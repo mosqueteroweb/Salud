@@ -30,10 +30,9 @@ jobs:
 
       - name: Preparar artefacto para Pages
         run: |
+          rm -rf _site
           mkdir -p _site
-          cp index.html _site/
-          # Copia carpetas de media si existen
-          for d in img video pdf; do [ -d "$d" ] && cp -r "$d" _site/; done
+          cp index.html _site/index.html
 
       - name: Subir artefacto
         uses: actions/upload-pages-artifact@v3

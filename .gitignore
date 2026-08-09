@@ -16,3 +16,4 @@ node_modules/
 
 # === Artefactos de build local (no subir) ===
 _site/
+index.html
