@@ -37,6 +37,8 @@ function wiki2html(body) {
   let h = body
     // Enlace a video local (.mp4) -> visor embebido
     .replace(/\[\[([^\]|]+)\|(video\/[^\]]+\.mp4)\]\]/g, '<video controls preload="metadata" src="$2">$1</video>')
+    // Enlace iframe externo: [[texto|xFrame|url]]
+    .replace(/\[\[([^\]|]+)\|xFrame\|([^\]]+)\]\]/g, '<iframe loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen src="$2" style="width:100%;aspect-ratio:16/9;border:0;border-radius:8px;margin:.5rem 0"></iframe>')
     .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '<a href="$2" target="_blank">$1</a>')
     .replace(/\[\[([^\]]+)\]\]/g, '<a href="#">$1</a>')
     .replace(/'''([^']+)'''/g, '<b>$1</b>')
