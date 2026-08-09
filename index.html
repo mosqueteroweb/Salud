@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wiki Mosqueteroweb</title>
+<style>
+  body{font-family:system-ui,-apple-system,sans-serif;margin:0;background:#f4f1ea;color:#222}
+  header{background:#3a5a40;color:#fff;padding:1rem;position:sticky;top:0;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+  header h1{margin:0;font-size:1.3rem}
+  .layout{display:flex;min-height:80vh}
+  nav{width:240px;background:#344e41;color:#fff;padding:1rem;flex-shrink:0}
+  nav ul{list-style:none;padding:0;margin:0}
+  nav a{color:#dad7cd;text-decoration:none;display:block;padding:.4rem 0}
+  nav a:hover{color:#fff}
+  main{flex:1;padding:1.5rem;max-width:820px}
+  .view{display:none}
+  .tiddler{border-bottom:1px solid #ccc;padding:1rem 0}
+  .tags .tag{background:#a3b18a;color:#1c2b1f;border-radius:4px;padding:.1rem .5rem;font-size:.75rem;margin-right:.3rem}
+  .body img{max-width:100%}
+  .catlist li{margin:.3rem 0}
+  .catlist a{color:#344e41;font-weight:600}
+  .catdesc{color:#555}
+  input#search{width:100%;padding:.5rem;margin-bottom:1rem;border-radius:6px;border:1px solid #ccc}
+  .hint{font-size:.8rem;color:#888;margin-top:2rem;border-top:1px dashed #ccc;padding-top:1rem}
+  @media(max-width:600px){.layout{flex-direction:column}nav{width:100%}}
+</style>
+</head>
+<body>
+<header>
+  <h1>🩺 Wiki Mosqueteroweb</h1>
+</header>
+<div class="layout">
+  <nav>
+    <input id="search" placeholder="Buscar..." onkeyup="filter()">
+    <ul id="navlist"><li><a href="#" onclick="show('Presentaci%C3%B3n')"><b>🏠 Inicio</b></a></li>
+<li><a href="#" onclick="show('cat-Salud')">🩺 Salud</a></li>
+<li><a href="#" onclick="show('cat-Utilidades')">🧰 Utilidades</a></li>
+<li><a href="#" onclick="show('cat-Curiosidades')">💡 Curiosidades</a></li></ul>
+  </nav>
+  <main>
+
+<section class="view tiddler" id="Convertir%20PDF%20a%20texto%20con%20herramientas%20gratuitas">
+  <h2>Convertir PDF a texto con herramientas gratuitas</h2>
+  <div class="tags"><span class="tag">Utilidades</span></div>
+  <div class="body"><h1>PDF a texto (utilidad)</h1><p>A veces necesitas extraer el texto de un PDF escaneado para buscar o resumir.</p><ol><li>Opciones gratuitas</li><li><b>OCR online</b>: subes el PDF y descargas .txt (cuidado con datos sensibles).</li><li><b>pdftotext</b> (línea de comandos): para PDFs con texto seleccionable.</li><li><b>Markdown</b>: convertir a .md conserva la estructura para reediciones.</li></ol><ol><li>Consejo</li></ol><p>Si el PDF tiene datos personales de salud, usa herramientas <b>locales</b> o borra el archivo tras procesarlo.</p></div>
+</section>
+
+<section class="view tiddler" id="Por%20qu%C3%A9%20bostezamos">
+  <h2>Por qué bostezamos</h2>
+  <div class="tags"><span class="tag">Curiosidades</span></div>
+  <div class="body"><h1>El bostezo (curiosidad)</h1><p>El bostezo es contagioso y aún no se comprende del todo, pero hay varias teorías:</p><ol><li>Teorías</li><li><b>Enfriamiento cerebral</b>: el bostezo renovaría aire para refrigerar el cerebro.</li><li><b>Alerta social</b>: sincroniza la vigilia del grupo (por eso es contagioso).</li><li><b>Transición</b>: marca cambios de estado (aburrimiento, sueño, tensión).</li></ol><ol><li>Dato</li></ol><p>Ver a alguien bostezar activa el mismo circuito en tu cerebro: de ahí lo contagioso.</p></div>
+</section>
+
+<section class="view tiddler" id="Presentaci%C3%B3n">
+  <h2>Presentación</h2>
+  <div class="tags"><span class="tag">Portada</span></div>
+  <div class="body"><h1>Wiki Mosqueteroweb</h1><p>Recopilatorio personal de cosas que voy encontrando y quiero tener a mano, organizado en tres secciones:</p><ol><li>🩺 Salud</li></ol><p>Artículos sobre salud, primeros auxilios, botiquines, hábitos y todo lo relacionado con el bienestar y la prevención.</p><ol><li>🧰 Utilidades</li></ol><p>Herramientas, trucos y recursos prácticos que facilitan tareas del día a día (conversión de formatos, organización, etc.).</p><ol><li>💡 Curiosidades</li></ol><p>Datos, fenómenos y temas curiosos que no encajan en lo anterior pero merecen guardarse.</p><p><i>Cómo se usa esta web:</i></p><p>Navega por las secciones del menú lateral. Usa el buscador para encontrar cualquier tema. Para añadir o editar contenido se crea o modifica un archivo en la carpeta <i>tiddlers/</i> del repositorio de GitHub; la web se actualiza sola con GitHub Actions.</p><p>Esta web es estática, alojada en GitHub Pages, y su contenido es texto plano exportable a cualquier otro sistema.</p></div>
+</section>
+
+<section class="view tiddler" id="Qu%C3%A9%20llevar%20en%20el%20botiqu%C3%ADn%20b%C3%A1sico">
+  <h2>Qué llevar en el botiquín básico</h2>
+  <div class="tags"><span class="tag">Salud</span></div>
+  <div class="body"><h1>Botiquín básico del hogar</h1><p>Un botiquín bien surtido evita carreras a la farmacia en momentos críticos.</p><ol><li>Imprescindibles</li><li>Vendas, tiritas y gasas estériles.</li><li>Antiséptico (clorhexidina o povidona yodada).</li><li>Analgésicos (paracetamol, ibuprofeno).</li><li>Tijeras, pinzas y guantes desechables.</li><li>Termómetro.</li></ol><ol><li>Revisión</li><li>Comprueba <b>caducidades</b> cada 6 meses.</li><li>Guarda en sitio fresco, seco y fuera del alcance de niños.</li></ol><p><b>Aplicación:</b> útil tanto en salud diaria como en confinamientos o apagones prolongados.</p></div>
+</section>
+<section class="view" id="cat-Salud">
+  <h2>🩺 Salud</h2>
+  <p class="catdesc">Artículos en <b>Salud</b>:</p>
+  <ul class="catlist"><li><a href="#" onclick="show('Qu%C3%A9%20llevar%20en%20el%20botiqu%C3%ADn%20b%C3%A1sico')">Qué llevar en el botiquín básico</a></li></ul>
+</section>
+<section class="view" id="cat-Utilidades">
+  <h2>🧰 Utilidades</h2>
+  <p class="catdesc">Artículos en <b>Utilidades</b>:</p>
+  <ul class="catlist"><li><a href="#" onclick="show('Convertir%20PDF%20a%20texto%20con%20herramientas%20gratuitas')">Convertir PDF a texto con herramientas gratuitas</a></li></ul>
+</section>
+<section class="view" id="cat-Curiosidades">
+  <h2>💡 Curiosidades</h2>
+  <p class="catdesc">Artículos en <b>Curiosidades</b>:</p>
+  <ul class="catlist"><li><a href="#" onclick="show('Por%20qu%C3%A9%20bostezamos')">Por qué bostezamos</a></li></ul>
+</section>
+  <div class="hint">
+    ¿Quieres añadir o editar un artículo? Entra en el repositorio de GitHub
+    (<code>tiddlers/</code>), crea o modifica un archivo <code>.tid</code> y guarda.
+    La web se actualiza sola con GitHub Actions. No necesitas ayuda externa.
+  </div>
+  </main>
+</div>
+<script>
+function show(id){
+  document.querySelectorAll('.view').forEach(s=>s.style.display='none');
+  const el=document.getElementById(id);
+  if(el){ el.style.display='block'; window.scrollTo(0,0); }
+}
+function filter(){
+  const q=document.getElementById('search').value.toLowerCase().trim();
+  if(!q){ show('Presentaci%C3%B3n'); return; }
+  document.querySelectorAll('.view').forEach(s=>s.style.display='none');
+  document.querySelectorAll('.tiddler').forEach(s=>{
+    if(s.innerText.toLowerCase().includes(q)){ s.style.display='block'; }
+  });
+  window.scrollTo(0,0);
+}
+window.addEventListener('DOMContentLoaded',()=>{
+  const h=location.hash.slice(1);
+  if(h && document.getElementById(h)) show(h);
+  else show('Presentaci%C3%B3n');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+node_modules/
+.DS_Store
+
+# === Seguridad: nunca subir credenciales/secretos ===
+**/.ssh/**
+**/id_rsa
+**/id_ed25519
+**/*.pem
+**/*.key
+**/.env
+**/token*
+**/github_pat_*
+
+# === El ZIP de exportación NO se versiona ===
+**/wikiprep.zip
+
+# === Artefactos de build local (no subir) ===
+_site/
