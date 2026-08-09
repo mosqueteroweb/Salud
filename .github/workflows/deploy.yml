@@ -33,9 +33,21 @@ jobs:
           rm -rf _site
           mkdir -p _site
           cp index.html _site/index.html
-          [ -d video ] && cp -r video _site/video
-          [ -d img ] && cp -r img _site/img
-          [ -d pdf ] && cp -r pdf _site/pdf
+          if [ -d "video" ]; then
+            mkdir -p _site/video
+            cp -r video/. _site/video/
+            echo "video copiado"
+          fi
+          if [ -d "img" ]; then
+            mkdir -p _site/img
+            cp -r img/. _site/img/
+          fi
+          if [ -d "pdf" ]; then
+            mkdir -p _site/pdf
+            cp -r pdf/. _site/pdf/
+          fi
+          echo "Contenido de _site:"
+          find _site -type f
 
       - name: Subir artefacto
         uses: actions/upload-pages-artifact@v3
