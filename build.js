@@ -35,6 +35,8 @@ function parseTid(raw) {
 
 function wiki2html(body) {
   let h = body
+    // Enlace a video local (.mp4) -> visor embebido
+    .replace(/\[\[([^\]|]+)\|(video\/[^\]]+\.mp4)\]\]/g, '<video controls preload="metadata" src="$2">$1</video>')
     .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '<a href="$2" target="_blank">$1</a>')
     .replace(/\[\[([^\]]+)\]\]/g, '<a href="#">$1</a>')
     .replace(/'''([^']+)'''/g, '<b>$1</b>')
@@ -129,6 +131,7 @@ function build() {
   .tiddler{border-bottom:1px solid #ccc;padding:1rem 0}
   .tags .tag{background:#a3b18a;color:#1c2b1f;border-radius:4px;padding:.1rem .5rem;font-size:.75rem;margin-right:.3rem}
   .body img{max-width:100%}
+  .body video{max-width:100%;border-radius:8px;margin:.5rem 0;background:#000}
   .catlist li{margin:.3rem 0}
   .catlist a{color:#344e41;font-weight:600}
   .catdesc{color:#555}
