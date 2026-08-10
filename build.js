@@ -110,7 +110,7 @@ function build() {
   }).join('\n');
 
   const navCats = CATEGORIES.concat(['Otros']).filter(c => groups[c].length)
-    .map(c => `<li><a href="#" onclick="show('cat-${encodeURIComponent(c)}')"><span class="dot"></span> ${CAT_ICON[c]||''} ${c}</a></li>`).join('\n');
+    .map(c => `<li><a href="#" data-cat="${c}" onclick="show('cat-${encodeURIComponent(c)}')"><span class="dot"></span> ${CAT_ICON[c]||''} ${c}</a></li>`).join('\n');
   const nav = `<li><a href="#" onclick="show('${homeId}')"><span class="dot"></span> <b>🏠 Inicio</b></a></li>\n${navCats}`;
 
   const html = `<!doctype html>
@@ -138,6 +138,8 @@ function build() {
   nav ul{list-style:none;padding:0;margin:0 0 1.2rem}
   nav a{display:flex;align-items:center;gap:.6rem;color:var(--ink);text-decoration:none;padding:.55rem .7rem;border-radius:9px;font-size:.92rem}
   nav a:hover{background:var(--card);box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  nav a.active{background:var(--accent);color:#fff;font-weight:600}
+  nav a.active .dot{background:#fff}
   .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex-shrink:0}
   main{flex:1;padding:2rem 2.4rem;max-width:860px}
   .crumb{font-size:.8rem;color:var(--muted);margin-bottom:1.2rem}
@@ -186,11 +188,28 @@ ${catSections}
 </div>
 <script>
 var _history=[];
+const CATS = ${JSON.stringify(CATEGORIES)};
 function titleOf(id){ return decodeURIComponent(id); }
+function activeCatFor(id){
+  if(id && id.indexOf('cat-')===0){ return decodeURIComponent(id.slice(4)); }
+  // tiddler: buscar primera categoria base en sus tags
+  const el=document.getElementById(id);
+  if(el){
+    const tags=[...el.querySelectorAll('.tags .tag')].map(t=>t.textContent.trim());
+    for(const c of CATS){ if(tags.includes(c)) return c; }
+  }
+  return null;
+}
+function highlightCat(cat){
+  document.querySelectorAll('#navlist a[data-cat]').forEach(a=>{
+    if(cat && a.getAttribute('data-cat')===cat) a.classList.add('active');
+    else a.classList.remove('active');
+  });
+}
 function show(id){
   document.querySelectorAll('.view').forEach(s=>s.style.display='none');
   const el=document.getElementById(id);
-  if(el){ el.style.display='block'; window.scrollTo(0,0); _history.push(id); updateCrumb(id); }
+  if(el){ el.style.display='block'; window.scrollTo(0,0); _history.push(id); updateCrumb(id); highlightCat(activeCatFor(id)); }
 }
 function updateCrumb(id){
   const crumb=document.getElementById('crumb');
@@ -210,13 +229,14 @@ function goBack(){
 }
 function filter(){
   const q=document.getElementById('search').value.toLowerCase().trim();
-  if(!q){ show('${homeId}'); updateCrumb('${homeId}'); return; }
+  if(!q){ show('${homeId}'); updateCrumb('${homeId}'); highlightCat(null); return; }
   document.querySelectorAll('.view').forEach(s=>s.style.display='none');
   document.querySelectorAll('.tiddler').forEach(s=>{
     if(s.innerText.toLowerCase().includes(q)){ s.style.display='block'; }
   });
   window.scrollTo(0,0);
   const crumb=document.getElementById('crumb'); if(crumb) crumb.textContent='Búsqueda: '+q;
+  highlightCat(null);
 }
 // Genera el ZIP en el navegador (index.html + media local) para uso offline
 async function exportZip(){
@@ -228,7 +248,7 @@ async function exportZip(){
     zip.file('index.html', document.documentElement.outerHTML);
     const dirs=['img','video','pdf'];
     for(const d of dirs){
-      const re=new RegExp(d+'/[^\"\\\\\\\\'\\\\\\\\s)]+','g');
+      const re=new RegExp(d+'/[^"\\x27\\s)]+','g');
       const found=new Set([...document.documentElement.outerHTML.matchAll(re)].map(m=>m[0]));
       for(const rel of found){
         try{
