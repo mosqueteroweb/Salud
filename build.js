@@ -91,7 +91,7 @@ function build() {
     const htmlBody = wiki2html(t.body).replace(/<html>[\s\S]*?<\/html>/g, '');
     const rawHtml = extractRawHtml(t.body);
     return `
-<section class="view tiddler" id="${id}">
+<section class="view card tiddler" id="${id}">
   <h2>${title}</h2>
   <div class="tags">${tagHtml}</div>
   <div class="body">${htmlBody}${rawHtml}</div>
@@ -110,8 +110,8 @@ function build() {
   }).join('\n');
 
   const navCats = CATEGORIES.concat(['Otros']).filter(c => groups[c].length)
-    .map(c => `<li><a href="#" onclick="show('cat-${encodeURIComponent(c)}')">${CAT_ICON[c]||''} ${c}</a></li>`).join('\n');
-  const nav = `<li><a href="#" onclick="show('${homeId}')"><b>🏠 Inicio</b></a></li>\n${navCats}`;
+    .map(c => `<li><a href="#" onclick="show('cat-${encodeURIComponent(c)}')"><span class="dot"></span> ${CAT_ICON[c]||''} ${c}</a></li>`).join('\n');
+  const nav = `<li><a href="#" onclick="show('${homeId}')"><span class="dot"></span> <b>🏠 Inicio</b></a></li>\n${navCats}`;
 
   const html = `<!doctype html>
 <html lang="es">
@@ -121,28 +121,45 @@ function build() {
 <title>Wiki Mosqueteroweb</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <style>
-  body{font-family:system-ui,-apple-system,sans-serif;margin:0;background:#f4f1ea;color:#222}
-  header{background:#3a5a40;color:#fff;padding:1rem;position:sticky;top:0;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
-  header h1{margin:0;font-size:1.3rem}
-  header button{background:#a3b18a;color:#1c2b1f;border:none;border-radius:6px;padding:.5rem .9rem;font-size:.85rem;cursor:pointer;font-weight:600}
-  header button:hover{background:#b5c99a}
-  .layout{display:flex;min-height:80vh}
-  nav{width:240px;background:#344e41;color:#fff;padding:1rem;flex-shrink:0}
-  nav ul{list-style:none;padding:0;margin:0}
-  nav a{color:#dad7cd;text-decoration:none;display:block;padding:.4rem 0}
-  nav a:hover{color:#fff}
-  main{flex:1;padding:1.5rem;max-width:820px}
-  .view{display:none}
-  .tiddler{border-bottom:1px solid #ccc;padding:1rem 0}
-  .tags .tag{background:#a3b18a;color:#1c2b1f;border-radius:4px;padding:.1rem .5rem;font-size:.75rem;margin-right:.3rem}
-  .body img{max-width:100%}
-  .body video{max-width:100%;border-radius:8px;margin:.5rem 0;background:#000}
+  :root{
+    --bg:#f3f6f4; --panel:#e7eee9; --ink:#2f3e36; --muted:#6b7d72;
+    --accent:#5a8a6b; --card:#ffffff; --line:#d8e3db;
+  }
+  *{box-sizing:border-box}
+  body{font-family:-apple-system,system-ui,Segoe UI,Roboto,sans-serif;margin:0;background:var(--bg);color:var(--ink)}
+  header{background:linear-gradient(120deg,#5a8a6b,#7fae8e);color:#fff;padding:1.1rem 1.6rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+  header h1{margin:0;font-family:Georgia,'Times New Roman',serif;font-weight:600;font-size:1.45rem;letter-spacing:.3px}
+  header button{background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:.45rem .8rem;font-size:.82rem;cursor:pointer;font-weight:600}
+  header button:hover{background:rgba(255,255,255,.3)}
+  .layout{display:flex;min-height:86vh}
+  nav{width:265px;background:var(--panel);padding:1.4rem 1.2rem;border-right:1px solid var(--line);flex-shrink:0}
+  nav .search{width:100%;padding:.6rem .8rem;border:1px solid var(--line);border-radius:10px;background:#fff;margin-bottom:1.3rem;font-size:.9rem;color:var(--muted)}
+  nav h3{font-size:.72rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin:.4rem 0 .6rem}
+  nav ul{list-style:none;padding:0;margin:0 0 1.2rem}
+  nav a{display:flex;align-items:center;gap:.6rem;color:var(--ink);text-decoration:none;padding:.55rem .7rem;border-radius:9px;font-size:.92rem}
+  nav a:hover{background:var(--card);box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex-shrink:0}
+  main{flex:1;padding:2rem 2.4rem;max-width:860px}
+  .crumb{font-size:.8rem;color:var(--muted);margin-bottom:1.2rem}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.6rem 1.8rem;box-shadow:0 4px 18px rgba(47,62,54,.06);margin-bottom:1.4rem}
+  .card h2{font-family:Georgia,serif;margin:.1rem 0 .6rem;font-size:1.35rem;overflow-wrap:anywhere;word-break:break-word;max-width:100%}
+  .tag{display:inline-block;background:var(--panel);color:var(--accent);border-radius:6px;padding:.15rem .6rem;font-size:.72rem;margin-right:.4rem}
+  .card p{color:var(--muted);line-height:1.65;font-size:.95rem;margin:.4rem 0}
+  .body img{max-width:100%;border-radius:12px}
+  .body video{max-width:100%;border-radius:12px;margin:.5rem 0;background:#000;display:block}
+  .body iframe{max-width:100%;border:0;border-radius:8px;margin:.5rem 0}
   .catlist li{margin:.3rem 0}
   .catlist a{color:#344e41;font-weight:600}
   .catdesc{color:#555}
-  input#search{width:100%;padding:.5rem;margin-bottom:1rem;border-radius:6px;border:1px solid #ccc}
   .hint{font-size:.8rem;color:#888;margin-top:2rem;border-top:1px dashed #ccc;padding-top:1rem}
-  @media(max-width:600px){.layout{flex-direction:column}nav{width:100%}}
+  @media(max-width:600px){
+    .layout{flex-direction:column}
+    nav{width:100%;border-right:none;border-bottom:1px solid var(--line)}
+    main{padding:1.2rem}
+    header h1{font-size:1.15rem}
+    .card h2{font-size:1.15rem}
+    .body video,.body iframe{max-width:100%}
+  }
 </style>
 </head>
 <body>
@@ -153,10 +170,11 @@ function build() {
 </header>
 <div class="layout">
   <nav>
-    <input id="search" placeholder="Buscar..." onkeyup="filter()">
+    <input id="search" class="search" placeholder="🔎 Buscar..." onkeyup="filter()">
     <ul id="navlist">${nav}</ul>
   </nav>
   <main>
+<div class="crumb" id="crumb"></div>
 ${entries}
 ${catSections}
   <div class="hint">
@@ -168,10 +186,23 @@ ${catSections}
 </div>
 <script>
 var _history=[];
+function titleOf(id){ return decodeURIComponent(id); }
 function show(id){
   document.querySelectorAll('.view').forEach(s=>s.style.display='none');
   const el=document.getElementById(id);
-  if(el){ el.style.display='block'; window.scrollTo(0,0); _history.push(id); }
+  if(el){ el.style.display='block'; window.scrollTo(0,0); _history.push(id); updateCrumb(id); }
+}
+function updateCrumb(id){
+  const crumb=document.getElementById('crumb');
+  if(!crumb) return;
+  if(id && id.indexOf('cat-')===0){
+    const cat=decodeURIComponent(id.slice(4));
+    crumb.textContent='Inicio › '+cat;
+  } else if(id){
+    crumb.textContent='Inicio › '+decodeURIComponent(id);
+  } else {
+    crumb.textContent='Inicio';
+  }
 }
 function goBack(){
   if(_history.length>1){ _history.pop(); const prev=_history.pop(); show(prev); }
@@ -179,12 +210,13 @@ function goBack(){
 }
 function filter(){
   const q=document.getElementById('search').value.toLowerCase().trim();
-  if(!q){ show('${homeId}'); return; }
+  if(!q){ show('${homeId}'); updateCrumb('${homeId}'); return; }
   document.querySelectorAll('.view').forEach(s=>s.style.display='none');
   document.querySelectorAll('.tiddler').forEach(s=>{
     if(s.innerText.toLowerCase().includes(q)){ s.style.display='block'; }
   });
   window.scrollTo(0,0);
+  const crumb=document.getElementById('crumb'); if(crumb) crumb.textContent='Búsqueda: '+q;
 }
 // Genera el ZIP en el navegador (index.html + media local) para uso offline
 async function exportZip(){
