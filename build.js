@@ -119,10 +119,13 @@ function build() {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wiki Mosqueteroweb</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <style>
   body{font-family:system-ui,-apple-system,sans-serif;margin:0;background:#f4f1ea;color:#222}
   header{background:#3a5a40;color:#fff;padding:1rem;position:sticky;top:0;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
   header h1{margin:0;font-size:1.3rem}
+  header button{background:#a3b18a;color:#1c2b1f;border:none;border-radius:6px;padding:.5rem .9rem;font-size:.85rem;cursor:pointer;font-weight:600}
+  header button:hover{background:#b5c99a}
   .layout{display:flex;min-height:80vh}
   nav{width:240px;background:#344e41;color:#fff;padding:1rem;flex-shrink:0}
   nav ul{list-style:none;padding:0;margin:0}
@@ -145,6 +148,8 @@ function build() {
 <body>
 <header>
   <h1>🩺 Wiki Mosqueteroweb</h1>
+  <button onclick="goBack()" title="Volver atrás">⬅ Atrás</button>
+  <button onclick="exportZip()" title="Descargar copia de seguridad (ZIP)">⬇ Copia seguridad</button>
 </header>
 <div class="layout">
   <nav>
@@ -162,10 +167,15 @@ ${catSections}
   </main>
 </div>
 <script>
+var _history=[];
 function show(id){
   document.querySelectorAll('.view').forEach(s=>s.style.display='none');
   const el=document.getElementById(id);
-  if(el){ el.style.display='block'; window.scrollTo(0,0); }
+  if(el){ el.style.display='block'; window.scrollTo(0,0); _history.push(id); }
+}
+function goBack(){
+  if(_history.length>1){ _history.pop(); const prev=_history.pop(); show(prev); }
+  else if(_history.length===1){ /* ya en inicio */ }
 }
 function filter(){
   const q=document.getElementById('search').value.toLowerCase().trim();
@@ -175,6 +185,36 @@ function filter(){
     if(s.innerText.toLowerCase().includes(q)){ s.style.display='block'; }
   });
   window.scrollTo(0,0);
+}
+// Genera el ZIP en el navegador (index.html + media local) para uso offline
+async function exportZip(){
+  if(typeof JSZip==='undefined'){ alert('Cargando librería ZIP, inténtalo en unos segundos...'); return; }
+  const btn=document.querySelector('header button[onclick^="exportZip"]')||document.querySelector('header button');
+  const old=btn.textContent; btn.textContent='⏳ Generando...'; btn.disabled=true;
+  try{
+    const zip=new JSZip();
+    zip.file('index.html', document.documentElement.outerHTML);
+    const dirs=['img','video','pdf'];
+    for(const d of dirs){
+      const re=new RegExp(d+'/[^\"\\\\\\\\'\\\\\\\\s)]+','g');
+      const found=new Set([...document.documentElement.outerHTML.matchAll(re)].map(m=>m[0]));
+      for(const rel of found){
+        try{
+          const r=await fetch(rel);
+          if(r.ok){ const buf=await r.arrayBuffer(); zip.file(rel, buf); }
+        }catch(e){ console.warn('No se pudo añadir',rel,e); }
+      }
+    }
+    const blob=await zip.generateAsync({type:'blob'});
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    const mm=String(new Date().getMonth()+1).padStart(2,'0');
+    const yyyy=new Date().getFullYear();
+    a.download='wikisalud-'+mm+'-'+yyyy+'.zip';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }catch(e){ alert('Error: '+e.message); }
+  finally{ btn.textContent=old; btn.disabled=false; }
 }
 window.addEventListener('DOMContentLoaded',()=>{
   const h=location.hash.slice(1);
