@@ -46,6 +46,10 @@ jobs:
             mkdir -p _site/pdf
             cp -r pdf/. _site/pdf/
           fi
+          if [ -f "robots.txt" ]; then
+            cp robots.txt _site/robots.txt
+            echo "robots.txt copiado"
+          fi
           echo "Contenido de _site:"
           find _site -type f
 
