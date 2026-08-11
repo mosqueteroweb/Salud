@@ -76,7 +76,10 @@ function build() {
   CATEGORIES.forEach(c => groups[c] = []);
   groups['Otros'] = [];
   const articles = tiddlers.filter(t => t !== home);
+  const HIDDEN = 'Oculto';
+  const isHidden = t => ((t.meta.tags || '').split(' ').includes(HIDDEN));
   for (const t of articles) {
+    if (isHidden(t)) continue;
     const tags = (t.meta.tags || '').split(' ').filter(Boolean);
     const cats = tags.filter(tg => CATEGORIES.includes(tg));
     if (cats.length === 0) groups['Otros'].push(t);
@@ -87,11 +90,12 @@ function build() {
     const title = t.meta.title || 'Sin título';
     const id = encodeURIComponent(title);
     const tags = (t.meta.tags || '').split(' ').filter(Boolean);
-    const tagHtml = tags.map(tg => `<span class="tag">${tg}</span>`).join(' ');
+    const hidden = tags.includes(HIDDEN);
+    const tagHtml = tags.filter(tg => tg !== HIDDEN).map(tg => `<span class="tag">${tg}</span>`).join(' ');
     const htmlBody = wiki2html(t.body).replace(/<html>[\s\S]*?<\/html>/g, '');
     const rawHtml = extractRawHtml(t.body);
     return `
-<section class="view card tiddler" id="${id}">
+<section class="view card tiddler" id="${id}"${hidden ? ' data-hidden="1"' : ''}>
   <h2>${title}</h2>
   <div class="tags">${tagHtml}</div>
   <div class="body">${htmlBody}${rawHtml}</div>
@@ -234,6 +238,7 @@ function filter(){
   if(!q){ show('${homeId}'); updateCrumb('${homeId}'); highlightCat(null); return; }
   document.querySelectorAll('.view').forEach(s=>s.style.display='none');
   document.querySelectorAll('.tiddler').forEach(s=>{
+    if(s.dataset.hidden) return;
     if(s.innerText.toLowerCase().includes(q)){ s.style.display='block'; }
   });
   window.scrollTo(0,0);
