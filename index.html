@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noai, noimageai, nosnippet">
+<meta name="googlebot" content="noindex, nofollow, noai">
+<title>Wiki Mosqueteroweb</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<style>
+  :root{
+    --bg:#f3f6f4; --panel:#e7eee9; --ink:#2f3e36; --muted:#6b7d72;
+    --accent:#5a8a6b; --card:#ffffff; --line:#d8e3db;
+  }
+  *{box-sizing:border-box}
+  body{font-family:-apple-system,system-ui,Segoe UI,Roboto,sans-serif;margin:0;background:var(--bg);color:var(--ink)}
+  header{background:linear-gradient(120deg,#5a8a6b,#7fae8e);color:#fff;padding:1.1rem 1.6rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+  header h1{margin:0;font-family:Georgia,'Times New Roman',serif;font-weight:600;font-size:1.45rem;letter-spacing:.3px}
+  header button{background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:.45rem .8rem;font-size:.82rem;cursor:pointer;font-weight:600}
+  header button:hover{background:rgba(255,255,255,.3)}
+  .layout{display:flex;min-height:86vh}
+  nav{width:265px;background:var(--panel);padding:1.4rem 1.2rem;border-right:1px solid var(--line);flex-shrink:0}
+  nav .search{width:100%;padding:.6rem .8rem;border:1px solid var(--line);border-radius:10px;background:#fff;margin-bottom:1.3rem;font-size:.9rem;color:var(--muted)}
+  nav h3{font-size:.72rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin:.4rem 0 .6rem}
+  nav ul{list-style:none;padding:0;margin:0 0 1.2rem}
+  nav a{display:flex;align-items:center;gap:.6rem;color:var(--ink);text-decoration:none;padding:.55rem .7rem;border-radius:9px;font-size:.92rem}
+  nav a:hover{background:var(--card);box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  nav a.active{background:var(--accent);color:#fff;font-weight:600}
+  nav a.active .dot{background:#fff}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex-shrink:0}
+  main{flex:1;padding:2rem 2.4rem;max-width:860px}
+  .crumb{font-size:.8rem;color:var(--muted);margin-bottom:1.2rem}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.6rem 1.8rem;box-shadow:0 4px 18px rgba(47,62,54,.06);margin-bottom:1.4rem}
+  .card h2{font-family:Georgia,serif;margin:.1rem 0 .6rem;font-size:1.35rem;overflow-wrap:anywhere;word-break:break-word;max-width:100%}
+  .tag{display:inline-block;background:var(--panel);color:var(--accent);border-radius:6px;padding:.15rem .6rem;font-size:.72rem;margin-right:.4rem}
+  .card p{color:var(--muted);line-height:1.65;font-size:.95rem;margin:.4rem 0}
+  .body img{max-width:100%;border-radius:12px}
+  .body video{max-width:100%;border-radius:12px;margin:.5rem 0;background:#000;display:block}
+  .body iframe{max-width:100%;border:0;border-radius:8px;margin:.5rem 0}
+  .catlist li{margin:.3rem 0}
+  .catlist a{color:#344e41;font-weight:600}
+  .catdesc{color:#555}
+  .hint{font-size:.8rem;color:#888;margin-top:2rem;border-top:1px dashed #ccc;padding-top:1rem}
+  @media(max-width:600px){
+    .layout{flex-direction:column}
+    nav{width:100%;border-right:none;border-bottom:1px solid var(--line)}
+    main{padding:1.2rem}
+    header h1{font-size:1.15rem}
+    .card h2{font-size:1.15rem}
+    .body video,.body iframe{max-width:100%}
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>🩺 Wiki Mosqueteroweb</h1>
+  <button onclick="goBack()" title="Volver atrás">⬅ Atrás</button>
+  <button onclick="exportZip()" title="Descargar copia de seguridad (ZIP)">⬇ Copia seguridad</button>
+</header>
+<div class="layout">
+  <nav>
+    <input id="search" class="search" placeholder="🔎 Buscar..." onkeyup="filter()">
+    <ul id="navlist"><li><a href="#" onclick="show('Presentaci%C3%B3n')"><span class="dot"></span> <b>🏠 Inicio</b></a></li>
+<li><a href="#" data-cat="Salud" onclick="show('cat-Salud')"><span class="dot"></span> 🩺 Salud</a></li>
+<li><a href="#" data-cat="Utilidades" onclick="show('cat-Utilidades')"><span class="dot"></span> 🧰 Utilidades</a></li>
+<li><a href="#" data-cat="Curiosidades" onclick="show('cat-Curiosidades')"><span class="dot"></span> 💡 Curiosidades</a></li></ul>
+  </nav>
+  <main>
+<div class="crumb" id="crumb"></div>
+
+<section class="view card tiddler" id="12%20nudos%20resistentes%20que%20todos%20deber%C3%ADan%20conocer">
+  <h2>12 nudos resistentes que todos deberían conocer</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>12 nudos resistentes que todos deberían conocer</h1><p>Vídeo recopilatorio (94 s, "Durable knots everyone should know") troceado en 12 clips, uno por nudo, cada uno con su nombre en castellano. Fuente: X/Twitter (canal LifeHaxx101).</p><ol><li>Los 12 nudos</li></ol><p><b>1. Nudo para cerrar bolsas de líquido</b></p><p>Sella bolsas de plástico con líquido de forma hermética, sin derrames al girar la bolsa.</p><p><video controls preload="metadata" src="video/nudos-lifehaxx/01-bolsa-liquido.mp4">Vídeo 1</video></p><p><b>2. Nudo de esquina para lonas</b></p><p>Asegura las esquinas de carpas o lonas (tarps) tensándolas con firmeza.</p><p><video controls preload="metadata" src="video/nudos-lifehaxx/02-esquina-lona.mp4">Vídeo 2</video></p><p><b>3. Nudo de remolque</b></p><p>Atado a un gancho metálico, para tracción y remolque de objetos pesados.</p><p><video controls preload="metadata" src="video/nudos-lifehaxx/03-remolque.mp4">Vídeo 3</video></p><p><b>4. Nudo para haz de leña</b></p><p>Enrolla y enhebra cuerda alrededor de ramas para transportar leña suelta.</p><p><video controls preload="metadata" src="video/nudos-lifehaxx/04-haz-lena.mp4">Vídeo 4</video></p><p><b>5. Nudo para transportar botellas</b></p><p>Lleva dos botellas juntas de forma segura y equilibrada.</p><p><video controls preload="metadata" src="video/nudos-lifehaxx/05-transportar-botellas.mp4">Vídeo 5</video></p><p><b>6. Nudo para cerrar sacos</b></p><p>Cierre fuerte y fácil para sacos o bolsas.</p><p><video controls preload="metadata" src="video/nudos-lifehaxx/06-cerrar-sacos.mp4">Vídeo 6</video></p><p><b>7. Nudo para atar verduras</b></p><p>Sujeta manojos de verduras o hierbas sin dañarlas.</p><p><video controls preload="metadata" src="video/nudos-lifehaxx/07-atar-verduras.mp4">Vídeo 7</video></p><p><b>8. Nudo de reparación de cuerda</b></p><p>Repara cuerdas rotas con agarre duradero y resistente.</p><p><video controls preload="metadata" src="video/nudos-lifehaxx/08-reparacion.mp4">Vídeo 8</video></p><p><b>9. Nudo para colgar y organizar</b></p><p>Mantiene cuerdas y sogas ordenadas; ideal para colgar.</p><p><video controls preload="metadata" src="video/nudos-lifehaxx/09-colgar-organizar.mp4">Vídeo 9</video></p><p><b>10. Nudo de escape</b></p><p>Para situaciones críticas; puede salvar la vida en emergencias.</p><p><video controls preload="metadata" src="video/nudos-lifehaxx/10-escape.mp4">Vídeo 10</video></p><p><b>11. Nudo de conexión (unir cuerdas)</b></p><p>Une dos cuerdas; usado en escalada o rescate (seguridad para la vida).</p><p><video controls preload="metadata" src="video/nudos-lifehaxx/11-conexion.mp4">Vídeo 11</video></p><p><b>12. Nudo de lazo deslizante</b></p><p>Lazo ajustable libremente; útil para múltiples aplicaciones de colgado.</p><p><video controls preload="metadata" src="video/nudos-lifehaxx/12-lazo-deslizante.mp4">Vídeo 12</video></p><ol><li>Clave</li></ol><p>Tutorial 100% visual. Material: cuerda. Varios de estos nudos son útiles en preparación, emergencias y refugio improvisado.</p><p>Fuente: X/Twitter (canal "LifeHaxx101", "Durable knots everyone should know").</p></div>
+</section>
+
+<section class="view card tiddler" id="3%20cosas%20que%20hacer%20(y%20no%20hacer)%20con%20la%20fascitis%20plantar">
+  <h2>3 cosas que hacer (y no hacer) con la fascitis plantar</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>3 cosas que hacer (y no hacer) con la fascitis plantar</h1><p>Tutorial de la podóloga Pilar del Arco (español, ~45 s) con 3 pautas clave y un estiramiento para eliminar el dolor de la fascitis plantar. Mejoras visibles en una semana si se siguen.</p><ol><li>Las 3 pautas</li><li><b>1. Deja las zapatillas planas</b>: el calzado sin amortiguación ni soporte agrava la fascitis. Usa calzado deportivo con amortiguación y soporte (p.ej. ASICS, New Balance).</li><li><b>2. Estira todos los días</b>: la fascitis a menudo viene de tensión en los gemelos. Haz <b>elevaciones de talón</b> descalzo sobre superficie plana, 2 minutos por pierna, para soltar la pantorrilla (causa raíz).</li><li><b>3. No vayas descalzo</b>: caminar descalzo en casa sobrecarga la fascia sin soporte y empeora el dolor.</li></ol><ol><li>Clave</li></ol><p>El estiramiento de gemelo (no solo del pie) ataca el origen del problema. Constancia diaria.</p><ol><li>Vídeo</li></ol><p>Podóloga explica las 3 pautas y el estiramiento: <video controls preload="metadata" src="video/fascitis-3-cosas.mp4">Fascitis plantar: 3 cosas (vídeo)</video></p><p><b>Aplicación:</b> salud preventiva; útil cuando no puedes ir a la podóloga de inmediato.</p></div>
+</section>
+
+<section class="view card tiddler" id="5%20nudos%20de%20cuerda%20para%20el%20d%C3%ADa%20a%20d%C3%ADa">
+  <h2>5 nudos de cuerda para el día a día</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>5 nudos de cuerda para el día a día</h1><p>Vídeo (30 s, sin audio) que demuestra <b>5 nudos de cuerda prácticos</b> para uso cotidiano, camping o emergencias. Cada uno se muestra en su contexto real.</p><ol><li>Los 5 nudos</li><li><b>Amarre de anillo</b>: fija un aro metálico a la cuerda. Útil para llaveros o sujetar anillas a bolsas.</li><li><b>Cierre de saco</b>: cierra sacos de tela (granos, piensos, suministros) de forma segura; no se desliza con el peso y se desata fácil.</li><li><b>Fijación a punto fijo</b>: sujeta la cuerda a clavos, ganchos o postes para colgar objetos o tender cuerdas.</li><li><b>Amarre de lona/toldo</b>: ajusta y tensa lonas o tiendas al suelo; nudo ajustable, resistente al viento.</li><li><b>Unión de cañas</b>: une palos o cañas de bambú para emparrados o estructuras de jardín.</li></ol><ol><li>Clave</li></ol><p>Tutorial 100% visual, sin audio. Material: cuerda y lo que tengas a mano. Útil también en situaciones de apagón o confinamiento donde haya que asegurar cargas o montar refugio.</p><ol><li>Vídeo</li></ol><p>Demostración de los 5 nudos: <video controls preload="metadata" src="video/utilidades-nudos-cuerda.mp4">Nudos de cuerda (vídeo)</video></p><p>Fuente: X/Twitter (canal "Smart Builds").</p><p><b>Aplicación:</b> utilidad doméstica y preparación; complementa la sección de herramientas/comunicaciones en contextos de emergencia.</p></div>
+</section>
+
+<section class="view card tiddler" id="8%20trucos%20para%20doblar%20la%20ropa">
+  <h2>8 trucos para doblar la ropa</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>8 trucos para doblar la ropa</h1><p>Vídeo demostrativo (63 s) con 8 métodos para plegar la ropa de forma rápida y ordenada. Original en árabe; aquí el resumen práctico para la wiki.</p><ol><li>De qué va</li></ol><p>El clip muestra 8 formas distintas de doblar prendas (camisetas, pantalones, ropa interior, etc.) usando trucos de plegado que ahorran tiempo y espacio en el armario. Es un contenido de organización doméstica, sin herramientas especiales.</p><ol><li>Clave</li></ol><p>Métodos visuales paso a paso: cada truco se demuestra con una prenda real. Útil para mantener la ropa ordenada ocupando menos sitio.</p><ol><li>Vídeo</li></ol><p>Demostración de los 8 métodos de plegado: <video controls preload="metadata" src="video/utilidades-doblar-ropa.mp4">8 trucos para doblar la ropa (vídeo)</video></p><p>Fuente: X/Twitter (publicación original en árabe: "8 طرق لتطوِي ملابسك").</p><p><b>Aplicación:</b> organización del hogar; útil en espacios reducidos (p.ej. tras un apagón o confinamiento donde se reorganiza el hogar).</p></div>
+</section>
+
+<section class="view card tiddler" id="Abdominales%20inferiores%20con%20reverse%20crunch">
+  <h2>Abdominales inferiores con reverse crunch</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Abdominales inferiores con reverse crunch</h1><p>Ejercicio de core de bajo impacto para fortalecer el <b>recto abdominal inferior</b> (la parte baja de la "tableta"), sin material más que una esterilla. Pauta indicada: 3 series de 20 repeticiones (3x20).</p><ol><li>Cómo se hace</li><li>Siéntate en la esterilla, piernas estiradas hacia delante y manos detrás de la cabeza.</li><li>Inclina el torso hacia atrás de forma controlada, levanta las piernas (dobladas por la rodilla) y acerca el torso a las piernas para contraer la zona baja del abdomen.</li><li>Baja lentamente y repite el movimiento con control.</li></ol><ol><li>Clave</li></ol><p>El trabajo está en la contracción del abdomen inferior al subir piernas y torso en posición semisentada. Ejercicio apto para casa, de bajo impacto.</p><ol><li>Vídeo</li></ol><p>Tutorial corto que demuestra el movimiento y su grupo muscular objetivo: <video controls preload="metadata" src="video/abs-inferiores-reverse-crunch.mp4">Abdominales inferiores (vídeo)</video></p><p><b>Aplicación:</b> salud diaria; útil también en apagones/confinamientos donde no hay gimnasio.</p></div>
+</section>
+
+<section class="view card tiddler" id="Abdominales%20sentado%20en%20silla">
+  <h2>Abdominales sentado en silla</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Abdominales sentado en silla</h1><p>Rutina de abdominales que se hace sentado en una silla, ideal para quien busca trabajar el core sin tumbarse en el suelo. El vídeo resalta con check qué grupos abdominales se activan (bajos, altos, oblicuos y el recto completo).</p><ol><li>En qué consiste</li><li>Sentado al borde de una silla (sobre una esterilla), realizas una serie de movimientos de core con las manos apoyadas o detrás de la cabeza.</li><li>El gráfico del vídeo va marcando los grupos trabajados: <i>Lower Abs</i>, <i>Upper Abs</i>, <i>Obliques</i> y <i>Full Abs</i>.</li></ol><ol><li>Clave</li></ol><p>Permite entrenar el abdomen en espacios pequeños y sin esterilla. Sigue la pauta de repeticiones que indica el vídeo y mantén el movimiento controlado.</p><ol><li>Vídeo</li></ol><p>Rutina "CHAIR ABS WORKOUT" demostrada paso a paso: <video controls preload="metadata" src="video/abs-silla.mp4">Abdominales en silla (vídeo)</video></p><p><b>Aplicación:</b> salud diaria en casa o en la oficina.</p></div>
+</section>
+
+<section class="view card tiddler" id="Caminar%20para%20eliminar%20el%20dolor%20de%20rodilla">
+  <h2>Caminar para eliminar el dolor de rodilla</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Caminar para eliminar el dolor de rodilla</h1><p>Vídeo (41 s, árabe original) que enseña una forma de caminar y ejercicios sencillos para aliviar el dolor de rodilla y otras molestias musculoesqueléticas.</p><ol><li>La técnica</li><li><b>Marcha apoyando el talón primero</b>: al caminar, aterriza primero con el talón y luego rueda el pie hasta los dedos. Según el vídeo, esta forma de caminar hace que el dolor de rodilla desaparezca.</li></ol><ol><li>Rutina diaria (2 minutos cada uno)</li><li><b>Caminata</b>: 2 min al día con la técnica de talón-primero, para evitar dolor de piernas.</li><li><b>Sentadillas</b>: espalda recta y core activado, 2 min al día, para eliminar el dolor lumbar.</li><li><b>Inclinación de cabeza atrás</b>: suave, 2 min al día, para relajar tensión de cuello y hombros.</li></ol><ol><li>Clave</li></ol><p>Ejercicios de bajo impacto, sin material. Constancia de 2 minutos diarios por cada movimiento.</p><ol><li>Vídeo</li></ol><p>Demostración de la marcha y ejercicios: <video controls preload="metadata" src="video/salud-dolor-rodilla.mp4">Caminar para dolor de rodilla (vídeo)</video></p><p>Fuente: X/Twitter (vídeo original de TikTok, creador @mohammedfadbel3, en árabe).</p><p><b>Aplicación:</b> salud preventiva diaria; útil para quienes caminan mucho o tienen rodillas/tensión acumulada.</p></div>
+</section>
+
+<section class="view card tiddler" id="C%C3%B3mo%20leer%20las%20marcas%20de%20un%20neum%C3%A1tico%20de%20coche">
+  <h2>Cómo leer las marcas de un neumático de coche</h2>
+  <div class="tags"><span class="tag">Curiosidades</span> <span class="tag">Coches</span> <span class="tag">Neumáticos</span></div>
+  <div class="body"></div>
+</section>
+
+<section class="view card tiddler" id="Ejercicios%20de%20Kegel%20para%20hombres" data-hidden="1">
+  <h2>Ejercicios de Kegel para hombres</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Ejercicios</span> <span class="tag">Pelvis</span></div>
+  <div class="body"><p>Rutina de ejercicios de suelo pélvico (Kegel) para hombres, dividida en 8 movimientos cortos. Realiza las repeticiones que indica cada clip y descansa unos segundos entre series.</p><h2>1. Puente de mariposa pulsante</h2><p>Posición: tumbado boca arriba, rodillas caídas a los lados (pies juntos), manos sobre el bajo vientre. Pequeños impulsos controlados de cadera hacia arriba y abajo para activar suelo pélvico y glúteos.</p><p><video controls preload="metadata" src="video/k1.mp4">▶ Ver ejercicio</video></p><h2>2. Puente de glúteos Kegel</h2><p>Puente de glúteos clásico: pies a la anchura de las caderas, sube la cadera, mantén arriba y baja. Contrae el suelo pélvico en la subida.</p><p><video controls preload="metadata" src="video/k2.mp4">▶ Ver ejercicio</video></p><h2>3. Puente de glúteos diamante</h2><p>Igual que el puente, pero con los pies juntos (posición diamante) y rodillas al frente. Intensifica el trabajo del suelo pélvico.</p><p><video controls preload="metadata" src="video/k3.mp4">▶ Ver ejercicio</video></p><h2>4. Puente de glúteos con abducción</h2><p>En posición de puente, separa las rodillas hacia afuera (abducción) manteniendo la cadera arriba, junta y baja.</p><p><video controls preload="metadata" src="video/k4.mp4">▶ Ver ejercicio</video></p><h2>5. Puente de glúteos en pausa</h2><p>Sube a la posición de puente y mantén la cima (pausa) antes de bajar. Al final del clip levanta las piernas estiradas sin perder la contracción.</p><p><video controls preload="metadata" src="video/k5.mp4">▶ Ver ejercicio</video></p><h2>6. Pulso rápido de cadera</h2><p>Tumbado, pies levantados del suelo, pequeños impulsos rápidos de cadera hacia arriba y abajo (lumbar pegada al suelo al bajar).</p><p><video controls preload="metadata" src="video/k6.mp4">▶ Ver ejercicio</video></p><h2>7. Empuje inverso de cadera</h2><p>Sentado en el suelo, manos detrás para apoyo, empuja la cadera hacia delante y arriba (hip thrust inverso) y vuelve a la posición neutral.</p><p><video controls preload="metadata" src="video/k7.mp4">▶ Ver ejercicio</video></p><h2>8. Patada de glúteo inclinada</h2><p>A cuatro patas, espalda plana, extiende una pierna recta hacia atrás apretando el glúteo arriba, alterna piernas.</p><p><video controls preload="metadata" src="video/k8.mp4">▶ Ver ejercicio</video></p><p>!!! Fuente</p><p>Vídeo original: https://x.com/i/status/2086791704120787040 — "You Should Know - Kegel exercises for men". Troceado en 8 clips para esta wiki.</p></div>
+</section>
+
+<section class="view card tiddler" id="Ejercicios%20de%20Kegel" data-hidden="1">
+  <h2>Ejercicios de Kegel</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Ejercicios de Kegel</h1><p>Vídeo (26 s) que presenta un <b>programa de entrenamiento de Kegel para hombres</b> enfocado en la salud íntima y el suelo pélvico. Muestra un plan de 24 días (DAY 1 a DAY 24) con distintas posiciones de ejercicio, y hace hincapié en síntomas de debilidad pélvica (p.ej. erección débil) que este entrenamiento busca mejorar.</p><ol><li>De qué va</li></ol><p>Los ejercicios de Kegel fortalecen los músculos del suelo pélvico. En hombres, un suelo pélvico fuerte contribuye al control urinario y a la salud íntima en general. El vídeo lo presenta como un reto diario de 24 días.</p><ol><li>Clave</li></ol><p>Es un contenido de salud preventiva. Como cualquier ejercicio de suelo pélvico, la constancia importa más que la intensidad. No sustituye la valoración de un profesional si hay síntomas persistentes.</p><ol><li>Vídeo</li></ol><p>Programa de Kegel para hombres: <video controls preload="metadata" src="video/ejercicios-kegel.mp4">Ejercicios de Kegel (vídeo)</video></p><p>Fuente: vídeo corto de redes sociales (anuncio de programa de Kegel para hombres).</p><p><b>Aplicación:</b> salud preventiva diaria; útil también en contextos (apagón, confinamiento) donde no hay acceso inmediato a consulta.</p></div>
+</section>
+
+<section class="view card tiddler" id="Ejercicios%20en%20cama%20para%20dolor%20de%20espalda">
+  <h2>Ejercicios en cama para dolor de espalda</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Ejercicios en cama para dolor de espalda</h1><p>Tutorial corto (español, ~20 s) de movilidad de cadera y piernas hecho <b>en la cama</b>, para relajar caderas y eliminar el dolor de espalda. Sin equipamiento.</p><ol><li>Los movimientos (20 repeticiones cada uno)</li><li><b>Piernas abiertas</b>: tumbado boca abajo, cara en la almohada, brazos estirados; abre las piernas y haz balanceos/rotaciones circulares desde la cadera.</li><li><b>Piernas juntas</b>: misma posición, junta las piernas y repite el balanceo/rotación para abrir la cadera.</li><li><b>Toque de pies laterales</b>: lleva un pie al lado contrario del cuerpo, 20 veces.</li></ol><ol><li>Clave</li></ol><p>La falta de movilidad de cadera carga la espalda; estos giros la relajan. Ideal al despertar o antes de dormir.</p><ol><li>Vídeo</li></ol><p>Rutina de cama para espalda y cadera: <video controls preload="metadata" src="video/cama-dolor-espalda-cadera.mp4">Ejercicios en cama (vídeo)</video></p><p><b>Aplicación:</b> alivio de dolor de espalda en casa, sin levantarse.</p></div>
+</section>
+
+<section class="view card tiddler" id="Ejercicios%20para%20corregir%20la%20joroba%20(cifosis%20postural)">
+  <h2>Ejercicios para corregir la joroba (cifosis postural)</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Ejercicios para corregir la joroba (cifosis postural)</h1><p>Vídeo (12 s, turco original: "Kamburluktan bu egzersizler sayesinde kurtulun") con ejercicios para corregir la <b>joroba postural (cifosis)</b> y la postura adelantada de cabeza. El gráfico del vídeo compara ANTES (espalda redondeada, cabeza adelantada) y DESPUÉS (cabeza alineada, pecho abierto, hombros atrás).</p><ol><li>Los 3 ejercicios</li><li><b>1. Extensión en prono (boca abajo)</b>: tumbado boca abajo, antebrazos en el suelo y cara apoyada sobre una pila de servilletas de papel. Elevas ligeramente pecho y cabeza del suelo y mantienes la posición para extender la zona alta de la espalda.</li><li><b>2. Extensión en supino (boca arriba)</b>: tumbado boca arriba, colocas la pila de servilletas bajo cuello/parte alta de la espalda y elevas cabeza y pecho para abrir el pecho y extender la columna.</li><li><b>3. Elevación lumbar</b>: tumbado boca arriba con rodillas flexionadas, pones las servilletas bajo la zona lumbar y elevas esa zona para trabajar la curva baja de la espalda.</li></ol><ol><li>Clave</li></ol><p>Material casero (servilletas/papel) como cuña para extender la columna. Constancia para mejorar la postura.</p><ol><li>Vídeo</li></ol><p>Demostración de los 3 ejercicios: <video controls preload="metadata" src="video/salud-joroba-cifosis.mp4">Corregir la joroba/cifosis (vídeo)</video></p><p>Fuente: X/Twitter (canal "Spor Rehberi", vídeo original en turco).</p><p><b>Aplicación:</b> salud postural diaria; útil para quienes pasan horas sentados o frente a pantallas.</p></div>
+</section>
+
+<section class="view card tiddler" id="Ejercicios%20para%20el%20bruxismo">
+  <h2>Ejercicios para el bruxismo</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Ejercicios para el bruxismo</h1><p>El bruxismo (rechinar o apretar los dientes) suele estar ligado a la tensión acumulada en la mandíbula y el core. Estos ejercicios buscan liberar esa tensión. Son de mantenimiento; si hay dolor articular o dental, consulta a un profesional.</p><ol><li>Liberación de tensión mandibular (sentado)</li><li>Siéntate cómodo (puede ser cruzado de piernas).</li><li>Con los dedos, <b>masajea suavemente</b> la articulación temporomandibular (justo delante de las orejas), la línea de la mandíbula y los músculos de las mejillas.</li><li>Haz movimientos lentos y controlados: abre y cierra la boca suavemente, y desliza la mandíbula de lado a lado, para soltar los músculos tensos.</li></ol><ol><li>Relajación decúbito supino (tumbado)</li><li>Túmbate boca arriba en una esterilla, con una <b>toalla enrollada bajo el cuello</b> para dar soporte.</li><li>Rodillas flexionadas, pies apoyados en el suelo.</li><li>Haz <b>crunch suaves</b> (eleva cabeza y hombros unos centímetros para activar el core) mientras haces aperturas suaves de mandíbula y masajeas zona mandíbula/cuello.</li><li>El objetivo: liberar la tensión del core que se transmite a la mandíbula y provoca el bruxismo.</li></ol><ol><li>Hábitos complementarios</li><li>Reduce cafeína y estimulantes por la tarde.</li><li>Calor local en la mandíbula antes de dormir relaja la musculatura.</li><li>Un <b>relajante muscular nocturno</b> (férula) lo pone el dentista si el caso lo requiere.</li></ol><ol><li>Vídeo</li></ol><p>Tutorial práctico en español (~3 min) que muestra los ejercicios paso a paso: <video controls preload="metadata" src="video/ejercicios-bruxismo.mp4">Ejercicios para el bruxismo (vídeo)</video></p><p><b>Aplicación:</b> útil en salud diaria y especialmente en épocas de estrés (confinamientos, apagones) donde aumenta el apretamiento dental.</p></div>
+</section>
+
+<section class="view card tiddler" id="Ejercicios%20para%20el%20v%C3%A9rtigo">
+  <h2>Ejercicios para el vértigo</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Ejercicios para el vértigo</h1><p>El vértigo que aparece de golpe al acostarse o al agacharse suele ser <i>vértigo posicional paroxístico benigno (VPPB)</i>. Lo causa el desplazamiento de unas pequeñas piedrecillas del oído interno (otoconias). La maniobra de Epley las recoloca y suele eliminar el síntoma en minutos. No sustituye a un profesional si el vértigo es persistente, con pérdida de audición o neurológico.</p><ol><li>Maniobra de Epley (paso a paso)</li><li><b>Paso 1</b>: siéntate en el borde de la cama. Gira la cabeza 45° hacia el <b>lado que te produce el vértigo</b> (lado afectado).</li><li><b>Paso 2</b>: acuéstate rápido, manteniendo la cabeza girada 45° hacia el lado afectado y <b>colgando ligeramente</b> del borde de la cama (inclinada atrás). Mantén unos segundos.</li><li><b>Paso 3</b>: sin levantarte, gira la cabeza 90° hacia el lado <b>opuesto</b> (sano), tumbado. Espera unos segundos.</li><li><b>Paso 4</b>: gira <b>todo el cuerpo</b> hacia ese lado, quedando de lado con la cabeza mirando al suelo. Tras unos segundos, levántate <b>lento</b> sin enderezar la cabeza de inmediato.</li></ol><ol><li>Clave</li></ol><p>La maniobra mueve las otoconias desprendidas de vuelta a su sitio. No requiere pastillas ni urgencias para este tipo concreto.</p><ol><li>Precaución</li></ol><p>Si el vértigo va con pérdida de audición, debilidad facial, dolor de cabeza intenso o no cede, consulta a un médico (puede ser otra causa).</p><ol><li>Vídeo</li></ol><p>Tutorial práctico en español (~1 min) que demuestra la maniobra de Epley: <video controls preload="metadata" src="video/ejercicios-vertigo.mp4">Ejercicios para el vértigo (vídeo)</video></p><p><b>Aplicación:</b> útil en salud diaria y en situaciones (apagón, confinamiento) donde no puedes acudir a urgencias de inmediato.</p></div>
+</section>
+
+<section class="view card tiddler" id="Ejercicios%20para%20la%20fascitis%20plantar">
+  <h2>Ejercicios para la fascitis plantar</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Ejercicios para la fascitis plantar</h1><p>La fascitis plantar (dolor en el talón o la planta del pie, sobre todo al levantarse) suele venir de un <b>acortamiento de la cadena muscular posterior</b> de la pierna: pantorrilla, tendón de Aquiles y su conexión con la planta. Estos ejercicios estiran y activan esa cadena. Son de mantenimiento; si el dolor es fuerte o no cede, consulta a un profesional.</p><ol><li>Causa y clave</li></ol><p>El problema rara vez está solo en el pie: es toda la parte trasera de la pierna acortada. Por eso los estiramientos van de la pantorrilla al talón.</p><ol><li>Ejercicios (vídeo casero, ~2 min)</li><li><b>1. Cadena posterior sentado</b>: sentado, eleva una pierna y sujeta el pie para estirar pantorrilla, tendón de Aquiles y la conexión con la planta.</li><li><b>2. Bloque elevado</b>: de pie, apoya un pie sobre una superficie algo alta (bloque de espuma, libro), pierna estirada, e inclínate hacia adelante para estirar la parte alta de la pantorrilla y el tendón. Ajusta la altura a tu flexibilidad.</li><li><b>3. Talón y tendón de Aquiles</b>: de pie, un pie delante y otro atrás, flexionas la rodilla delantera, pierna trasera estirada, e inclinas el torso adelante para sentir el estiramiento bajo del tendón, talón y planta. Repite inclinando y subiendo el talón trasero.</li><li><b>4. Tobillos y talones</b>: sentado, flexión dorsal de tobillo (sube los dedos hacia la espinilla) para activar la musculatura anterior; y de pie contra la pared, elevaciones de talón (puntillas). Cuanto más cerca de la pared, más intensidad.</li></ol><ol><li>Consejos</li><li>Hazlos <b>antes de levantarte</b> si el dolor matutino es fuerte.</li><li>Constancia: mejor poco y a diario que mucho una vez.</li><li>El dolor agudo o con hormigueo requiere valoración médica.</li></ol><ol><li>Vídeo</li></ol><p>Tutorial práctico en español (~2 min) con los 4 ejercicios: <video controls preload="metadata" src="video/ejercicios-fascitis-plantar.mp4">Ejercicios para la fascitis plantar (vídeo)</video></p><p><b>Aplicación:</b> salud diaria; útil también en épocas (apagón, confinamiento) donde no puedes ir a fisio de inmediato.</p></div>
+</section>
+
+<section class="view card tiddler" id="El%20truco%20de%20aparcamiento%20que%20todo%20conductor%20deber%C3%ADa%20saber">
+  <h2>El truco de aparcamiento que todo conductor debería saber</h2>
+  <div class="tags"><span class="tag">Curiosidades</span> <span class="tag">Coches</span> <span class="tag">Aparcamiento</span></div>
+  <div class="body"><p>Vídeo animado (vista cenital) que enseña a aparcar en paralelo en una plaza a la derecha.</p><p><video controls preload="metadata" src="video/parking.mp4">▶ Ver vídeo</video></p><h2>El truco</h2><p>1. Alinea la **parte trasera de tu coche** con la línea de referencia de la plaza (el coche queda a la derecha de la plaza).</p><p>2. Gira el **volante completamente a la izquierda** cuando tu espejo lateral se alinee con el borde delantero de la plaza.</p><p>3. Retrocede en un **ángulo de 45 grados** hasta entrar en la plaza.</p><p>4. Endereza el volante para quedar **paralelo a las líneas** de la plaza.</p><p>!!! Fuente</p><p>Vídeo original: https://x.com/i/status/2086709457904349627 — "Science Postcard - The parking trick every driver should know".</p></div>
+</section>
+
+<section class="view card tiddler" id="Estiramiento%20de%20espalda%20baja%20con%20pared">
+  <h2>Estiramiento de espalda baja con pared</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Estiramiento de espalda baja con pared</h1><p>Tutorial corto (español, ~20 s) para liberar dolor y tensión de la <b>zona lumbar/lumbosacra</b> usando solo una pared, sin equipamiento.</p><ol><li>Cómo se hace</li><li>De pie frente a la pared, espalda apoyada, manos a la altura de los hombros presionando la pared.</li><li>Levanta un brazo y extiéndelo; lleva el otro al lado, hasta tener ambos brazos extendidos a la altura de los hombros.</li><li>Gira el torso a un lado y al otro, brazos apoyados en la pared.</li><li>Desliza las manos hacia abajo hasta la zona lumbar (sobre la cadera) y presiona espalda y manos contra la pared.</li><li>Repite de ambos lados, manteniendo cada posición ~1 minuto.</li></ol><ol><li>Clave</li></ol><p>Libera la compresión muscular lumbar. Se hace en casa o donde haya una pared.</p><ol><li>Vídeo</li></ol><p>Demostración del estiramiento asistido con pared: <video controls preload="metadata" src="video/espalda-baja-pared.mp4">Espalda baja con pared (vídeo)</video></p><p><b>Aplicación:</b> salud diaria; útil en jornadas sentado o tras cargar peso.</p></div>
+</section>
+
+<section class="view card tiddler" id="Hacer%20el%20nudo%20de%20corbata%20medio%20Windsor">
+  <h2>Hacer el nudo de corbata medio Windsor</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Hacer el nudo de corbata medio Windsor</h1><p>Vídeo (16 s, inglés) que enseña a hacer el <b>nudo medio Windsor (Half Windsor)</b> en 15 segundos. Publicación original: "Master the Half Windsor knot in 15 seconds."</p><ol><li>De qué va</li></ol><p>El clip demuestra paso a paso cómo anudar la corbata con el nudo medio Windsor, un nudo simétrico y de tamaño medio, ideal para el día a día y uso formal. Es un truco de vestimenta rápido.</p><ol><li>Clave</li></ol><p>Nudo versátil: más pequeño que el Windsor completo pero más voluminoso que el simple. Útil para camisas de cuello estándar.</p><ol><li>Vídeo</li></ol><p>Demostración del nudo en 15 s: <video controls preload="metadata" src="video/utilidades-nudo-corbata.mp4">Nudo medio Windsor (vídeo)</video></p><p>Fuente: X/Twitter (canal "Smart Builds").</p><p><b>Aplicación:</b> utilidad de vestimenta; útil para eventos o trabajo formal.</p></div>
+</section>
+
+<section class="view card tiddler" id="H%C3%A1bitos%20de%20longevidad%20de%20China">
+  <h2>Hábitos de longevidad de China</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Hábitos de longevidad de China</h1><p>Vídeo (90 s, inglés) sobre <b>hábitos de longevidad de la tradición china</b> que van más allá del "matcha de la mañana". Publicación original: "Chinese longevity habits that go beyond your morning matcha."</p><ol><li>De qué va</li></ol><p>El clip recopila prácticas cotidianas asociadas a la longevidad en la cultura china: hábitos de alimentación, movimiento y rutina que, según la fuente, contribuyen a una vida más larga y saludable. Es contenido de divulgación de estilo de vida, no un protocolo médico.</p><ol><li>Clave</li></ol><p>Enfoque preventivo y de hábitos diarios. Complementa las rutinas de activación y estiramientos de la sección Salud.</p><ol><li>Vídeo</li></ol><p>Hábitos de longevidad china explicados: <video controls preload="metadata" src="video/salud-habitos-longevidad-china.mp4">Hábitos de longevidad de China (vídeo)</video></p><p>Fuente: X/Twitter (canal "Grow Smarter").</p><p><b>Aplicación:</b> hábitos preventivos diarios; útil en contextos sin acceso a sanidad inmediata.</p></div>
+</section>
+
+<section class="view card tiddler" id="No%20tires%20la%20prenda%20manchada%20%E2%80%94%20qu%C3%ADtala%20con%20caseros">
+  <h2>No tires la prenda manchada — quítala con caseros</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>No tires la prenda manchada — quítala con caseros</h1><p>Vídeo (60 s, sin audio) que enseña a eliminar manchas difíciles de pantalones vaqueros usando solo productos domésticos, para no tener que tirar la prenda. Publicación original: "Wait! Don't Throw It Away".</p><ol><li>Qué productos usa</li><li><b>Aceite de aguacate</b>: se aplica sobre la mancha para penetrar la fibra antes del tratamiento.</li><li><b>Limón</b>: se exprime como agente blanqueador natural.</li><li><b>Agua caliente</b>: activa los productos de limpieza.</li><li><b>Vinagre blanco</b>: elimina manchas persistentes y neutraliza olores.</li><li><b>Jabón lavavajillas</b>: trata grasa y suciedad.</li><li><b>Bicarbonato de sodio</b>: absorbe la mancha oscura.</li><li><b>Hielo (bolsa)</b>: se frota sobre la zona; el frío ayuda a levantar manchas difíciles.</li><li><b>Lavadora</b>: lavado final que deja la prenda limpia.</li></ol><ol><li>Clave</li></ol><p>Evita tirar ropa manchada reutilizando lo que ya tienes en casa. Sin productos comerciales, apto para cualquier público.</p><ol><li>Vídeo</li></ol><p>Demostración de limpieza de vaqueros: <video controls preload="metadata" src="video/utilidades-no-tirar.mp4">No tires la prenda manchada (vídeo)</video></p><p>Fuente: X/Twitter (canal "THE LEARNING HUB", vídeo original @HACKSBYVIKTORIIA en Instagram).</p><p><b>Aplicación:</b> ahorro y reutilización en el hogar; útil para alargar la vida de la ropa.</p></div>
+</section>
+
+<section class="view card tiddler" id="Por%20qu%C3%A9%20unos%20tienen%20suerte%20y%20la%20mayor%C3%ADa%20no%20(Stanford)">
+  <h2>Por qué unos tienen suerte y la mayoría no (Stanford)</h2>
+  <div class="tags"><span class="tag">Curiosidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Por qué unos tienen suerte y la mayoría no (Stanford)</h1><p>Charla de divulgación (~11 min) basada en el trabajo de una profesora de Stanford que lleva 20 años estudiando la suerte. Por superar los 5 minutos, el vídeo se muestra como <i>iframe</i> (no se descarga).</p><ol><li>Resumen del hilo original (X)</li></ol><p>"Una profesora de Stanford lleva 20 años estudiando por qué unos tienen suerte y la mayoría no. Su conclusión: la suerte es como el viento, pero nadie sabe ponerle vela. Si quisiera más suerte, haría estas 7 cosas: 1/ Micro-riesgos fuera de mi zona de confort."</p><ol><li>De qué trata</li></ol><p>La ponente estudia qué diferencia a las personas "con suerte" del resto. Su tesis: la suerte no es azar puro, sino algo sobre lo que se puede incidir con hábitos y actitudes (empezando por salir de la zona de confort con micro-riesgos).</p><ol><li>Clave</li></ol><p>Enfoque de curiosidad más que de salud: cómo pequeñas acciones sistemáticas aumentan las oportunidades que la vida te pone por delante.</p><ol><li>Vídeo</li></ol><p><iframe loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen src="https://x.com/i/status/2077800033974428107/embed" style="width:100%;aspect-ratio:16/9;border:0;border-radius:8px;margin:.5rem 0"></iframe></p><p>Fuente: X/Twitter (embed). Duración original ~11 min — se incrusta sin descargar por superar el límite de 5 min.</p><p><b>Aplicación:</b> lectura/visión de curiosidades; no es contenido de salud ni tutorial práctico.</p></div>
+</section>
+
+<section class="view card tiddler" id="Presentaci%C3%B3n">
+  <h2>Presentación</h2>
+  <div class="tags"><span class="tag">Portada</span></div>
+  <div class="body"><h1>Wiki Mosqueteroweb</h1><p>Recopilatorio personal de cosas que voy encontrando y quiero tener a mano, organizado en tres secciones:</p><ol><li>🩺 Salud</li></ol><p>Artículos sobre salud, primeros auxilios, botiquines, hábitos y todo lo relacionado con el bienestar y la prevención.</p><ol><li>🧰 Utilidades</li></ol><p>Herramientas, trucos y recursos prácticos que facilitan tareas del día a día (conversión de formatos, organización, etc.).</p><ol><li>💡 Curiosidades</li></ol><p>Datos, fenómenos y temas curiosos que no encajan en lo anterior pero merecen guardarse.</p><p><i>Cómo se usa esta web:</i></p><p>Navega por las secciones del menú lateral. Usa el buscador para encontrar cualquier tema. Para añadir o editar contenido se crea o modifica un archivo en la carpeta <i>tiddlers/</i> del repositorio de GitHub; la web se actualiza sola con GitHub Actions.</p><p>Esta web es estática, alojada en GitHub Pages, y su contenido es texto plano exportable a cualquier otro sistema.</p></div>
+</section>
+
+<section class="view card tiddler" id="Qu%C3%A9%20llevar%20en%20el%20botiqu%C3%ADn%20b%C3%A1sico">
+  <h2>Qué llevar en el botiquín básico</h2>
+  <div class="tags"><span class="tag">Salud</span></div>
+  <div class="body"><h1>Botiquín básico del hogar</h1><p>Un botiquín bien surtido evita carreras a la farmacia en momentos críticos.</p><ol><li>Imprescindibles</li><li>Vendas, tiritas y gasas estériles.</li><li>Antiséptico (clorhexidina o povidona yodada).</li><li>Analgésicos (paracetamol, ibuprofeno).</li><li>Tijeras, pinzas y guantes desechables.</li><li>Termómetro.</li></ol><ol><li>Revisión</li><li>Comprueba <b>caducidades</b> cada 6 meses.</li><li>Guarda en sitio fresco, seco y fuera del alcance de niños.</li></ol><p><b>Aplicación:</b> útil tanto en salud diaria como en confinamientos o apagones prolongados.</p></div>
+</section>
+
+<section class="view card tiddler" id="Resolver%20el%20cubo%20de%20Rubik%20con%20un%20algoritmo">
+  <h2>Resolver el cubo de Rubik con un algoritmo</h2>
+  <div class="tags"><span class="tag">Curiosidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Resolver el cubo de Rubik con un algoritmo</h1><p>Vídeo demostrativo (36 s) en francés que resuelve el cubo de Rubik repitiendo <b>18 veces un solo algoritmo</b>. Publicación original: "18 répétitions. Un seul algorithme. Et pourtant… le Rubik's Cube se résout."</p><ol><li>De qué va</li></ol><p>El clip muestra cómo, aplicando sistemáticamente un único algoritmo 18 veces, el cubo termina resuelto. A primera vista parece magia (o que "se resuelve solo"); en realidad es una propiedad del grupo del cubo: ciertas secuencias cortas, repetidas, devuelven el cubo a su estado resuelto desde configuraciones concretas.</p><ol><li>Clave</li></ol><p>Es una curiosidad matemática/visual, no un método de resolución general. Entretenimiento y demostración de cómo un patrón simple repetido produce un resultado sorprendente.</p><ol><li>Vídeo</li></ol><p>Demostración del algoritmo repetido 18 veces: <video controls preload="metadata" src="video/curiosidad-rubik-cubo.mp4">Cubo de Rubik con un algoritmo (vídeo)</video></p><p>Fuente: X/Twitter (publicación original en francés, "Échecs & Stratégie").</p><p><b>Aplicación:</b> curiosidad/entretenimiento; útil como pasatiempo en ratos libres (p.ej. confinamiento, apagón).</p></div>
+</section>
+
+<section class="view card tiddler" id="Rutina%20de%20cardio%20y%20coordinaci%C3%B3n%20sin%20equipo%20(1%20minuto)">
+  <h2>Rutina de cardio y coordinación sin equipo (1 minuto)</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Rutina de cardio y coordinación sin equipo (1 minuto)</h1><p>Tutorial de seguimiento (~56 s) de entrenamiento de cuerpo completo sin equipamiento: combina cardio, core, fuerza de piernas/brazos y coordinación. 15 movimientos en circuito, apto para espacios pequeños.</p><ol><li>Los 15 movimientos</li></ol><p>Salto (hop), ola (wave), balanceo de brazos (arm swing), torsión de tronco (trunk twist), torsión alta (high twist), swing de golf, marcha, plié, empuje lateral, apertura de pecho, patada y paso (kick step), puñetazo (punch), zancada (lunge), salto con rotación (hop rotate) y curtsy cruzado.</p><ol><li>Clave</li></ol><p>Rutina activa (no de estiramiento): trabaja resistencia aeróbica y fuerza de cuerpo completo. Sigue el ritmo de la instructora.</p><ol><li>Vídeo</li></ol><p>Circuito de 15 ejercicios sin equipo: <video controls preload="metadata" src="video/rutina-cardio-coordinacion.mp4">Rutina cardio coordinación (vídeo)</video></p><p><b>Aplicación:</b> activación diaria en casa; útil sin gimnasio.</p></div>
+</section>
+
+<section class="view card tiddler" id="Rutina%20matutina%20de%204%20ejercicios%20al%20despertar">
+  <h2>Rutina matutina de 4 ejercicios al despertar</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Rutina matutina de 4 ejercicios al despertar</h1><p>Tutorial corto (inglés, ~36 s) de activación corporal ligera justo al despertar, sin salir de casa ni estiramientos aleatorios. 30 repeticiones por ejercicio. Trabaja cuello, hombros, pecho, espalda, cintura, caderas y piernas.</p><ol><li>Los 4 movimientos</li><li><b>Balanceos de brazos + elevación de talones</b>: mueve los brazos (adelante, atrás, lados) mientras subes los talones.</li><li><b>Aplausos frontales y posteriores</b>: extiende los brazos, aplaude frente al pecho, vuelve a extender y repite.</li><li><b>Elevaciones de rodilla + presión de brazos</b>: sube una rodilla al pecho y baja los brazos, alternando piernas.</li><li><b>Expansión de pecho + pasos atrás</b>: abre los brazos a los lados y da pasos hacia atrás.</li></ol><ol><li>Clave</li></ol><p>Activa la musculatura y deja el cuerpo cómodo y ágil para empezar el día. Sin equipamiento.</p><ol><li>Vídeo</li></ol><p>Rutina de 4 ejercicios matutinos: <video controls preload="metadata" src="video/rutina-matutina-4.mp4">Rutina matutina 4 (vídeo)</video></p><p><b>Aplicación:</b> hábito diario; útil en confinamientos/apagones para mantener movilidad.</p></div>
+</section>
+
+<section class="view card tiddler" id="Rutina%20matutina%20de%207%20ejercicios%20para%20longevidad">
+  <h2>Rutina matutina de 7 ejercicios para longevidad</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Rutina matutina de 7 ejercicios para longevidad</h1><p>Tutorial en español (~42 s) de 7 ejercicios de bajo impacto al despertar, sin equipamiento. El instructor los asocia a beneficios progresivos: normalización de glucosa, fortalecimiento de articulaciones y ligamentos, presión arterial, sueño y digestión, metabolismo y alivio de dolores.</p><ol><li>Los 7 ejercicios</li><li><b>1. Elevación de brazos</b>: del frente, sobre la cabeza y detrás.</li><li><b>2. Balanceo doble de brazos</b>: arcos amplios alternados cruzando el cuerpo.</li><li><b>3. Elevación de brazo + talones</b>: un brazo arriba y puntas de pie, alternando.</li><li><b>4. Círculos de brazos</b>: amplios, adelante y atrás.</li><li><b>5. Elevación de rodillas</b>: marcha en el sitio llevando la rodilla al pecho.</li><li><b>6. Elevación de cuerpo completo</b>: brazos arriba + puntas de pie, entrelazando manos atrás para abrir pecho.</li><li><b>7. Balanceo de brazos y cuerpo</b>: con giro de torso y desplazamiento de peso.</li></ol><ol><li>Clave</li></ol><p>Rutina rápida y fácil, apta para todos los niveles. Seguirla al despertar como hábito de longevidad saludable.</p><ol><li>Vídeo</li></ol><p>Rutina de 7 ejercicios matutinos: <video controls preload="metadata" src="video/rutina-matutina-7.mp4">Rutina matutina 7 (vídeo)</video></p><p><b>Aplicación:</b> hábito preventivo diario.</p></div>
+</section>
+
+<section class="view card tiddler" id="Truco%201%20%E2%80%94%20Vac%C3%ADo%20casero%20con%20cubo%20y%20manguera">
+  <h2>Truco 1 — Vacío casero con cubo y manguera</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Truco 1 — Vacío casero con cubo y manguera</h1><p>Primer truco del recopilatorio "Daily Useful Tips". Muestra cómo crear un efecto de vacío usando un cubo con agua y una manguera: sumerges la manguera en el agua y el agua es succionada/fluye a través de ella, formando un sistema de vacío casero.</p><ol><li>Qué ves en el clip</li><li>Cubo blanco con agua y manguera roja.</li><li>Se sumerge la manguera y se demuestra el flujo de agua por aspiración.</li><li>Texto del vídeo: "Easiest way to vacuum".</li></ol><ol><li>Para qué sirve</li></ol><p>Curiosidad de física casera y truco de transvase de líquidos sin bomba.</p><ol><li>Vídeo</li></ol><p><video controls preload="metadata" src="video/daily-tips/01-vacio-cubo.mp4">Truco 1: vacío con cubo (vídeo)</video></p><p>Fuente: X/Twitter (recopilatorio "Daily Useful Tips", canal Global Brand♛).</p></div>
+</section>
+
+<section class="view card tiddler" id="Truco%2010%20%E2%80%94%20Botella%20transparente%20modificada">
+  <h2>Truco 10 — Botella transparente modificada</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Truco 10 — Botella transparente modificada</h1><p>Décimo y último truco del recopilatorio "Daily Useful Tips". Muestra una botella de plástico transparente cortada con tijeras e insertando un tubo, para hacer un dispensador o filtro de agua casero.</p><ol><li>Qué ves en el clip</li><li>Botella transparente sobre césped.</li><li>Se corta con tijeras e inserta un tubo.</li><li>El vídeo se corta antes de mostrar el resultado final.</li></ol><ol><li>Para qué sirve</li></ol><p>Base para un dispensador/filtro de agua casero con material reciclado (continuación del truco 8).</p><ol><li>Vídeo</li></ol><p><video controls preload="metadata" src="video/daily-tips/10-botella-modificada.mp4">Truco 10: botella modificada (vídeo)</video></p><p>Fuente: X/Twitter (recopilatorio "Daily Useful Tips", canal Global Brand♛).</p></div>
+</section>
+
+<section class="view card tiddler" id="Truco%202%20%E2%80%94%20Empu%C3%B1adura%20para%20cilindro%20de%20gas">
+  <h2>Truco 2 — Empuñadura para cilindro de gas</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Truco 2 — Empuñadura para cilindro de gas</h1><p>Segundo truco del recopilatorio "Daily Useful Tips". Sobre un cilindro de gas, ata un cordón a la tuerca de la válvula para crear un lazo que facilita el agarre y giro de la válvula sin esfuerzo ni dolor de manos.</p><ol><li>Qué ves en el clip</li><li>Cilindro de gas rojo, se accede a la válvula.</li><li>Se ata un cordón naranja alrededor de la tuerca de la válvula formando un asa.</li><li>Giras la válvula tirando del cordón, sin forzar la mano.</li></ol><ol><li>Para qué sirve</li></ol><p>Abrir/cerrar botellas de gas con poca fuerza; útil para personas con poca movilidad en las manos.</p><ol><li>Vídeo</li></ol><p><video controls preload="metadata" src="video/daily-tips/02-empunadura-gas.mp4">Truco 2: empuñadura cilindro de gas (vídeo)</video></p><p>Fuente: X/Twitter (recopilatorio "Daily Useful Tips", canal Global Brand♛).</p></div>
+</section>
+
+<section class="view card tiddler" id="Truco%203%20%E2%80%94%20Asa%20para%20garrafa%20de%20agua">
+  <h2>Truco 3 — Asa para garrafa de agua</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Truco 3 — Asa para garrafa de agua</h1><p>Tercer truco del recopilatorio "Daily Useful Tips". Ata una cuerda al cuello de una garrafa de agua grande para crear un asa cómoda y levantarla sin que duelan las manos.</p><ol><li>Qué ves en el clip</li><li>Garrafa de agua grande.</li><li>Se ata una cuerda amarilla alrededor del cuello de la garrafa.</li><li>Se levanta la garrafa con la nueva asa. Texto: "Now, your hands won't hurt".</li></ol><ol><li>Para qué sirve</li></ol><p>Transportar garrafas pesadas sin cargar todo el peso en los dedos.</p><ol><li>Vídeo</li></ol><p><video controls preload="metadata" src="video/daily-tips/03-asa-garrafa.mp4">Truco 3: asa para garrafa (vídeo)</video></p><p>Fuente: X/Twitter (recopilatorio "Daily Useful Tips", canal Global Brand♛).</p></div>
+</section>
+
+<section class="view card tiddler" id="Truco%204%20%E2%80%94%20Manguera%20para%20dispensador%20de%20agua">
+  <h2>Truco 4 — Manguera para dispensador de agua</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Truco 4 — Manguera para dispensador de agua</h1><p>Cuarto truco del recopilatorio "Daily Useful Tips". Conecta una manguera al dispensador de agua para llenar recipientes en el suelo sin tener que levantar la pesada garrafa.</p><ol><li>Qué ves en el clip</li><li>Dispensador de agua azul.</li><li>Se acopla una manguera amarilla a la salida.</li><li>Se llena un recipiente en el suelo sin mover la garrafa.</li></ol><ol><li>Para qué sirve</li></ol><p>Evita levantar garrafas pesadas; práctico para mascotas, plantas o bidones de cocina.</p><ol><li>Vídeo</li></ol><p><video controls preload="metadata" src="video/daily-tips/04-manguera-dispensador.mp4">Truco 4: manguera dispensador (vídeo)</video></p><p>Fuente: X/Twitter (recopilatorio "Daily Useful Tips", canal Global Brand♛).</p></div>
+</section>
+
+<section class="view card tiddler" id="Truco%205%20%E2%80%94%20Tendedero%20con%20tap%C3%B3n%20de%20botella">
+  <h2>Truco 5 — Tendedero con tapón de botella</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Truco 5 — Tendedero con tapón de botella</h1><p>Quinto truco del recopilatorio "Daily Useful Tips". Pasa un cordón a través de un tapón de botella y lo coloca en el tendedero; el tapón actúa como tope o soporte para las pinzas de la ropa.</p><ol><li>Qué ves en el clip</li><li>Tendedero con pinzas.</li><li>Se pasa un cordón por una tapa de botella azul y se coloca en el tendedero.</li><li>La tapa funciona como tope para las pinzas. Texto: "Bottle cap clothesline hack".</li></ol><ol><li>Para qué sirve</li></ol><p>Mantener las pinzas de la ropa en su sitio o crear topes en el tendedero con material reciclado.</p><ol><li>Vídeo</li></ol><p><video controls preload="metadata" src="video/daily-tips/05-tendedero-tapon.mp4">Truco 5: tendedero con tapón (vídeo)</video></p><p>Fuente: X/Twitter (recopilatorio "Daily Useful Tips", canal Global Brand♛).</p></div>
+</section>
+
+<section class="view card tiddler" id="Truco%206%20%E2%80%94%20Embudo%20para%20moto%20o%20scooter">
+  <h2>Truco 6 — Embudo para moto o scooter</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Truco 6 — Embudo para moto o scooter</h1><p>Sexto truco del recopilatorio "Daily Useful Tips". Corta una botella por la mitad para usarla como embudo y verter aceite en el depósito de la moto/scooter sin derrames.</p><ol><li>Qué ves en el clip</li><li>Botella verde cortada por la mitad.</li><li>Se usa como embudo para verter líquido (aceite) en el depósito de la moto.</li><li>Marca de prohibición sobre el método de verter directamente.</li></ol><ol><li>Para qué sirve</li></ol><p>Rellenar el aceite de la moto o scooter sin manchar ni perder producto.</p><ol><li>Vídeo</li></ol><p><video controls preload="metadata" src="video/daily-tips/06-embudo-moto.mp4">Truco 6: embudo para moto (vídeo)</video></p><p>Fuente: X/Twitter (recopilatorio "Daily Useful Tips", canal Global Brand♛).</p></div>
+</section>
+
+<section class="view card tiddler" id="Truco%207%20%E2%80%94%20Corredera%20de%20tendedero%20con%20tuerca">
+  <h2>Truco 7 — Corredera de tendedero con tuerca</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Truco 7 — Corredera de tendedero con tuerca</h1><p>Séptimo truco del recopilatorio "Daily Useful Tips". Ata una tuerca metálica a un cordón y lo coloca en el tendedero entre barandillas; la tuerca actúa como corredera deslizante para ajustar la posición de las pinzas.</p><ol><li>Qué ves en el clip</li><li>Cordón amarillo con tuerca metálica.</li><li>Se coloca en el tendedero entre barandillas.</li><li>La tuerca desliza el cordón para ajustar las pinzas.</li></ol><ol><li>Para qué sirve</li></ol><p>Crear topes o correderas en tendederos improvisados con material reciclado.</p><ol><li>Vídeo</li></ol><p><video controls preload="metadata" src="video/daily-tips/07-corredera-tuerca.mp4">Truco 7: corredera con tuerca (vídeo)</video></p><p>Fuente: X/Twitter (recopilatorio "Daily Useful Tips", canal Global Brand♛).</p></div>
+</section>
+
+<section class="view card tiddler" id="Truco%208%20%E2%80%94%20Pico%20antiderrame%20para%20garrafa">
+  <h2>Truco 8 — Pico antiderrame para garrafa</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Truco 8 — Pico antiderrame para garrafa</h1><p>Octavo truco del recopilatorio "Daily Useful Tips". Modifica el tapón de la garrafa añadiéndole un pico que crea un vertido controlado para verter agua sin derrames.</p><ol><li>Qué ves en el clip</li><li>Tapón morado de garrafa y pieza azul con interior blanco.</li><li>Se acopla el pico al tapón.</li><li>Se vierte el agua de forma controlada. Texto: "Water won't spill anymore".</li></ol><ol><li>Para qué sirve</li></ol><p>Verter agua de garrafa sin derramar; útil en cocina y para mascotas.</p><ol><li>Vídeo</li></ol><p><video controls preload="metadata" src="video/daily-tips/08-pico-antiderrame.mp4">Truco 8: pico antiderrame (vídeo)</video></p><p>Fuente: X/Twitter (recopilatorio "Daily Useful Tips", canal Global Brand♛).</p></div>
+</section>
+
+<section class="view card tiddler" id="Truco%209%20%E2%80%94%20Trazar%20con%20linterna%20de%20m%C3%B3vil">
+  <h2>Truco 9 — Trazar con linterna de móvil</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Truco 9 — Trazar con linterna de móvil</h1><p>Noveno truco del recopilatorio "Daily Useful Tips". Usa la linterna del móvil para proyectar la imagen de un libro sobre una hoja de papel y poder trazar el dibujo.</p><ol><li>Qué ves en el clip</li><li>Teléfono móvil con linterna encendida.</li><li>Se proyecta la imagen de un libro sobre una hoja.</li><li>Se traza el dibujo sobre el papel.</li></ol><ol><li>Para qué sirve</li></ol><p>Copiar/ampliar dibujos de un libro con luz de fondo, sin escáner ni impresora.</p><ol><li>Vídeo</li></ol><p><video controls preload="metadata" src="video/daily-tips/09-linterna-trazar.mp4">Truco 9: trazar con linterna (vídeo)</video></p><p>Fuente: X/Twitter (recopilatorio "Daily Useful Tips", canal Global Brand♛).</p></div>
+</section>
+
+<section class="view card tiddler" id="Trucos%20dom%C3%A9sticos%20para%20facilitar%20el%20trabajo">
+  <h2>Trucos domésticos para facilitar el trabajo</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Trucos domésticos para facilitar el trabajo</h1><p>Vídeo (96 s, español) donde un hombre enseña a su madre <b>pequeños trucos para facilitarle las tareas del hogar</b>. Publicación original: "Un hombre le enseñó a su madre algunos pequeños trucos para facilitarle el trabajo."</p><ol><li>De qué va</li></ol><p>El clip muestra varios trucos caseros sencillos pensados para ahorrar esfuerzo en las tareas domésticas diarias. Es contenido de organización y ayuda en casa, sin herramientas especiales.</p><ol><li>Clave</li></ol><p>Ideas prácticas de bajo coste para hacer más llevadero el trabajo del hogar. Complementa otros trucos de organización (p.ej. doblar la ropa).</p><ol><li>Vídeo</li></ol><p>Trucos domésticos demostrados: <video controls preload="metadata" src="video/utilidades-trucos-domesticos.mp4">Trucos domésticos (vídeo)</video></p><p>Fuente: X/Twitter (canal "Vive con Propósito").</p><p><b>Aplicación:</b> organización del hogar; útil en convivencia y situaciones de confinamiento/apagón.</p></div>
+</section>
+
+<section class="view card tiddler" id="T%C3%A9cnica%20de%20atado%20de%20cordones%20para%20zapatillas">
+  <h2>Técnica de atado de cordones para zapatillas</h2>
+  <div class="tags"><span class="tag">Salud</span> <span class="tag">Vídeos</span></div>
+  <div class="body"><h1>Técnica de atado de cordones para zapatillas</h1><p>Muchas lesiones por calzado deportivo no vienen del zapato en sí, sino de un <b>mal ajuste</b>: cuando la zapatilla es algo grande, el pie se desliza hacia adelante al caminar o correr. Eso provoca rozaduras en dedos y uñas, sobrecarga del tobillo y riesgo de lesión a largo plazo. Una podóloga explica un método de atado que <b>bloquea el talón y la zona media</b> del pie para que no se deslice.</p><ol><li>Problema</li><li>Calzado algo holgado → el pie avanza dentro de la zapatilla.</li><li>Consecuencias: rozaduras en dedos/uñas, tensión en el tobillo, incomodidad.</li></ol><ol><li>Técnica de atado (paso a paso)</li><li><b>1</b>: ata los cordones por los ojales inferiores de forma normal, pero <b>sin tirar del todo</b>: deja un lazo suelto en la parte alta del atado.</li><li><b>2</b>: coge cada extremo del cordón y pásalo por el lazo del lado opuesto del zapato.</li><li><b>3</b>: tira de ambos extremos para ajustar el lazo y haz el nudo normal.</li><li>Resultado: el talón y el empeine quedan fijos; el pie deja de deslizarse hacia delante aunque la zapatilla sea algo grande.</li></ol><ol><li>Beneficio</li></ol><p>Elimina el deslizamiento: nada de rozaduras en dedos/uñas ni sobrecarga de tobillo. Ideal para quien camina o corre muchas horas al día.</p><ol><li>Vídeo</li></ol><p>Tutorial de podología en español (~50 s) que demuestra el atado: <video controls preload="metadata" src="video/atado-cordones-zapatillas.mp4">Técnica de atado de cordones (vídeo)</video></p><p><b>Aplicación:</b> salud preventiva diaria; útil también en situaciones (apagón, confinamiento) donde no puedes acudir a la podóloga de inmediato.</p></div>
+</section>
+
+<section class="view card tiddler" id="Uso%20de%20la%20brida%20(cable%20tie)%20para%20amarrar">
+  <h2>Uso de la brida (cable tie) para amarrar</h2>
+  <div class="tags"><span class="tag">Utilidades</span> <span class="tag">Herramientas</span> <span class="tag">Brida</span></div>
+  <div class="body"><p>Una **brida** (también llamada *zip tie*, *abrazadera de plástico* o *cable tie*) es una cinta de plástico con trinquete que, al tirar, se aprieta de forma permanente. En el vídeo original se usa para demostrar cómo sujetar dos cañas de bambú entrecruzadas.</p><h2>Cómo hacerlo</h2><p>1. Coloca las dos varillas o cañas en la posición en que quieres unirlas (p. ej. en cruz o paralelas).</p><p>2. Pasa la brida alrededor de ambas, por el punto de unión.</p><p>3. Tira del extremo liso hasta que quede bien tensa.</p><p>4. La brida queda bloqueada: corta el sobrante con tijeras o un cortabridas.</p><p><video controls preload="metadata" src="video/brida.mp4">▶ Ver demostración</video></p><p>!!! Fuente</p><p>Vídeo original (solo el tramo de la brida): https://x.com/i/status/2086660391250317317 — "bellaadinda - lifehack for removing tags from new clothes". Troceado para esta wiki.</p></div>
+</section>
+<section class="view" id="cat-Salud">
+  <h2>🩺 Salud</h2>
+  <p class="catdesc">Artículos en <b>Salud</b>:</p>
+  <ul class="catlist"><li><a href="#" onclick="show('3%20cosas%20que%20hacer%20(y%20no%20hacer)%20con%20la%20fascitis%20plantar')">3 cosas que hacer (y no hacer) con la fascitis plantar</a></li>
+<li><a href="#" onclick="show('Abdominales%20inferiores%20con%20reverse%20crunch')">Abdominales inferiores con reverse crunch</a></li>
+<li><a href="#" onclick="show('Abdominales%20sentado%20en%20silla')">Abdominales sentado en silla</a></li>
+<li><a href="#" onclick="show('Caminar%20para%20eliminar%20el%20dolor%20de%20rodilla')">Caminar para eliminar el dolor de rodilla</a></li>
+<li><a href="#" onclick="show('Ejercicios%20en%20cama%20para%20dolor%20de%20espalda')">Ejercicios en cama para dolor de espalda</a></li>
+<li><a href="#" onclick="show('Ejercicios%20para%20corregir%20la%20joroba%20(cifosis%20postural)')">Ejercicios para corregir la joroba (cifosis postural)</a></li>
+<li><a href="#" onclick="show('Ejercicios%20para%20el%20bruxismo')">Ejercicios para el bruxismo</a></li>
+<li><a href="#" onclick="show('Ejercicios%20para%20el%20v%C3%A9rtigo')">Ejercicios para el vértigo</a></li>
+<li><a href="#" onclick="show('Ejercicios%20para%20la%20fascitis%20plantar')">Ejercicios para la fascitis plantar</a></li>
+<li><a href="#" onclick="show('Estiramiento%20de%20espalda%20baja%20con%20pared')">Estiramiento de espalda baja con pared</a></li>
+<li><a href="#" onclick="show('H%C3%A1bitos%20de%20longevidad%20de%20China')">Hábitos de longevidad de China</a></li>
+<li><a href="#" onclick="show('Qu%C3%A9%20llevar%20en%20el%20botiqu%C3%ADn%20b%C3%A1sico')">Qué llevar en el botiquín básico</a></li>
+<li><a href="#" onclick="show('Rutina%20de%20cardio%20y%20coordinaci%C3%B3n%20sin%20equipo%20(1%20minuto)')">Rutina de cardio y coordinación sin equipo (1 minuto)</a></li>
+<li><a href="#" onclick="show('Rutina%20matutina%20de%204%20ejercicios%20al%20despertar')">Rutina matutina de 4 ejercicios al despertar</a></li>
+<li><a href="#" onclick="show('Rutina%20matutina%20de%207%20ejercicios%20para%20longevidad')">Rutina matutina de 7 ejercicios para longevidad</a></li>
+<li><a href="#" onclick="show('T%C3%A9cnica%20de%20atado%20de%20cordones%20para%20zapatillas')">Técnica de atado de cordones para zapatillas</a></li></ul>
+</section>
+<section class="view" id="cat-Utilidades">
+  <h2>🧰 Utilidades</h2>
+  <p class="catdesc">Artículos en <b>Utilidades</b>:</p>
+  <ul class="catlist"><li><a href="#" onclick="show('12%20nudos%20resistentes%20que%20todos%20deber%C3%ADan%20conocer')">12 nudos resistentes que todos deberían conocer</a></li>
+<li><a href="#" onclick="show('5%20nudos%20de%20cuerda%20para%20el%20d%C3%ADa%20a%20d%C3%ADa')">5 nudos de cuerda para el día a día</a></li>
+<li><a href="#" onclick="show('8%20trucos%20para%20doblar%20la%20ropa')">8 trucos para doblar la ropa</a></li>
+<li><a href="#" onclick="show('Hacer%20el%20nudo%20de%20corbata%20medio%20Windsor')">Hacer el nudo de corbata medio Windsor</a></li>
+<li><a href="#" onclick="show('No%20tires%20la%20prenda%20manchada%20%E2%80%94%20qu%C3%ADtala%20con%20caseros')">No tires la prenda manchada — quítala con caseros</a></li>
+<li><a href="#" onclick="show('Truco%201%20%E2%80%94%20Vac%C3%ADo%20casero%20con%20cubo%20y%20manguera')">Truco 1 — Vacío casero con cubo y manguera</a></li>
+<li><a href="#" onclick="show('Truco%2010%20%E2%80%94%20Botella%20transparente%20modificada')">Truco 10 — Botella transparente modificada</a></li>
+<li><a href="#" onclick="show('Truco%202%20%E2%80%94%20Empu%C3%B1adura%20para%20cilindro%20de%20gas')">Truco 2 — Empuñadura para cilindro de gas</a></li>
+<li><a href="#" onclick="show('Truco%203%20%E2%80%94%20Asa%20para%20garrafa%20de%20agua')">Truco 3 — Asa para garrafa de agua</a></li>
+<li><a href="#" onclick="show('Truco%204%20%E2%80%94%20Manguera%20para%20dispensador%20de%20agua')">Truco 4 — Manguera para dispensador de agua</a></li>
+<li><a href="#" onclick="show('Truco%205%20%E2%80%94%20Tendedero%20con%20tap%C3%B3n%20de%20botella')">Truco 5 — Tendedero con tapón de botella</a></li>
+<li><a href="#" onclick="show('Truco%206%20%E2%80%94%20Embudo%20para%20moto%20o%20scooter')">Truco 6 — Embudo para moto o scooter</a></li>
+<li><a href="#" onclick="show('Truco%207%20%E2%80%94%20Corredera%20de%20tendedero%20con%20tuerca')">Truco 7 — Corredera de tendedero con tuerca</a></li>
+<li><a href="#" onclick="show('Truco%208%20%E2%80%94%20Pico%20antiderrame%20para%20garrafa')">Truco 8 — Pico antiderrame para garrafa</a></li>
+<li><a href="#" onclick="show('Truco%209%20%E2%80%94%20Trazar%20con%20linterna%20de%20m%C3%B3vil')">Truco 9 — Trazar con linterna de móvil</a></li>
+<li><a href="#" onclick="show('Trucos%20dom%C3%A9sticos%20para%20facilitar%20el%20trabajo')">Trucos domésticos para facilitar el trabajo</a></li>
+<li><a href="#" onclick="show('Uso%20de%20la%20brida%20(cable%20tie)%20para%20amarrar')">Uso de la brida (cable tie) para amarrar</a></li></ul>
+</section>
+<section class="view" id="cat-Curiosidades">
+  <h2>💡 Curiosidades</h2>
+  <p class="catdesc">Artículos en <b>Curiosidades</b>:</p>
+  <ul class="catlist"><li><a href="#" onclick="show('C%C3%B3mo%20leer%20las%20marcas%20de%20un%20neum%C3%A1tico%20de%20coche')">Cómo leer las marcas de un neumático de coche</a></li>
+<li><a href="#" onclick="show('El%20truco%20de%20aparcamiento%20que%20todo%20conductor%20deber%C3%ADa%20saber')">El truco de aparcamiento que todo conductor debería saber</a></li>
+<li><a href="#" onclick="show('Por%20qu%C3%A9%20unos%20tienen%20suerte%20y%20la%20mayor%C3%ADa%20no%20(Stanford)')">Por qué unos tienen suerte y la mayoría no (Stanford)</a></li>
+<li><a href="#" onclick="show('Resolver%20el%20cubo%20de%20Rubik%20con%20un%20algoritmo')">Resolver el cubo de Rubik con un algoritmo</a></li></ul>
+</section>
+  <div class="hint">
+    ¿Quieres añadir o editar un artículo? Entra en el repositorio de GitHub
+    (<code>tiddlers/</code>), crea o modifica un archivo <code>.tid</code> y guarda.
+    La web se actualiza sola con GitHub Actions. No necesitas ayuda externa.
+  </div>
+  </main>
+</div>
+<script>
+var _history=[];
+const CATS = ["Salud","Utilidades","Curiosidades"];
+function titleOf(id){ return decodeURIComponent(id); }
+function activeCatFor(id){
+  if(id && id.indexOf('cat-')===0){ return decodeURIComponent(id.slice(4)); }
+  // tiddler: buscar primera categoria base en sus tags
+  const el=document.getElementById(id);
+  if(el){
+    const tags=[...el.querySelectorAll('.tags .tag')].map(t=>t.textContent.trim());
+    for(const c of CATS){ if(tags.includes(c)) return c; }
+  }
+  return null;
+}
+function highlightCat(cat){
+  document.querySelectorAll('#navlist a[data-cat]').forEach(a=>{
+    if(cat && a.getAttribute('data-cat')===cat) a.classList.add('active');
+    else a.classList.remove('active');
+  });
+}
+function show(id){
+  document.querySelectorAll('.view').forEach(s=>s.style.display='none');
+  const el=document.getElementById(id);
+  if(el){ el.style.display='block'; window.scrollTo(0,0); _history.push(id); updateCrumb(id); highlightCat(activeCatFor(id)); }
+}
+function updateCrumb(id){
+  const crumb=document.getElementById('crumb');
+  if(!crumb) return;
+  if(id && id.indexOf('cat-')===0){
+    const cat=decodeURIComponent(id.slice(4));
+    crumb.textContent='Inicio › '+cat;
+  } else if(id){
+    crumb.textContent='Inicio › '+decodeURIComponent(id);
+  } else {
+    crumb.textContent='Inicio';
+  }
+}
+function goBack(){
+  if(_history.length>1){ _history.pop(); const prev=_history.pop(); show(prev); }
+  else if(_history.length===1){ /* ya en inicio */ }
+}
+function filter(){
+  const q=document.getElementById('search').value.toLowerCase().trim();
+  if(!q){ show('Presentaci%C3%B3n'); updateCrumb('Presentaci%C3%B3n'); highlightCat(null); return; }
+  document.querySelectorAll('.view').forEach(s=>s.style.display='none');
+  document.querySelectorAll('.tiddler').forEach(s=>{
+    if(s.dataset.hidden) return;
+    if(s.innerText.toLowerCase().includes(q)){ s.style.display='block'; }
+  });
+  window.scrollTo(0,0);
+  const crumb=document.getElementById('crumb'); if(crumb) crumb.textContent='Búsqueda: '+q;
+  highlightCat(null);
+}
+// Genera el ZIP en el navegador (index.html + media local) para uso offline
+async function exportZip(){
+  if(typeof JSZip==='undefined'){ alert('Cargando librería ZIP, inténtalo en unos segundos...'); return; }
+  const btn=document.querySelector('header button[onclick^="exportZip"]')||document.querySelector('header button');
+  const old=btn.textContent; btn.textContent='⏳ Generando...'; btn.disabled=true;
+  try{
+    const zip=new JSZip();
+    zip.file('index.html', document.documentElement.outerHTML);
+    const dirs=['img','video','pdf'];
+    for(const d of dirs){
+      const re=new RegExp(d+'/[^"\x27\s)]+','g');
+      const found=new Set([...document.documentElement.outerHTML.matchAll(re)].map(m=>m[0]));
+      for(const rel of found){
+        try{
+          const r=await fetch(rel);
+          if(r.ok){ const buf=await r.arrayBuffer(); zip.file(rel, buf); }
+        }catch(e){ console.warn('No se pudo añadir',rel,e); }
+      }
+    }
+    const blob=await zip.generateAsync({type:'blob'});
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    const mm=String(new Date().getMonth()+1).padStart(2,'0');
+    const yyyy=new Date().getFullYear();
+    a.download='wikisalud-'+mm+'-'+yyyy+'.zip';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }catch(e){ alert('Error: '+e.message); }
+  finally{ btn.textContent=old; btn.disabled=false; }
+}
+window.addEventListener('DOMContentLoaded',()=>{
+  const h=location.hash.slice(1);
+  if(h && document.getElementById(h)) show(h);
+  else show('Presentaci%C3%B3n');
+});
+</script>
+</body>
+</html>
