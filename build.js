@@ -42,11 +42,18 @@ function esc(s) {
     .replace(/'/g, '&#39;');
 }
 function wiki2html(body) {
-  // Seguridad: escapar todo salvo bloques <html>...</html> explícitos (controlados por el autor).
-  const segs = body.split(/(<html>[\s\S]*?<\/html>)/g);
+  // Seguridad: escapar todo salvo bloques permitidos (controlados por el autor).
+  // Permitidos como HTML crudo: <html>, <iframe https>, <video>.
+  const segs = body.split(/(<html>[\s\S]*?<\/html>|<iframe[\s\S]*?<\/iframe>|<video[\s\S]*?<\/video>)/g);
   let h = '';
   for (const seg of segs) {
     if (seg.startsWith('<html>')) { h += seg.slice(6, -7); continue; }
+    if (/^<iframe/i.test(seg)) {
+      // Solo iframes con src https: (evita javascript:/data:)
+      if (/src\s*=\s*["']https:\/\//i.test(seg)) { h += seg; continue; }
+      h += esc(seg); continue;
+    }
+    if (/^<video/i.test(seg)) { h += seg; continue; }
     h += esc(seg);
   }
   h = h
