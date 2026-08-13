@@ -165,7 +165,7 @@ function build() {
 <meta name="robots" content="noindex, nofollow, noai, noimageai, nosnippet">
 <meta name="googlebot" content="noindex, nofollow, noai">
 <title>Wiki Mosqueteroweb</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" integrity="sha384-+mbV2IY1Zk/X1p/nWllGySJSUN8uMs+gUAN10Or95UBH0fpj6GfKgPmgC5EXieXG" crossorigin="anonymous"></script>
 <style>
   :root{
     --bg:#f3f6f4; --panel:#e7eee9; --ink:#2f3e36; --muted:#6b7d72;
