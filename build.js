@@ -41,7 +41,7 @@ function esc(s) {
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
 }
-function wiki2html(body) {
+function wiki2html(body, title) {
   // Seguridad: escapar todo salvo bloques permitidos (controlados por el autor).
   // Permitidos como HTML crudo: <html>, <iframe https>, <video>.
   const segs = body.split(/(<html>[\s\S]*?<\/html>|<iframe[\s\S]*?<\/iframe>|<video[\s\S]*?<\/video>)/g);
@@ -74,7 +74,11 @@ function wiki2html(body) {
   const blocks = h.split('\n');
   let out = '', inList = false, listType = '';
   const closeList = () => { if (inList) { out += `</${listType}>`; inList = false; } };
+  let first = true;
   for (let line of blocks) {
+    // Evitar h1 duplicado: el primer '! Título' coincide con el título del artículo
+    if (first && /^! /.test(line) && title && line.slice(2).trim() === title.trim()) { first = false; continue; }
+    first = false;
     if (line.startsWith('! ')) { closeList(); out += `<h1>${line.slice(2)}</h1>`; }
     else if (line.startsWith('!! ')) { closeList(); out += `<h2>${line.slice(3)}</h2>`; }
     else if (line.startsWith('!!! ')) { closeList(); out += `<h3>${line.slice(4)}</h3>`; }
@@ -144,11 +148,11 @@ function build() {
     const tags = (t.meta.tags || '').split(' ').filter(Boolean);
     const hidden = tags.includes(HIDDEN);
     const tagHtml = tags.filter(tg => tg !== HIDDEN).map(tg => `<span class="tag">${esc(tg)}</span>`).join(' ');
-    const htmlBody = wiki2html(t.body).replace(/<html>[\s\S]*?<\/html>/g, '');
+    const htmlBody = wiki2html(t.body, title).replace(/<html>[\s\S]*?<\/html>/g, '');
     const rawHtml = extractRawHtml(t.body);
     return `
 <section class="view card tiddler" id="${esc(id)}"${hidden ? ' data-hidden="1"' : ''}>
-  <h2>${esc(title)}</h2>
+  <h1>${esc(title)}</h1>
   <div class="tags">${tagHtml}</div>
   <div class="body">${htmlBody}${rawHtml}</div>
 </section>`;
