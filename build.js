@@ -55,8 +55,8 @@ function wiki2html(body, title) {
     if (/^<video/i.test(seg)) { h += seg; continue; }
     h += esc(seg);
   }
-  // Formato sobre el texto ya escapado (TiddlyWiki -> HTML)
-  h = h
+  // Formato sobre el texto ya escapado (TiddlyWiki -> HTML), por línea para no cruzar <p>
+  const formatInline = (s) => s
     .replace(/\[\[([^\]|]+)\|(video\/[^\]]+\.mp4)\]\]/g, '<video controls preload=\'none\' src=\'$2\' aria-label=\'$1\'>$1</video>')
     .replace(/\[\[([^\]|]+)\|xFrame\|([^\]]+)\]\]/g, '<iframe loading=\'lazy\' allow=\'encrypted-media; picture-in-picture\' allowfullscreen src=\'$2\' style=\'width:100%;aspect-ratio:16/9;border:0;border-radius:8px;margin:.5rem 0\'></iframe>')
     .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, (m, t, u) => {
@@ -65,7 +65,6 @@ function wiki2html(body, title) {
       return ok ? `<a href='${safe}' target='_blank' rel='noopener noreferrer'>${t}</a>` : `<a href='#'>${t}</a>`;
     })
     .replace(/\[\[([^\]]+)\]\]/g, '<a href=\'#\'>$1</a>')
-    // Negrita/cursiva (sobre texto escapado: &#39; == ')
     .replace(/&#39;&#39;&#39;([^&]+?)&#39;&#39;&#39;/g, '<strong>$1</strong>')
     .replace(/&#39;&#39;([^&]+?)&#39;&#39;/g, '<em>$1</em>')
     .replace(/\*\*([^*]+?)\*\*/g, '<strong>$1</strong>')
@@ -76,6 +75,7 @@ function wiki2html(body, title) {
   const closeList = () => { if (inList) { out += `</${listType}>`; inList = false; } };
   let first = true;
   for (let line of blocks) {
+    line = formatInline(line);
     // Evitar h1 duplicado: el primer '! Título' coincide con el título del artículo
     if (first && /^! /.test(line) && title && line.slice(2).trim() === title.trim()) { first = false; continue; }
     first = false;
@@ -244,12 +244,12 @@ function build() {
 ${entries}
 ${catSections}
   </main>
+</div>
   <footer class="hint">
     ¿Quieres añadir o editar un artículo? Entra en el repositorio de GitHub
     (<code>tiddlers/</code>), crea o modifica un archivo <code>.tid</code> y guarda.
     La web se actualiza sola con GitHub Actions. No necesitas ayuda externa.
   </footer>
-</div>
 <script>
 var _history=[];
 const CATS = ${JSON.stringify(CATEGORIES)};
