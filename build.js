@@ -194,6 +194,7 @@ function build() {
   header button{background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:.45rem .8rem;font-size:.82rem;cursor:pointer;font-weight:600}
   header button:hover{background:rgba(255,255,255,.3)}
   .layout{display:flex;min-height:86vh}
+  .view{display:none}
   nav{width:265px;background:var(--panel);padding:1.4rem 1.2rem;border-right:1px solid var(--line);flex-shrink:0}
   nav .search{width:100%;padding:.6rem .8rem;border:1px solid var(--line);border-radius:10px;background:#fff;margin-bottom:1.3rem;font-size:.9rem;color:var(--muted)}
   nav h3{font-size:.72rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin:.4rem 0 .6rem}
@@ -227,6 +228,7 @@ function build() {
 </style>
 </head>
 <body>
+<noscript><p style="padding:2rem;color:#b00">Esta wiki necesita JavaScript para mostrar los artículos. Si no carga, revisa la consola del navegador.</p></noscript>
 <header>
   <h1>🩺 Wiki Mosqueteroweb</h1>
   <button onclick="goBack()" title="Volver atrás">⬅ Atrás</button>
@@ -234,19 +236,19 @@ function build() {
 </header>
 <div class="layout">
   <nav>
-    <input id="search" class="search" placeholder="🔎 Buscar..." onkeyup="filter()">
+    <input id="search" class="search" placeholder="🔎 Buscar..." onkeyup="filter()" aria-label="Buscar artículos en la wiki">
     <ul id="navlist">${nav}</ul>
   </nav>
   <main>
 <div class="crumb" id="crumb"></div>
 ${entries}
 ${catSections}
-  <div class="hint">
+  </main>
+  <footer class="hint">
     ¿Quieres añadir o editar un artículo? Entra en el repositorio de GitHub
     (<code>tiddlers/</code>), crea o modifica un archivo <code>.tid</code> y guarda.
     La web se actualiza sola con GitHub Actions. No necesitas ayuda externa.
-  </div>
-  </main>
+  </footer>
 </div>
 <script>
 var _history=[];
@@ -276,13 +278,14 @@ function show(id){
 function updateCrumb(id){
   const crumb=document.getElementById('crumb');
   if(!crumb) return;
+  const home='<a href="#" onclick="show(\'${homeId}\');return false;">Inicio</a>';
   if(id && id.indexOf('cat-')===0){
     const cat=decodeURIComponent(id.slice(4));
-    crumb.textContent='Inicio › '+cat;
+    crumb.innerHTML=home+' › '+cat;
   } else if(id){
-    crumb.textContent='Inicio › '+decodeURIComponent(id);
+    crumb.innerHTML=home+' › '+decodeURIComponent(id);
   } else {
-    crumb.textContent='Inicio';
+    crumb.innerHTML=home;
   }
 }
 function goBack(){
