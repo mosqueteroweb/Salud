@@ -49,35 +49,40 @@ function wiki2html(body) {
   for (const seg of segs) {
     if (seg.startsWith('<html>')) { h += seg.slice(6, -7); continue; }
     if (/^<iframe/i.test(seg)) {
-      // Solo iframes con src https: (evita javascript:/data:)
       if (/src\s*=\s*["']https:\/\//i.test(seg)) { h += seg; continue; }
       h += esc(seg); continue;
     }
     if (/^<video/i.test(seg)) { h += seg; continue; }
     h += esc(seg);
   }
+  // Formato sobre el texto ya escapado (TiddlyWiki -> HTML)
   h = h
-    .replace(/\[\[([^\]|]+)\|(video\/[^\]]+\.mp4)\]\]/g, '<video controls preload=\'metadata\' src=\'$2\'>$1</video>')
+    .replace(/\[\[([^\]|]+)\|(video\/[^\]]+\.mp4)\]\]/g, '<video controls preload=\'none\' src=\'$2\' aria-label=\'$1\'>$1</video>')
     .replace(/\[\[([^\]|]+)\|xFrame\|([^\]]+)\]\]/g, '<iframe loading=\'lazy\' allow=\'encrypted-media; picture-in-picture\' allowfullscreen src=\'$2\' style=\'width:100%;aspect-ratio:16/9;border:0;border-radius:8px;margin:.5rem 0\'></iframe>')
     .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, (m, t, u) => {
       const ok = /^(https?:|mailto:)/i.test(u.trim());
       const safe = u.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-      return ok ? `<a href='${safe}' target='_blank' rel='noopener noreferrer'>${t}</a>`
-                : `<a href='#'>${t}</a>`;
+      return ok ? `<a href='${safe}' target='_blank' rel='noopener noreferrer'>${t}</a>` : `<a href='#'>${t}</a>`;
     })
     .replace(/\[\[([^\]]+)\]\]/g, '<a href=\'#\'>$1</a>')
-    .replace(/'''([^']+)'''/g, '<b>$1</b>')
-    .replace(/''([^']+)''/g, '<i>$1</i>');
+    // Negrita/cursiva (sobre texto escapado: &#39; == ')
+    .replace(/&#39;&#39;&#39;([^&]+?)&#39;&#39;&#39;/g, '<strong>$1</strong>')
+    .replace(/&#39;&#39;([^&]+?)&#39;&#39;/g, '<em>$1</em>')
+    .replace(/\*\*([^*]+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([^*]+?)\*/g, '<em>$1</em>');
+  // Bloques por línea: headings y listas
   const blocks = h.split('\n');
-  let out = '', inList = false;
+  let out = '', inList = false, listType = '';
+  const closeList = () => { if (inList) { out += `</${listType}>`; inList = false; } };
   for (let line of blocks) {
-    if (line.startsWith('! ')) { if(inList){out+='</ul>';inList=false;} out += `<h1>${line.slice(2)}</h1>`; }
-    else if (line.startsWith('!! ')) { if(inList){out+='</ul>';inList=false;} out += `<h2>${line.slice(3)}</h2>`; }
-    else if (line.startsWith('# ')) { if(!inList){out+='<ol>';inList='ol';} out += `<li>${line.slice(2)}</li>`; }
-    else if (line.startsWith('* ')) { if(!inList){out+='<ul>';inList='ul';} out += `<li>${line.slice(2)}</li>`; }
-    else { if(inList){out+=`</${inList}>`;inList=false;} if(line.trim()) out += `<p>${line}</p>`; }
+    if (line.startsWith('! ')) { closeList(); out += `<h1>${line.slice(2)}</h1>`; }
+    else if (line.startsWith('!! ')) { closeList(); out += `<h2>${line.slice(3)}</h2>`; }
+    else if (line.startsWith('!!! ')) { closeList(); out += `<h3>${line.slice(4)}</h3>`; }
+    else if (line.startsWith('# ')) { if (!inList || listType !== 'ol') { closeList(); out += '<ol>'; inList = true; listType = 'ol'; } out += `<li>${line.slice(2)}</li>`; }
+    else if (line.startsWith('* ')) { if (!inList || listType !== 'ul') { closeList(); out += '<ul>'; inList = true; listType = 'ul'; } out += `<li>${line.slice(2)}</li>`; }
+    else { closeList(); if (line.trim()) out += `<p>${line}</p>`; }
   }
-  if (inList) out += `</${inList}>`;
+  closeList();
   return out;
 }
 
