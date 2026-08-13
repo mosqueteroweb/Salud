@@ -278,16 +278,16 @@ function show(id){
 function updateCrumb(id){
   const crumb=document.getElementById('crumb');
   if(!crumb) return;
-  const home='<a href="#" onclick="show(\'${homeId}\');return false;">Inicio</a>';
   if(id && id.indexOf('cat-')===0){
     const cat=decodeURIComponent(id.slice(4));
-    crumb.innerHTML=home+' › '+cat;
+    crumb.textContent='Inicio › '+cat;
   } else if(id){
-    crumb.innerHTML=home+' › '+decodeURIComponent(id);
+    crumb.textContent='Inicio › '+decodeURIComponent(id);
   } else {
-    crumb.innerHTML=home;
+    crumb.textContent='Inicio';
   }
 }
+
 function goBack(){
   if(_history.length>1){ _history.pop(); const prev=_history.pop(); show(prev); }
   else if(_history.length===1){ /* ya en inicio */ }
