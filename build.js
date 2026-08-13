@@ -33,14 +33,27 @@ function parseTid(raw) {
   return { meta, body };
 }
 
+function esc(s) {
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
 function wiki2html(body) {
-  let h = body
-    // Enlace a video local (.mp4) -> visor embebido
-    .replace(/\[\[([^\]|]+)\|(video\/[^\]]+\.mp4)\]\]/g, '<video controls preload="metadata" src="$2">$1</video>')
-    // Enlace iframe externo: [[texto|xFrame|url]]
-    .replace(/\[\[([^\]|]+)\|xFrame\|([^\]]+)\]\]/g, '<iframe loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen src="$2" style="width:100%;aspect-ratio:16/9;border:0;border-radius:8px;margin:.5rem 0"></iframe>')
-    .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '<a href="$2" target="_blank">$1</a>')
-    .replace(/\[\[([^\]]+)\]\]/g, '<a href="#">$1</a>')
+  // Seguridad: escapar todo salvo bloques <html>...</html> explícitos (controlados por el autor).
+  const segs = body.split(/(<html>[\s\S]*?<\/html>)/g);
+  let h = '';
+  for (const seg of segs) {
+    if (seg.startsWith('<html>')) { h += seg.slice(6, -7); continue; }
+    h += esc(seg);
+  }
+  h = h
+    .replace(/\[\[([^\]|]+)\|(video\/[^\]]+\.mp4)\]\]/g, '<video controls preload=\'metadata\' src=\'$2\'>$1</video>')
+    .replace(/\[\[([^\]|]+)\|xFrame\|([^\]]+)\]\]/g, '<iframe loading=\'lazy\' allow=\'encrypted-media; picture-in-picture\' allowfullscreen src=\'$2\' style=\'width:100%;aspect-ratio:16/9;border:0;border-radius:8px;margin:.5rem 0\'></iframe>')
+    .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '<a href=\'$2\' target=\'_blank\'>$1</a>')
+    .replace(/\[\[([^\]]+)\]\]/g, '<a href=\'#\'>$1</a>')
     .replace(/'''([^']+)'''/g, '<b>$1</b>')
     .replace(/''([^']+)''/g, '<i>$1</i>');
   const blocks = h.split('\n');
@@ -66,8 +79,30 @@ function build() {
   if (!files.length) { console.error('No hay .tid en', TID_DIR); process.exit(1); }
   const tiddlers = files.map(f => {
     const raw = fs.readFileSync(path.join(TID_DIR, f), 'utf8');
-    return parseTid(raw);
+    const t = parseTid(raw);
+    t._file = f;
+    return t;
   });
+
+  // Validación: evitar artículos rotos/vacíos (falla el build con mensaje claro)
+  const errs = [];
+  for (const t of tiddlers) {
+    const fn = t._file || '(desconocido)';
+    const title = (t.meta.title || '').trim();
+    if (!title) errs.push(`Tiddler sin título (archivo: ${fn}). Añade 'title: ...' en la primera línea.`);
+    const isHome = (t.meta.tags || '').split(' ').includes('Portada');
+    if (!isHome) {
+      const tags = (t.meta.tags || '').trim();
+      if (!tags) errs.push(`"${title}" no tiene tags. Añade 'tags: Salud Utilidades Curiosidades ...' al menos con una sección.`);
+      const body = (t.body || '').trim();
+      if (!body) errs.push(`"${title}" tiene el cuerpo vacío. Escribe el contenido del artículo.`);
+    }
+  }
+  if (errs.length) {
+    console.error('✖ Build abortado: se encontraron tiddlers inválidos:');
+    errs.forEach(e => console.error('  - ' + e));
+    process.exit(1);
+  }
 
   const home = tiddlers.find(t => (t.meta.tags || '').split(' ').includes('Portada')) || tiddlers[0];
   const homeId = encodeURIComponent(home.meta.title);
@@ -91,12 +126,12 @@ function build() {
     const id = encodeURIComponent(title);
     const tags = (t.meta.tags || '').split(' ').filter(Boolean);
     const hidden = tags.includes(HIDDEN);
-    const tagHtml = tags.filter(tg => tg !== HIDDEN).map(tg => `<span class="tag">${tg}</span>`).join(' ');
+    const tagHtml = tags.filter(tg => tg !== HIDDEN).map(tg => `<span class="tag">${esc(tg)}</span>`).join(' ');
     const htmlBody = wiki2html(t.body).replace(/<html>[\s\S]*?<\/html>/g, '');
     const rawHtml = extractRawHtml(t.body);
     return `
-<section class="view card tiddler" id="${id}"${hidden ? ' data-hidden="1"' : ''}>
-  <h2>${title}</h2>
+<section class="view card tiddler" id="${esc(id)}"${hidden ? ' data-hidden="1"' : ''}>
+  <h2>${esc(title)}</h2>
   <div class="tags">${tagHtml}</div>
   <div class="body">${htmlBody}${rawHtml}</div>
 </section>`;
