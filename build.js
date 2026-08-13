@@ -52,7 +52,12 @@ function wiki2html(body) {
   h = h
     .replace(/\[\[([^\]|]+)\|(video\/[^\]]+\.mp4)\]\]/g, '<video controls preload=\'metadata\' src=\'$2\'>$1</video>')
     .replace(/\[\[([^\]|]+)\|xFrame\|([^\]]+)\]\]/g, '<iframe loading=\'lazy\' allow=\'encrypted-media; picture-in-picture\' allowfullscreen src=\'$2\' style=\'width:100%;aspect-ratio:16/9;border:0;border-radius:8px;margin:.5rem 0\'></iframe>')
-    .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '<a href=\'$2\' target=\'_blank\' rel=\'noopener noreferrer\'>$1</a>')
+    .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, (m, t, u) => {
+      const ok = /^(https?:|mailto:)/i.test(u.trim());
+      const safe = u.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+      return ok ? `<a href='${safe}' target='_blank' rel='noopener noreferrer'>${t}</a>`
+                : `<a href='#'>${t}</a>`;
+    })
     .replace(/\[\[([^\]]+)\]\]/g, '<a href=\'#\'>$1</a>')
     .replace(/'''([^']+)'''/g, '<b>$1</b>')
     .replace(/''([^']+)''/g, '<i>$1</i>');
