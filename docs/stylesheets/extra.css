@@ -1,5 +1,6 @@
-/* Fondo con imagen (hojas) — SOLO en modo claro */
-body[data-md-color-scheme="default"] {
-  background-image: url(../assets/bg-hojas.webp);
-  background-repeat: repeat;
+/* Fondo con imagen (textura orgánica verde) — SOLO en modo claro */
+html body[data-md-color-scheme="default"] {
+  background-image: url(../assets/bg-verde.webp) !important;
+  background-repeat: repeat !important;
+  background-color: #e8f3e8 !important;
 }
