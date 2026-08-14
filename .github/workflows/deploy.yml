@@ -25,14 +25,17 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Generar index.html desde tiddlers/
-        run: node build.js
+      - name: Instalar TiddlyWiki
+        run: npm install -g tiddlywiki@latest
+
+      - name: Generar index.html (TiddlyWiki)
+        run: tiddlywiki . --build index
 
       - name: Preparar artefacto para Pages
         run: |
           rm -rf _site
           mkdir -p _site
-          cp index.html _site/index.html
+          cp output/index.html _site/index.html
           if [ -d "video" ]; then
             mkdir -p _site/video
             cp -r video/. _site/video/

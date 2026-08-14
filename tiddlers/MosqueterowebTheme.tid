@@ -1,0 +1,53 @@
+title: MosqueterowebTheme
+tags: $:/tags/Stylesheet
+
+/* Tema Mosqueteroweb — paleta verde de Pedro */
+:root {
+  --tc-page-background: #f3f6f4;
+  --tc-sidebar-background: #e7eee9;
+  --tc-sidebar-border: #d8e3db;
+  --tc-tiddler-background: #ffffff;
+  --tc-tiddler-border: #d8e3db;
+  --tc-foreground: #2f3e36;
+  --tc-muted-foreground: #6b7d72;
+  --tc-accent-color: #5a8a6b;
+  --tc-background: #f3f6f4;
+  --tc-highlight: #5a8a6b;
+}
+
+html body.tc-body {
+  background: #f3f6f4;
+  color: #2f3e36;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+.tc-sidebar-scrollable {
+  background: #e7eee9;
+}
+
+.tc-tiddler-frame {
+  background: #ffffff;
+  border: 1px solid #d8e3db;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(47,62,54,.06);
+}
+
+.tc-tiddler-title {
+  color: #2f3e36;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.tc-tag-label {
+  background: #e7eee9;
+  color: #5a8a6b;
+  border-radius: 6px;
+}
+
+.tc-tab-buttons button.tc-tab-selected {
+  border-bottom: 2px solid #5a8a6b;
+}
+
+.tc-body video, .tc-body iframe {
+  max-width: 100%;
+  border-radius: 10px;
+}

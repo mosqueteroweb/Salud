@@ -5,13 +5,13 @@ summary: Vídeo animado que explica un truco para aparcar en paralelo alineando 
 
 Vídeo animado (vista cenital) que enseña a aparcar en paralelo en una plaza a la derecha.
 
-[[▶ Ver vídeo|video/parking.mp4]]
+<video controls preload="none" src="video/parking.mp4">▶ Ver vídeo</video>
 
 !! El truco
-1. Alinea la **parte trasera de tu coche** con la línea de referencia de la plaza (el coche queda a la derecha de la plaza).
-2. Gira el **volante completamente a la izquierda** cuando tu espejo lateral se alinee con el borde delantero de la plaza.
-3. Retrocede en un **ángulo de 45 grados** hasta entrar en la plaza.
-4. Endereza el volante para quedar **paralelo a las líneas** de la plaza.
+1. Alinea la ''parte trasera de tu coche'' con la línea de referencia de la plaza (el coche queda a la derecha de la plaza).
+2. Gira el ''volante completamente a la izquierda'' cuando tu espejo lateral se alinee con el borde delantero de la plaza.
+3. Retrocede en un ''ángulo de 45 grados'' hasta entrar en la plaza.
+4. Endereza el volante para quedar ''paralelo a las líneas'' de la plaza.
 
 !!! Fuente
 Vídeo original: https://x.com/i/status/2086709457904349627 — "Science Postcard - The parking trick every driver should know".
