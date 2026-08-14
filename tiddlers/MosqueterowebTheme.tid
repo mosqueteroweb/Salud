@@ -37,17 +37,41 @@ html body.tc-body {
   font-family: Georgia, "Times New Roman", serif;
 }
 
+/* Etiquetas separadas */
+.tc-tag-list-item {
+  display: inline-block;
+  margin: 0 0.4em 0.4em 0;
+}
 .tc-tag-label {
+  display: inline-block;
+  padding: 0.22em 0.65em;
   background: #e7eee9;
   color: #5a8a6b;
   border-radius: 6px;
+  font-size: 0.78em;
+  white-space: nowrap;
 }
 
 .tc-tab-buttons button.tc-tab-selected {
   border-bottom: 2px solid #5a8a6b;
 }
 
-.tc-body video, .tc-body iframe {
+/* Vídeos adaptados a su resolución nativa (no full-width) */
+.tc-body video {
   max-width: 100%;
+  max-height: 70vh;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0.5em 0;
   border-radius: 10px;
+  background: #000;
+}
+.tc-body iframe {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.tc-body img {
+  max-width: 100%;
+  height: auto;
 }
