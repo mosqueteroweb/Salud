@@ -32,6 +32,8 @@ nav:
       - Nudo de corbata medio Windsor: utilidades/nudo-corbata.md
   - Curiosidades:
       - Suerte (Stanford): curiosidades/suerte-stanford.md
+  - Ejemplo:
+      - Artículo de ejemplo (tablas, avisos, imágenes): ejemplo/formato.md
 markdown_extensions:
   - admonition
   - pymdownx.details
