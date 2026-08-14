@@ -31,6 +31,22 @@ jobs:
       - name: Generar index.html (TiddlyWiki)
         run: tiddlywiki . --build index
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar MkDocs Material
+        run: pip install mkdocs-material
+
+      - name: Generar demo MkDocs
+        run: |
+          cd mkdocs-demo
+          mkdir -p docs/video
+          cp ../video/salud-dolor-rodilla.mp4 docs/video/ 2>/dev/null || true
+          cp ../video/utilidades-nudo-corbata.mp4 docs/video/ 2>/dev/null || true
+          mkdocs build
+
       - name: Preparar artefacto para Pages
         run: |
           rm -rf _site
@@ -52,6 +68,11 @@ jobs:
           if [ -f "robots.txt" ]; then
             cp robots.txt _site/robots.txt
             echo "robots.txt copiado"
+          fi
+          if [ -d "mkdocs-demo/site" ]; then
+            mkdir -p _site/mkdocs
+            cp -r mkdocs-demo/site/. _site/mkdocs/
+            echo "demo mkdocs copiada"
           fi
           echo "Contenido de _site:"
           find _site -type f

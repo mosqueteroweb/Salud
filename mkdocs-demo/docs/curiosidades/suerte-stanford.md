@@ -1,0 +1,21 @@
+# Por qué unos tienen suerte y la mayoría no (Stanford)
+
+Charla de divulgación (~11 min) basada en el trabajo de una profesora de Stanford que lleva 20 años estudiando la suerte.
+
+## Resumen del hilo original (X)
+
+> "Una profesora de Stanford lleva 20 años estudiando por qué unos tienen suerte y la mayoría no. Su conclusión: la suerte es como el viento, pero nadie sabe ponerle vela. Si quisiera más suerte, haría estas 7 cosas: 1/ Micro-riesgos fuera de mi zona de confort."
+
+## De qué trata
+
+La ponente estudia qué diferencia a las personas "con suerte" del resto. Su tesis: la suerte no es azar puro, sino algo sobre lo que se puede incidir con hábitos y actitudes (empezando por salir de la zona de confort con micro-riesgos).
+
+## Clave
+
+Enfoque de curiosidad más que de salud: cómo pequeñas acciones sistemáticas aumentan las oportunidades que la vida te pone por delante.
+
+## Vídeo
+
+<iframe loading="lazy" allowfullscreen src="https://platform.twitter.com/embed/Tweet.html?id=2077800033974428107" style="width:100%;height:600px;border:0;border-radius:8px;margin:.5rem 0"></iframe>
+
+*Aplicación:* lectura/visión de curiosidades; no es contenido de salud ni tutorial práctico.

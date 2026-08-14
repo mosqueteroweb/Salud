@@ -4,6 +4,8 @@ audio/
 .venv/
 .venv311/
 node_modules/
+mkdocs-demo/site/
+mkdocs-demo/docs/video/
 
 # === Seguridad: nunca subir credenciales/secretos al repo público ===
 # Claves SSH

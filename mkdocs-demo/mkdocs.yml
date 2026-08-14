@@ -1,0 +1,36 @@
+site_name: Wiki Mosqueteroweb · Salud
+site_description: Prueba de MkDocs Material para la wiki de salud
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: green
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+    - scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+use_directory_urls: false
+nav:
+  - Inicio: index.md
+  - Salud:
+      - Caminar para eliminar el dolor de rodilla: salud/dolor-rodilla.md
+  - Utilidades:
+      - Nudo de corbata medio Windsor: utilidades/nudo-corbata.md
+  - Curiosidades:
+      - Suerte (Stanford): curiosidades/suerte-stanford.md
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
