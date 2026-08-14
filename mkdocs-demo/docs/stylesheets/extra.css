@@ -1,0 +1,15 @@
+/* Fondo con imagen (hojas) — wiki salud */
+body {
+  background-image: url(../assets/bg-hojas.webp);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Contenido con fondo claro semitransparente para que el texto se lea bien sobre la textura */
+.md-main__inner {
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.md-sidebar--primary {
+  background: rgba(255, 255, 255, 0.55);
+}
