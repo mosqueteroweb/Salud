@@ -1,0 +1,11 @@
+# Limpiador casero multiusos (pasta dental, vinagre y lavavajillas)
+
+Este vídeo muestra cómo preparar un **limpiador casero multiusos** con cuatro ingredientes comunes, y cómo aplicarlo en varias superficies de la cocina:
+
+- **Ingredientes**: pasta dental, detergente lavavajillas, vinagre blanco y agua.
+- **Preparación**: se mezclan los cuatro ingredientes en un recipiente, se remueven y se vierten en una botella con pulverizador.
+- **Uso**: se rocía el producto sobre la superficie a limpiar (cubo de pedal, estufa, campana extractora, etc.) y se frota con una esponja para eliminar la suciedad de forma rápida, dejando las superficies brillantes.
+
+Un truco doméstico sencillo y barato para limpiar varias superficies sin recurrir a productos comerciales.
+
+<video controls preload="none" src="../video/clean.mp4">▶ Ver vídeo</video>

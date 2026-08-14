@@ -1,0 +1,16 @@
+# Trucos domésticos para facilitar el trabajo
+
+
+Vídeo (96 s, español) donde un hombre enseña a su madre **pequeños trucos para facilitarle las tareas del hogar**. Publicación original: "Un hombre le enseñó a su madre algunos pequeños trucos para facilitarle el trabajo."
+
+## De qué va
+El clip muestra varios trucos caseros sencillos pensados para ahorrar esfuerzo en las tareas domésticas diarias. Es contenido de organización y ayuda en casa, sin herramientas especiales.
+
+## Clave
+Ideas prácticas de bajo coste para hacer más llevadero el trabajo del hogar. Complementa otros trucos de organización (p.ej. doblar la ropa).
+
+## Vídeo
+Trucos domésticos demostrados: <video controls preload="none" src="../video/utilidades-trucos-domesticos.mp4">Trucos domésticos (vídeo)</video>
+
+
+**Aplicación:** organización del hogar; útil en convivencia y situaciones de confinamiento/apagón.

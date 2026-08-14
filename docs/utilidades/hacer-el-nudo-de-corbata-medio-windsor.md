@@ -1,0 +1,16 @@
+# Hacer el nudo de corbata medio Windsor
+
+
+Vídeo (16 s, inglés) que enseña a hacer el **nudo medio Windsor (Half Windsor)** en 15 segundos. Publicación original: "Master the Half Windsor knot in 15 seconds."
+
+## De qué va
+El clip demuestra paso a paso cómo anudar la corbata con el nudo medio Windsor, un nudo simétrico y de tamaño medio, ideal para el día a día y uso formal. Es un truco de vestimenta rápido.
+
+## Clave
+Nudo versátil: más pequeño que el Windsor completo pero más voluminoso que el simple. Útil para camisas de cuello estándar.
+
+## Vídeo
+Demostración del nudo en 15 s: <video controls preload="none" src="../video/utilidades-nudo-corbata.mp4">Nudo medio Windsor (vídeo)</video>
+
+
+**Aplicación:** utilidad de vestimenta; útil para eventos o trabajo formal.

@@ -1,7 +1,0 @@
-title: Curiosidades
-
-Artículos en esta categoría:
-
-<$list filter="[tag[Curiosidades]!is[system]sort[title]]">
-<$link><$view field="title"/></$link><br>
-</$list>

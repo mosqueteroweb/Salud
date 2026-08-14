@@ -1,11 +1,12 @@
 _site/
-output/
-audio/
+site/
 .venv/
 .venv311/
 node_modules/
-mkdocs-demo/site/
-mkdocs-demo/docs/video/
+__pycache__/
+*.pyc
+.cache/
+.mypy_cache/
 
 # === Seguridad: nunca subir credenciales/secretos al repo público ===
 # Claves SSH

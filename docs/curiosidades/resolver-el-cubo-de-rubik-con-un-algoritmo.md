@@ -1,0 +1,16 @@
+# Resolver el cubo de Rubik con un algoritmo
+
+
+Vídeo demostrativo (36 s) en francés que resuelve el cubo de Rubik repitiendo **18 veces un solo algoritmo**. Publicación original: "18 répétitions. Un seul algorithme. Et pourtant… le Rubik's Cube se résout."
+
+## De qué va
+El clip muestra cómo, aplicando sistemáticamente un único algoritmo 18 veces, el cubo termina resuelto. A primera vista parece magia (o que "se resuelve solo"); en realidad es una propiedad del grupo del cubo: ciertas secuencias cortas, repetidas, devuelven el cubo a su estado resuelto desde configuraciones concretas.
+
+## Clave
+Es una curiosidad matemática/visual, no un método de resolución general. Entretenimiento y demostración de cómo un patrón simple repetido produce un resultado sorprendente.
+
+## Vídeo
+Demostración del algoritmo repetido 18 veces: <video controls preload="none" src="../video/curiosidad-rubik-cubo.mp4">Cubo de Rubik con un algoritmo (vídeo)</video>
+
+
+**Aplicación:** curiosidad/entretenimiento; útil como pasatiempo en ratos libres (p.ej. confinamiento, apagón).

@@ -1,0 +1,11 @@
+# Uso de la brida (cable tie) para amarrar
+
+Una **brida** (también llamada *zip tie*, *abrazadera de plástico* o *cable tie*) es una cinta de plástico con trinquete que, al tirar, se aprieta de forma permanente. En el vídeo original se usa para demostrar cómo sujetar dos cañas de bambú entrecruzadas.
+
+## Cómo hacerlo
+1. Coloca las dos varillas o cañas en la posición en que quieres unirlas (p. ej. en cruz o paralelas).
+2. Pasa la brida alrededor de ambas, por el punto de unión.
+3. Tira del extremo liso hasta que quede bien tensa.
+4. La brida queda bloqueada: corta el sobrante con tijeras o un cortabridas.
+
+<video controls preload="none" src="../video/brida.mp4">▶ Ver demostración</video>

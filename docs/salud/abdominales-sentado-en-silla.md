@@ -1,0 +1,16 @@
+# Abdominales sentado en silla
+
+
+Rutina de abdominales que se hace sentado en una silla, ideal para quien busca trabajar el core sin tumbarse en el suelo. El vídeo resalta con check qué grupos abdominales se activan (bajos, altos, oblicuos y el recto completo).
+
+## En qué consiste
+- Sentado al borde de una silla (sobre una esterilla), realizas una serie de movimientos de core con las manos apoyadas o detrás de la cabeza.
+- El gráfico del vídeo va marcando los grupos trabajados: *Lower Abs*, *Upper Abs*, *Obliques* y *Full Abs*.
+
+## Clave
+Permite entrenar el abdomen en espacios pequeños y sin esterilla. Sigue la pauta de repeticiones que indica el vídeo y mantén el movimiento controlado.
+
+## Vídeo
+Rutina "CHAIR ABS WORKOUT" demostrada paso a paso: <video controls preload="none" src="../video/abs-silla.mp4">Abdominales en silla (vídeo)</video>
+
+**Aplicación:** salud diaria en casa o en la oficina.

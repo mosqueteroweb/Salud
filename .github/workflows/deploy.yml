@@ -20,62 +20,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Instalar TiddlyWiki
-        run: npm install -g tiddlywiki@latest
-
-      - name: Generar index.html (TiddlyWiki)
-        run: tiddlywiki . --build index
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Instalar MkDocs Material
-        run: pip install mkdocs-material
+      - name: Instalar MkDocs
+        run: pip install mkdocs-material mkdocs-awesome-pages-plugin
 
-      - name: Generar demo MkDocs
-        run: |
-          cd mkdocs-demo
-          mkdir -p docs/video
-          cp ../video/salud-dolor-rodilla.mp4 docs/video/ 2>/dev/null || true
-          cp ../video/utilidades-nudo-corbata.mp4 docs/video/ 2>/dev/null || true
-          mkdocs build
+      - name: Build MkDocs
+        run: mkdocs build
 
-      - name: Preparar artefacto para Pages
+      - name: Preparar artefacto
         run: |
-          rm -rf _site
-          mkdir -p _site
-          cp output/index.html _site/index.html
-          if [ -d "video" ]; then
-            mkdir -p _site/video
-            cp -r video/. _site/video/
-            echo "video copiado"
-          fi
-          if [ -d "img" ]; then
-            mkdir -p _site/img
-            cp -r img/. _site/img/
-          fi
-          if [ -d "pdf" ]; then
-            mkdir -p _site/pdf
-            cp -r pdf/. _site/pdf/
-          fi
           if [ -f "robots.txt" ]; then
             cp robots.txt _site/robots.txt
             echo "robots.txt copiado"
           fi
-          if [ -d "mkdocs-demo/site" ]; then
-            mkdir -p _site/mkdocs
-            cp -r mkdocs-demo/site/. _site/mkdocs/
-            echo "demo mkdocs copiada"
-          fi
           echo "Contenido de _site:"
-          find _site -type f
+          find _site -maxdepth 2 -type f | head -30
 
       - name: Subir artefacto
         uses: actions/upload-pages-artifact@v3
