@@ -32,3 +32,5 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - tables
+  - markdown.extensions.md_in_html
+  - attr_list
