@@ -9,7 +9,6 @@ Lista de modelos a considerar. Las casillas se marcan ✅ cuando se compra/decid
 - [ ] **SteelDive Capitán Willard** — sumergible estilo militar (AliExpress).
 - [ ] **Casio Marlín** — automático clásico de entrada.
 - [ ] **Reloj de lujo VK63** — cronógrafo de negocios, cuarzo, 39mm, acero/oro rosa, fecha, esfera luminosa, cronógrafo completo (AliExpress).
-  - 🔗 https://a.aliexpress.com/_Ez0Bmow
 
 ## Notas
 
