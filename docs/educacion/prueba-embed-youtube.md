@@ -1,7 +1,7 @@
-# Artículo de prueba — Embed de YouTube (no listado)
+# Tony Robbins regaló su técnica millonaria gratis — Skill Arbitrage
 
-Este es un artículo de prueba para verificar que el pipeline de vídeo largo funciona: el vídeo se extrajo de X, se subió a YouTube como **no listado** y se embebe aquí con un `<iframe>`.
+Tony Robbins cobra hasta 1 millón de dólares por una sola charla. Décadas atrás, alguien grabó cómo entregaba toda la técnica de forma gratuita. Esto es *skill arbitrage* en su forma más pura: la brecha entre lo que sabes y lo que otro no sabe, vendida directamente. Robbins construyó un imperio a partir de esto.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2yHk7N46scY?si=GNiIy2u1gBZKgS4P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2yHk7N46scY?si=GNiIy2u1gBZKgS4P" title="Tony Robbins regaló su técnica millonaria gratis - Skill Arbitrage" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Si ves el reproductor de YouTube arriba y el vídeo carga, el flujo está completo. Este artículo se puede borrar cuando quieras.
+*Vídeo original extraído de X, subido a YouTube como no listado y embebido aquí como prueba del pipeline de vídeo largo.*
