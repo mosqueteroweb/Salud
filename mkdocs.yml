@@ -1,8 +1,10 @@
 site_name: Wiki Mosqueteroweb · Salud
 site_description: Recopilatorio personal de salud, utilidades y curiosidades
+site_url: https://mosqueteroweb.github.io/Salud/
 site_dir: _site
 theme:
   name: material
+  custom_dir: overrides
   language: es
   palette:
     - scheme: default
