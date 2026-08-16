@@ -12,6 +12,18 @@ Lista de modelos a considerar. Las casillas se marcan ✅ cuando se compra/decid
 - [ ] **Casio G-Shock GW-M5610 Solar** — digital resistente (200 m), módulo Tough Solar y sincronización atómica Multi Band 6. Rango ~105–139 €.
 - [ ] **Berny Compressor** — reloj de buceo automático estilo "compressor" (inspirado en Longines Polaris), movimiento Seagull ST1632 o Miyota 8215. ~130–140 € (AliExpress).
 
+## Imágenes
+
+| Modelo | Foto |
+|--------|------|
+| Casio F-91W | ![Casio F-91W](../img/f91w-sm.png){ width=120 } |
+| G-Shock GA2100 | ![G-Shock GA-2100](../img/ga2100-sm.png){ width=120 } |
+| SteelDive Capitán Willard | _(pendiente)_ |
+| Casio Marlín | _(pendiente)_ |
+| Reloj de lujo VK63 | _(pendiente)_ |
+| Casio G-Shock GW-M5610 Solar | ![Casio G-Shock GW-M5610](../img/gwm5610-sm.png){ width=120 } |
+| Berny Compressor | _(pendiente)_ |
+
 ## Notas
 
 - SteelDive es marca de réplica de buena calidad, no original.
