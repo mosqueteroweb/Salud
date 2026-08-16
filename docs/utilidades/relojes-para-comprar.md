@@ -7,7 +7,7 @@ Lista de modelos a considerar. Las casillas se marcan ✅ cuando se compra/decid
 - [ ] **Casio F-91W** — clásico digital barato y fiable.
 - [ ] **G-Shock GA2100** — resistente, estilo "Casi-Casi" (Casioak).
 - [ ] **SteelDive Capitán Willard** — sumergible estilo militar (AliExpress).
-- [ ] **Casio Marlín** — automático clásico de entrada.
+- [ ] **Casio Marlín** — automático clásico de entrada (MDV-107).
 - [ ] **Reloj de lujo VK63** — cronógrafo de negocios, cuarzo, 39mm, acero/oro rosa, fecha, esfera luminosa, cronógrafo completo (AliExpress).
 - [ ] **Casio G-Shock GW-M5610 Solar** — digital resistente (200 m), módulo Tough Solar y sincronización atómica Multi Band 6. Rango ~105–139 €.
 - [ ] **Berny Compressor** — reloj de buceo automático estilo "compressor" (inspirado en Longines Polaris), movimiento Seagull ST1632 o Miyota 8215. ~130–140 € (AliExpress).
@@ -19,7 +19,7 @@ Lista de modelos a considerar. Las casillas se marcan ✅ cuando se compra/decid
 | Casio F-91W | ![Casio F-91W](../img/f91w-sm.png){ width=120 } |
 | G-Shock GA2100 | ![G-Shock GA-2100](../img/ga2100-sm.png){ width=120 } |
 | SteelDive Capitán Willard | ![SteelDive Capitán Willard](../img/steeldive-sm.png){ width=120 } |
-| Casio Marlín | _(pendiente)_ |
+| Casio Marlín | ![Casio Marlín (MDV-107)](../img/marlin-sm.png){ width=120 } |
 | Reloj de lujo VK63 | ![Reloj de lujo VK63](../img/vk63-sm.png){ width=120 } |
 | Casio G-Shock GW-M5610 Solar | ![Casio G-Shock GW-M5610](../img/gwm5610-sm.png){ width=120 } |
 | Berny Compressor | ![Berny Compressor](../img/berny-sm.png){ width=120 } |
