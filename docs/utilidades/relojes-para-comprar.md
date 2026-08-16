@@ -10,6 +10,7 @@ Lista de modelos a considerar. Las casillas se marcan ✅ cuando se compra/decid
 - [ ] **Casio Marlín** — automático clásico de entrada.
 - [ ] **Reloj de lujo VK63** — cronógrafo de negocios, cuarzo, 39mm, acero/oro rosa, fecha, esfera luminosa, cronógrafo completo (AliExpress).
 - [ ] **Casio G-Shock GW-M5610 Solar** — digital resistente (200 m), módulo Tough Solar y sincronización atómica Multi Band 6. Rango ~105–139 €.
+- [ ] **Berny Compressor** — reloj de buceo automático estilo "compressor" (inspirado en Longines Polaris), movimiento Seagull ST1632 o Miyota 8215. ~130–140 € (AliExpress).
 
 ## Notas
 
