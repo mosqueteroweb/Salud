@@ -18,7 +18,7 @@ Lista de modelos a considerar. Las casillas se marcan ✅ cuando se compra/decid
 |--------|------|
 | Casio F-91W | ![Casio F-91W](../img/f91w-sm.png){ width=120 } |
 | G-Shock GA2100 | ![G-Shock GA-2100](../img/ga2100-sm.png){ width=120 } |
-| SteelDive Capitán Willard | _(pendiente)_ |
+| SteelDive Capitán Willard | ![SteelDive Capitán Willard](../img/steeldive-sm.png){ width=120 } |
 | Casio Marlín | _(pendiente)_ |
 | Reloj de lujo VK63 | _(pendiente)_ |
 | Casio G-Shock GW-M5610 Solar | ![Casio G-Shock GW-M5610](../img/gwm5610-sm.png){ width=120 } |
