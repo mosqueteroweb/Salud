@@ -1,6 +1,6 @@
-# Wiki Mosqueteroweb · Salud
+# Wiki Mosqueteroweb
 
-Recopilatorio personal de cosas que voy encontrando y quiero tener a mano, organizado en tres secciones:
+Recopilatorio personal de notas y recursos que voy encontrando y quiero tener a mano, organizado por temas:
 
 ## Secciones
 
@@ -9,6 +9,4 @@ Recopilatorio personal de cosas que voy encontrando y quiero tener a mano, organ
 - 💡 **[Curiosidades](curiosidades/index.md)** — datos, fenómenos y temas curiosos que no encajan en lo anterior pero merecen guardarse.
 - 🎓 **[Educación](educacion/sistema-university-in-a-box-alter.md)** — aprender con IA, métodos de estudio y sistemas de autoformación.
 
-*Cómo se usa esta web:* navega por las secciones del menú lateral o usa el buscador para encontrar cualquier tema. Para añadir o editar contenido se crea o modifica un archivo `.md` en la carpeta `docs/` del repositorio de GitHub; la web se actualiza sola con GitHub Actions.
-
-Esta web es estática (MkDocs), alojada en GitHub Pages, y su contenido es texto plano en Markdown, exportable a cualquier otro sistema.
+*Navega por las secciones del menú lateral o usa el buscador para encontrar cualquier tema.*

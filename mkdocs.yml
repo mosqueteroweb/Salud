@@ -1,5 +1,5 @@
-site_name: Wiki Mosqueteroweb · Salud
-site_description: Recopilatorio personal de salud, utilidades y curiosidades
+site_name: Wiki Mosqueteroweb
+site_description: Recopilatorio personal de notas, salud, utilidades y curiosidades
 site_url: https://mosqueteroweb.github.io/Salud/
 site_dir: _site
 theme:
@@ -20,6 +20,9 @@ theme:
         icon: material/weather-sunny
         name: Modo claro
   features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tracking
     - navigation.top
     - search.suggest
     - search.highlight
@@ -27,7 +30,8 @@ use_directory_urls: false
 extra_css:
   - stylesheets/extra.css
 plugins:
-  - search
+  - search:
+      lang: es
   - awesome-pages
 markdown_extensions:
   - admonition
