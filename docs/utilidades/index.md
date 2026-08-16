@@ -6,7 +6,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
 <div class="grid cards" markdown>
 
-- __Truco 1 — Vacío casero con cubo y manguera__
+- [__Truco 1 — Vacío casero con cubo y manguera__](truco-01-vacio-casero-con-cubo-y-manguera.md)
 
     ---
 
@@ -14,7 +14,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](truco-01-vacio-casero-con-cubo-y-manguera.md)
 
-- __Truco 2 — Empuñadura para cilindro de gas__
+- [__Truco 2 — Empuñadura para cilindro de gas__](truco-02-empunadura-para-cilindro-de-gas.md)
 
     ---
 
@@ -22,7 +22,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](truco-02-empunadura-para-cilindro-de-gas.md)
 
-- __Truco 3 — Asa para garrafa de agua__
+- [__Truco 3 — Asa para garrafa de agua__](truco-03-asa-para-garrafa-de-agua.md)
 
     ---
 
@@ -30,7 +30,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](truco-03-asa-para-garrafa-de-agua.md)
 
-- __Truco 4 — Manguera para dispensador de agua__
+- [__Truco 4 — Manguera para dispensador de agua__](truco-04-manguera-para-dispensador-de-agua.md)
 
     ---
 
@@ -38,7 +38,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](truco-04-manguera-para-dispensador-de-agua.md)
 
-- __Truco 5 — Tendedero con tapón de botella__
+- [__Truco 5 — Tendedero con tapón de botella__](truco-05-tendedero-con-tapon-de-botella.md)
 
     ---
 
@@ -46,7 +46,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](truco-05-tendedero-con-tapon-de-botella.md)
 
-- __Truco 6 — Embudo para moto o scooter__
+- [__Truco 6 — Embudo para moto o scooter__](truco-06-embudo-para-moto-o-scooter.md)
 
     ---
 
@@ -54,7 +54,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](truco-06-embudo-para-moto-o-scooter.md)
 
-- __Truco 7 — Corredera de tendedero con tuerca__
+- [__Truco 7 — Corredera de tendedero con tuerca__](truco-07-corredera-de-tendedero-con-tuerca.md)
 
     ---
 
@@ -62,7 +62,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](truco-07-corredera-de-tendedero-con-tuerca.md)
 
-- __Truco 8 — Pico antiderrame para garrafa__
+- [__Truco 8 — Pico antiderrame para garrafa__](truco-08-pico-antiderrame-para-garrafa.md)
 
     ---
 
@@ -70,7 +70,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](truco-08-pico-antiderrame-para-garrafa.md)
 
-- __Truco 9 — Trazar con linterna de móvil__
+- [__Truco 9 — Trazar con linterna de móvil__](truco-09-trazar-con-linterna-de-movil.md)
 
     ---
 
@@ -78,7 +78,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](truco-09-trazar-con-linterna-de-movil.md)
 
-- __Truco 10 — Botella transparente modificada__
+- [__Truco 10 — Botella transparente modificada__](truco-10-botella-transparente-modificada.md)
 
     ---
 
@@ -86,7 +86,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](truco-10-botella-transparente-modificada.md)
 
-- __Trucos domésticos para facilitar el trabajo__
+- [__Trucos domésticos para facilitar el trabajo__](trucos-domesticos-para-facilitar-el-trabajo.md)
 
     ---
 
@@ -94,7 +94,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](trucos-domesticos-para-facilitar-el-trabajo.md)
 
-- __Uso de la brida (cable tie) para amarrar__
+- [__Uso de la brida (cable tie) para amarrar__](uso-de-la-brida-cable-tie-para-amarrar.md)
 
     ---
 
@@ -108,7 +108,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
 <div class="grid cards" markdown>
 
-- __8 trucos para doblar la ropa__
+- [__8 trucos para doblar la ropa__](8-trucos-para-doblar-la-ropa.md)
 
     ---
 
@@ -116,7 +116,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](8-trucos-para-doblar-la-ropa.md)
 
-- __Fashion tip: cómo planchar tu camisa__
+- [__Fashion tip: cómo planchar tu camisa__](como-planchar-tu-camisa.md)
 
     ---
 
@@ -124,7 +124,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](como-planchar-tu-camisa.md)
 
-- __No tires la prenda manchada — quítala con caseros__
+- [__No tires la prenda manchada — quítala con caseros__](no-tires-la-prenda-manchada-quitala-con-caseros.md)
 
     ---
 
@@ -138,7 +138,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
 <div class="grid cards" markdown>
 
-- __5 nudos de cuerda para el día a día__
+- [__5 nudos de cuerda para el día a día__](5-nudos-de-cuerda-para-el-dia-a-dia.md)
 
     ---
 
@@ -146,7 +146,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](5-nudos-de-cuerda-para-el-dia-a-dia.md)
 
-- __12 nudos resistentes que todos deberían conocer__
+- [__12 nudos resistentes que todos deberían conocer__](12-nudos-resistentes-que-todos-deberian-conocer.md)
 
     ---
 
@@ -154,7 +154,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](12-nudos-resistentes-que-todos-deberian-conocer.md)
 
-- __Hacer el nudo de corbata medio Windsor__
+- [__Hacer el nudo de corbata medio Windsor__](hacer-el-nudo-de-corbata-medio-windsor.md)
 
     ---
 
@@ -168,7 +168,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
 <div class="grid cards" markdown>
 
-- __Relojes para comprar__
+- [__Relojes para comprar__](relojes-para-comprar.md)
 
     ---
 

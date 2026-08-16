@@ -4,7 +4,7 @@ Recopilatorio personal de notas y recursos que voy encontrando y quiero tener a 
 
 <div class="grid cards" markdown>
 
-- :material-heart:{ .lg .middle } __Salud__
+- :material-heart:{ .lg .middle } [__Salud__](salud/index.md)
 
     ---
 
@@ -12,7 +12,7 @@ Recopilatorio personal de notas y recursos que voy encontrando y quiero tener a 
 
     [:octicons-arrow-right-24: Ver sección](salud/index.md)
 
-- :material-tools:{ .lg .middle } __Utilidades__
+- :material-tools:{ .lg .middle } [__Utilidades__](utilidades/index.md)
 
     ---
 
@@ -20,7 +20,7 @@ Recopilatorio personal de notas y recursos que voy encontrando y quiero tener a 
 
     [:octicons-arrow-right-24: Ver sección](utilidades/index.md)
 
-- :material-lightbulb-on:{ .lg .middle } __Curiosidades__
+- :material-lightbulb-on:{ .lg .middle } [__Curiosidades__](curiosidades/index.md)
 
     ---
 
@@ -28,7 +28,7 @@ Recopilatorio personal de notas y recursos que voy encontrando y quiero tener a 
 
     [:octicons-arrow-right-24: Ver sección](curiosidades/index.md)
 
-- :material-school:{ .lg .middle } __Educación__
+- :material-school:{ .lg .middle } [__Educación__](educacion/sistema-university-in-a-box-alter.md)
 
     ---
 

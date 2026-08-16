@@ -4,7 +4,7 @@ Datos, fenómenos y temas curiosos que merecen guardarse:
 
 <div class="grid cards" markdown>
 
-- __Cómo leer las marcas de un neumático de coche__
+- [__Cómo leer las marcas de un neumático de coche__](como-leer-las-marcas-de-un-neumatico-de-coche.md)
 
     ---
 
@@ -12,7 +12,7 @@ Datos, fenómenos y temas curiosos que merecen guardarse:
 
     [:octicons-arrow-right-24: Leer](como-leer-las-marcas-de-un-neumatico-de-coche.md)
 
-- __El truco de aparcamiento que todo conductor debería saber__
+- [__El truco de aparcamiento que todo conductor debería saber__](el-truco-de-aparcamiento-que-todo-conductor-deberia-saber.md)
 
     ---
 
@@ -20,7 +20,7 @@ Datos, fenómenos y temas curiosos que merecen guardarse:
 
     [:octicons-arrow-right-24: Leer](el-truco-de-aparcamiento-que-todo-conductor-deberia-saber.md)
 
-- __Limpiador casero multiusos (pasta dental, vinagre y lavavajillas)__
+- [__Limpiador casero multiusos (pasta dental, vinagre y lavavajillas)__](limpiador-casero-multiusos-pasta-dental-vinagre-y-lavavajillas.md)
 
     ---
 
@@ -28,7 +28,7 @@ Datos, fenómenos y temas curiosos que merecen guardarse:
 
     [:octicons-arrow-right-24: Leer](limpiador-casero-multiusos-pasta-dental-vinagre-y-lavavajillas.md)
 
-- __Por qué unos tienen suerte y la mayoría no (Stanford)__
+- [__Por qué unos tienen suerte y la mayoría no (Stanford)__](por-que-unos-tienen-suerte-y-la-mayoria-no-stanford.md)
 
     ---
 
@@ -36,7 +36,7 @@ Datos, fenómenos y temas curiosos que merecen guardarse:
 
     [:octicons-arrow-right-24: Leer](por-que-unos-tienen-suerte-y-la-mayoria-no-stanford.md)
 
-- __Resolver el cubo de Rubik con un algoritmo__
+- [__Resolver el cubo de Rubik con un algoritmo__](resolver-el-cubo-de-rubik-con-un-algoritmo.md)
 
     ---
 

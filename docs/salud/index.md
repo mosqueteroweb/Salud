@@ -4,7 +4,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
 <div class="grid cards" markdown>
 
-- __3 cosas que hacer (y no hacer) con la fascitis plantar__
+- [__3 cosas que hacer (y no hacer) con la fascitis plantar__](3-cosas-que-hacer-y-no-hacer-con-la-fascitis-plantar.md)
 
     ---
 
@@ -12,7 +12,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](3-cosas-que-hacer-y-no-hacer-con-la-fascitis-plantar.md)
 
-- __Abdominales inferiores con reverse crunch__
+- [__Abdominales inferiores con reverse crunch__](abdominales-inferiores-con-reverse-crunch.md)
 
     ---
 
@@ -20,7 +20,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](abdominales-inferiores-con-reverse-crunch.md)
 
-- __Abdominales sentado en silla__
+- [__Abdominales sentado en silla__](abdominales-sentado-en-silla.md)
 
     ---
 
@@ -28,7 +28,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](abdominales-sentado-en-silla.md)
 
-- __Caminar para eliminar el dolor de rodilla__
+- [__Caminar para eliminar el dolor de rodilla__](caminar-para-eliminar-el-dolor-de-rodilla.md)
 
     ---
 
@@ -36,7 +36,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](caminar-para-eliminar-el-dolor-de-rodilla.md)
 
-- __Ejercicios en cama para dolor de espalda__
+- [__Ejercicios en cama para dolor de espalda__](ejercicios-en-cama-para-dolor-de-espalda.md)
 
     ---
 
@@ -44,7 +44,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](ejercicios-en-cama-para-dolor-de-espalda.md)
 
-- __Ejercicios para corregir la joroba (cifosis postural)__
+- [__Ejercicios para corregir la joroba (cifosis postural)__](ejercicios-para-corregir-la-joroba-cifosis-postural.md)
 
     ---
 
@@ -52,7 +52,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](ejercicios-para-corregir-la-joroba-cifosis-postural.md)
 
-- __Ejercicios para el bruxismo__
+- [__Ejercicios para el bruxismo__](ejercicios-para-el-bruxismo.md)
 
     ---
 
@@ -60,7 +60,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](ejercicios-para-el-bruxismo.md)
 
-- __Ejercicios para el vértigo__
+- [__Ejercicios para el vértigo__](ejercicios-para-el-vertigo.md)
 
     ---
 
@@ -68,7 +68,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](ejercicios-para-el-vertigo.md)
 
-- __Ejercicios para la fascitis plantar__
+- [__Ejercicios para la fascitis plantar__](ejercicios-para-la-fascitis-plantar.md)
 
     ---
 
@@ -76,7 +76,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](ejercicios-para-la-fascitis-plantar.md)
 
-- __Estiramiento de espalda baja con pared__
+- [__Estiramiento de espalda baja con pared__](estiramiento-de-espalda-baja-con-pared.md)
 
     ---
 
@@ -84,7 +84,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](estiramiento-de-espalda-baja-con-pared.md)
 
-- __Hábitos de longevidad de China__
+- [__Hábitos de longevidad de China__](habitos-de-longevidad-de-china.md)
 
     ---
 
@@ -92,7 +92,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](habitos-de-longevidad-de-china.md)
 
-- __Masaje del esternocleidomastoideo (tensión, bruxismo y tinnitus)__
+- [__Masaje del esternocleidomastoideo (tensión, bruxismo y tinnitus)__](masaje-del-musculo-esternocleidomastoideo-para-tension-bruxismo-y-tinnitus.md)
 
     ---
 
@@ -100,7 +100,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](masaje-del-musculo-esternocleidomastoideo-para-tension-bruxismo-y-tinnitus.md)
 
-- __Las técnicas de masaje más efectivas para aliviar el cansancio__
+- [__Las técnicas de masaje más efectivas para aliviar el cansancio__](masaje-para-aliviar-el-cansancio.md)
 
     ---
 
@@ -108,7 +108,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](masaje-para-aliviar-el-cansancio.md)
 
-- __Qué llevar en el botiquín básico__
+- [__Qué llevar en el botiquín básico__](que-llevar-en-el-botiquin-basico.md)
 
     ---
 
@@ -116,7 +116,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](que-llevar-en-el-botiquin-basico.md)
 
-- __Rutina de cardio y coordinación sin equipo (1 minuto)__
+- [__Rutina de cardio y coordinación sin equipo (1 minuto)__](rutina-de-cardio-y-coordinacion-sin-equipo-1-minuto.md)
 
     ---
 
@@ -124,7 +124,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](rutina-de-cardio-y-coordinacion-sin-equipo-1-minuto.md)
 
-- __Rutina matutina de 4 ejercicios al despertar__
+- [__Rutina matutina de 4 ejercicios al despertar__](rutina-matutina-de-4-ejercicios-al-despertar.md)
 
     ---
 
@@ -132,7 +132,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](rutina-matutina-de-4-ejercicios-al-despertar.md)
 
-- __Rutina matutina de 7 ejercicios para longevidad__
+- [__Rutina matutina de 7 ejercicios para longevidad__](rutina-matutina-de-7-ejercicios-para-longevidad.md)
 
     ---
 
@@ -140,7 +140,7 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](rutina-matutina-de-7-ejercicios-para-longevidad.md)
 
-- __Técnica de atado de cordones para zapatillas__
+- [__Técnica de atado de cordones para zapatillas__](tecnica-de-atado-de-cordones-para-zapatillas.md)
 
     ---
 
