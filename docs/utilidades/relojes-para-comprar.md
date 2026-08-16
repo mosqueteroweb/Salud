@@ -20,7 +20,7 @@ Lista de modelos a considerar. Las casillas se marcan ✅ cuando se compra/decid
 | G-Shock GA2100 | ![G-Shock GA-2100](../img/ga2100-sm.png){ width=120 } |
 | SteelDive Capitán Willard | ![SteelDive Capitán Willard](../img/steeldive-sm.png){ width=120 } |
 | Casio Marlín | _(pendiente)_ |
-| Reloj de lujo VK63 | _(pendiente)_ |
+| Reloj de lujo VK63 | ![Reloj de lujo VK63](../img/vk63-sm.png){ width=120 } |
 | Casio G-Shock GW-M5610 Solar | ![Casio G-Shock GW-M5610](../img/gwm5610-sm.png){ width=120 } |
 | Berny Compressor | ![Berny Compressor](../img/berny-sm.png){ width=120 } |
 
