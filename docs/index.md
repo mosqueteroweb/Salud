@@ -28,13 +28,13 @@ Recopilatorio personal de notas y recursos que voy encontrando y quiero tener a 
 
     [:octicons-arrow-right-24: Ver sección](curiosidades/index.md)
 
-- :material-school:{ .lg .middle } [__Educación__](educacion/sistema-university-in-a-box-alter.md)
+- :material-school:{ .lg .middle } [__Educación__](educacion/index.md)
 
     ---
 
     Aprender con IA, métodos de estudio y sistemas de autoformación.
 
-    [:octicons-arrow-right-24: Ver sección](educacion/sistema-university-in-a-box-alter.md)
+    [:octicons-arrow-right-24: Ver sección](educacion/index.md)
 
 </div>
 
