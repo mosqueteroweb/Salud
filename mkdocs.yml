@@ -28,7 +28,7 @@ theme:
     - search.highlight
 use_directory_urls: false
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/extra-v2.css
 plugins:
   - search:
       lang: es
