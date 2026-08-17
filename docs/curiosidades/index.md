@@ -44,11 +44,11 @@ Datos, fenómenos y temas curiosos que merecen guardarse:
 
     [:octicons-arrow-right-24: Leer](resolver-el-cubo-de-rubik-con-un-algoritmo.md)
 
-- [__Vídeos de interés__](videos-de-interes.md)
+- [__Magia sencilla__](videos-de-interes.md)
 
     ---
 
-    Vídeos curiosos y de entretenimiento, como el clip de humor de @SocietyKnight.
+    Vídeo de humor de @SocietyKnight: cata de aceite, reacción y un truco de magia.
 
     [:octicons-arrow-right-24: Leer](videos-de-interes.md)
 

@@ -1,4 +1,4 @@
-# Vídeos de interés
+# Magia sencilla
 
 Recopilación de vídeos curiosos y de entretenimiento que merecen la pena guardarse.
 
