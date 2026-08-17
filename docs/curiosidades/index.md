@@ -44,4 +44,12 @@ Datos, fenómenos y temas curiosos que merecen guardarse:
 
     [:octicons-arrow-right-24: Leer](resolver-el-cubo-de-rubik-con-un-algoritmo.md)
 
+- [__Vídeos de interés__](videos-de-interes.md)
+
+    ---
+
+    Vídeos curiosos y de entretenimiento, como el clip de humor de @SocietyKnight.
+
+    [:octicons-arrow-right-24: Leer](videos-de-interes.md)
+
 </div>
