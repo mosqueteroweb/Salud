@@ -176,4 +176,12 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](relojes-para-comprar.md)
 
+- [__6 documentos que pedir antes de comprar un piso__](documentos-antes-de-comprar-piso.md)
+
+    ---
+
+    Los 6 papeles imprescindibles (ninguno cuesta más de 15 €) y por qué pedirlos.
+
+    [:octicons-arrow-right-24: Leer](documentos-antes-de-comprar-piso.md)
+
 </div>
