@@ -184,4 +184,12 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](documentos-antes-de-comprar-piso.md)
 
+- [__Relojes Casio con 10 años de batería__](relojes-casio-10-anos-bateria.md)
+
+    ---
+
+    Comparativa de 10 modelos Casio de larga duración (pila > 10 años).
+
+    [:octicons-arrow-right-24: Leer](relojes-casio-10-anos-bateria.md)
+
 </div>

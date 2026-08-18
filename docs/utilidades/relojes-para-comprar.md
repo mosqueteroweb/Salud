@@ -12,6 +12,8 @@ Lista de modelos a considerar. Las casillas se marcan ✅ cuando se compra/decid
 - [ ] **Casio G-Shock GW-M5610 Solar** — digital resistente (200 m), módulo Tough Solar y sincronización atómica Multi Band 6. Rango ~105–139 €.
 - [ ] **Berny Compressor** — reloj de buceo automático estilo "compressor" (inspirado en Longines Polaris), movimiento Seagull ST1632 o Miyota 8215. ~130–140 € (AliExpress).
 
+> 📌 **Relojes Casio con 10 años de batería:** comparativa de 10 modelos Casio de larga duración → [ver artículo](relojes-casio-10-anos-bateria.md)
+
 ## Imágenes
 
 | Modelo | Foto |
