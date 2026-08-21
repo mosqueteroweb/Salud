@@ -1,0 +1,19 @@
+/* Fondo con imagen (textura orgánica verde) — SOLO en modo claro */
+html body[data-md-color-scheme="default"] {
+  background-image: url(../assets/bg-verde.webp) !important;
+  background-repeat: repeat !important;
+  background-color: #e8f3e8 !important;
+}
+
+/* Tarjetas (grid cards): borde verde que destaque + esquinas redondeadas */
+.md-typeset .grid.cards > ul > li {
+  border: 1.5px solid rgba(14, 122, 62, 0.55) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 1px 4px rgba(14, 122, 62, 0.10) !important;
+  transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease !important;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: rgba(14, 122, 62, 0.85) !important;
+  box-shadow: 0 4px 14px rgba(14, 122, 62, 0.22) !important;
+  transform: translateY(-2px);
+}
