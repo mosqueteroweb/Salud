@@ -94,6 +94,14 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](trucos-domesticos-para-facilitar-el-trabajo.md)
 
+- [__6 trucos de reparación casera para el hogar__](6-trucos-de-reparacion-casera.md)
+
+    ---
+
+    Soluciones rápidas para lavadora, cajones, inodoro, bombilla LED, flexo y cocina de gas.
+
+    [:octicons-arrow-right-24: Leer](6-trucos-de-reparacion-casera.md)
+
 - [__Uso de la brida (cable tie) para amarrar__](uso-de-la-brida-cable-tie-para-amarrar.md)
 
     ---
