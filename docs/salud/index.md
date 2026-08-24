@@ -36,6 +36,14 @@ Artículos sobre salud, primeros auxilios, botiquines, hábitos y bienestar:
 
     [:octicons-arrow-right-24: Leer](caminar-para-eliminar-el-dolor-de-rodilla.md)
 
+- [__Descompresión vertebral y salud de la espalda__](descompresion-vertebral-colgarse.md)
+
+    ---
+
+    Técnica de suspensión y tracción gravitacional para descomprimir discos y aliviar la columna.
+
+    [:octicons-arrow-right-24: Leer](descompresion-vertebral-colgarse.md)
+
 - [__Ejercicios en cama para dolor de espalda__](ejercicios-en-cama-para-dolor-de-espalda.md)
 
     ---
