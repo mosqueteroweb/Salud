@@ -52,4 +52,12 @@ Datos, fenómenos y temas curiosos que merecen guardarse:
 
     [:octicons-arrow-right-24: Leer](videos-de-interes.md)
 
+- [__15 reglas valiosas para la vida y el carácter__](15-reglas-del-hombre.md)
+
+    ---
+
+    Principios de conducta, disciplina personal y relaciones expuestos por Bernardo Jurado.
+
+    [:octicons-arrow-right-24: Leer](15-reglas-del-hombre.md)
+
 </div>
