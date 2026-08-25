@@ -110,6 +110,14 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](uso-de-la-brida-cable-tie-para-amarrar.md)
 
+- [__Mezclas de limpieza infalibles para un hogar impecable__](mezclas-de-limpieza-infalibles-para-el-hogar.md)
+
+    ---
+
+    8 soluciones y combinaciones caseras para limpiar grifos, cristales, juntas, madera y grasa.
+
+    [:octicons-arrow-right-24: Leer](mezclas-de-limpieza-infalibles-para-el-hogar.md)
+
 </div>
 
 ## Ropa y cuidado
