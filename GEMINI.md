@@ -73,7 +73,7 @@ Este repositorio contiene la wiki personal construida con **MkDocs Material** y 
 ## ⚡ Regla Permanente de Flujo Completo
 - Al añadir o actualizar contenido en la wiki:
   1. Crear el artículo y descargar o generar los recursos multimedia necesarios en local.
-  2. Indexar la tarjeta en el `index.md` de la sección.
+  2. **Indexar y actualizar menús**: Actualizar las tarjetas en `index.md` de la sección y el archivo de navegación `.pages` de la subcategoría para reflejar el artículo en el menú lateral.
   3. Validar la compilación con `mkdocs build`.
   4. **Ejecutar siempre en local y subir a GitHub (`git add`, `git commit`, `git push origin main`) de forma directa y automática, sin preguntar.**
   5. **Verificar con `gh run watch` o `gh run list` que el GitHub Action ha finalizado con éxito (`completed / success`) sin errores de despliegue.**
