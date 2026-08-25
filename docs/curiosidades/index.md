@@ -60,4 +60,12 @@ Datos, fenómenos y temas curiosos que merecen guardarse:
 
     [:octicons-arrow-right-24: Leer](15-reglas-del-hombre.md)
 
+- [__Los 4 tipos de riqueza (financiera, social, física y tiempo)__](los-4-tipos-de-riqueza.md)
+
+    ---
+
+    El dinero no es la única riqueza. Comprende las cuatro dimensiones y el valor prioritario de la salud y el tiempo.
+
+    [:octicons-arrow-right-24: Leer](los-4-tipos-de-riqueza.md)
+
 </div>
