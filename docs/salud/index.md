@@ -68,6 +68,14 @@ Artículos, ejercicios y guías sobre salud postural, movilidad, alivio del dolo
 
     [:octicons-arrow-right-24: Leer](ejercicios-para-el-vertigo.md)
 
+- [__Presión detrás de las orejas (vértigo, tensión y zumbidos)__](presion-detras-de-las-orejas-para-vertigo-mareos-y-tinnitus.md)
+
+    ---
+
+    Técnica de acupresión retroauricular de 1 minuto para aliviar mareos, dolor tensional y tinnitus.
+
+    [:octicons-arrow-right-24: Leer](presion-detras-de-las-orejas-para-vertigo-mareos-y-tinnitus.md)
+
 </div>
 
 ## Pies, rodillas y movilidad
