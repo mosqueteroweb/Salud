@@ -67,3 +67,14 @@ Este repositorio contiene la wiki personal construida con **MkDocs Material** y 
      (o usando el Python del entorno virtual: `python3 -m mkdocs build`). Debe finalizar con 0 advertencias.
 2. **Publicación**:
    - Todo commit y push a la rama `main` activa el workflow `.github/workflows/deploy.yml`, que compila con MkDocs y publica automáticamente en `https://mosqueteroweb.github.io/Salud/`.
+
+---
+
+## ⚡ Regla Permanente de Flujo Completo
+- Al añadir o actualizar contenido en la wiki:
+  1. Crear el artículo y descargar los recursos multimedia necesarios en local.
+  2. Indexar la tarjeta en el `index.md` de la sección.
+  3. Validar la compilación con `mkdocs build`.
+  4. **Ejecutar siempre en local y subir a GitHub (`git add`, `git commit`, `git push origin main`) de forma directa y automática, sin preguntar.**
+  5. **Entregar siempre al usuario el enlace web directo al artículo publicado.**
+
