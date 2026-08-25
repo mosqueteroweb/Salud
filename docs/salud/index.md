@@ -190,4 +190,12 @@ Artículos, ejercicios y guías sobre salud postural, movilidad, alivio del dolo
 
     [:octicons-arrow-right-24: Leer](que-llevar-en-el-botiquin-basico.md)
 
+- [__Cómo reconocer un infarto y actuar si estás solo en casa__](como-reconocer-un-infarto-y-actuar-si-estas-solo.md)
+
+    ---
+
+    Síntomas clave, llamada al 112, apertura de puerta y primeros auxilios de emergencia.
+
+    [:octicons-arrow-right-24: Leer](como-reconocer-un-infarto-y-actuar-si-estas-solo.md)
+
 </div>
