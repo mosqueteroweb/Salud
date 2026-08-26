@@ -98,6 +98,14 @@ Artículos, ejercicios y guías sobre salud postural, movilidad, alivio del dolo
 
     [:octicons-arrow-right-24: Leer](ejercicios-para-la-fascitis-plantar.md)
 
+- [__Fascitis plantar: 3 ejercicios clave para curar el dolor de talón__](fascitis-plantar-3-ejercicios-para-el-dolor-de-talon.md)
+
+    ---
+
+    Guía anatómica con 3 ejercicios esenciales de estiramiento y fortalecimiento para rehabilitar la fascia.
+
+    [:octicons-arrow-right-24: Leer](fascitis-plantar-3-ejercicios-para-el-dolor-de-talon.md)
+
 - [__Caminar para eliminar el dolor de rodilla__](caminar-para-eliminar-el-dolor-de-rodilla.md)
 
     ---
