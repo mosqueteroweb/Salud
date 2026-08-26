@@ -126,6 +126,14 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](limpiar-rieles-ventanas-correderas.md)
 
+- [__6 trucos ingeniosos para la cocina y el hogar__](6-trucos-ingeniosos-cocina-hogar.md)
+
+    ---
+
+    Hacks prácticos para abrir tarros, pelar huevos, limpiar tuppers, desatar nudos y extraer corchos.
+
+    [:octicons-arrow-right-24: Leer](6-trucos-ingeniosos-cocina-hogar.md)
+
 </div>
 
 ## Ropa y cuidado
