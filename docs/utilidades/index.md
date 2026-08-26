@@ -118,6 +118,14 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](mezclas-de-limpieza-infalibles-para-el-hogar.md)
 
+- [__Truco para limpiar rieles de ventanas correderas__](limpiar-rieles-ventanas-correderas.md)
+
+    ---
+
+    El método más fácil y rápido para limpiar raíles y guías sin esfuerzo con una toallita o papel.
+
+    [:octicons-arrow-right-24: Leer](limpiar-rieles-ventanas-correderas.md)
+
 </div>
 
 ## Ropa y cuidado
