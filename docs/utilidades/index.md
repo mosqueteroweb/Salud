@@ -134,6 +134,14 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](6-trucos-ingeniosos-cocina-hogar.md)
 
+- [__Cómo abren los bomberos puertas cerradas en segundos__](apertura-puertas-emergencia-bomberos.md)
+
+    ---
+
+    Técnicas de apertura rápida no destructiva (bypass) en resbalones y cerrojos basculantes, y cómo proteger tu hogar.
+
+    [:octicons-arrow-right-24: Leer](apertura-puertas-emergencia-bomberos.md)
+
 </div>
 
 ## Ropa y cuidado
