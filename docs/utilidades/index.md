@@ -196,6 +196,20 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
 </div>
 
+## Tecnología y digital
+
+<div class="grid cards" markdown>
+
+- [__Cómo cambiar el nombre de tu correo de Gmail__](como-cambiar-nombre-correo-gmail.md)
+
+    ---
+
+    Guía paso a paso para modificar tu dirección @gmail.com sin perder los correos de tu cuenta antigua.
+
+    [:octicons-arrow-right-24: Leer](como-cambiar-nombre-correo-gmail.md)
+
+</div>
+
 ## Otros
 
 <div class="grid cards" markdown>
