@@ -1,3 +1,9 @@
+---
+tags:
+  - utilidades
+  - trucos-caseros
+---
+
 # Truco 2 — Empuñadura para cilindro de gas
 
 

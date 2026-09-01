@@ -1,3 +1,10 @@
+---
+tags:
+  - inversión
+  - productividad
+  - desarrollo-personal
+---
+
 # 15 reglas valiosas para la vida y el carácter
 
 Recopilación de 15 principios de conducta, disciplina personal y relaciones expuestos por Bernardo Jurado (vía [@Camiloruimind](https://x.com/Camiloruimind/status/2091676869204557853)).

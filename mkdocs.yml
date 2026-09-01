@@ -33,6 +33,7 @@ plugins:
   - search:
       lang: es
   - awesome-pages
+  - tags
 markdown_extensions:
   - admonition
   - pymdownx.details

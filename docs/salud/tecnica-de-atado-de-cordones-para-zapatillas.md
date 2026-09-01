@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - utilidades
+---
+
 # Técnica de atado de cordones para zapatillas
 
 

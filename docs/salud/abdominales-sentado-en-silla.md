@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - ejercicio
+---
+
 # Abdominales sentado en silla
 
 

@@ -1,3 +1,9 @@
+---
+tags:
+  - productividad
+  - desarrollo-personal
+---
+
 # Por qué unos tienen suerte y la mayoría no (Stanford)
 
 

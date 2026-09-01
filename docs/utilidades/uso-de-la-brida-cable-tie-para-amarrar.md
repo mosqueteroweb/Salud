@@ -1,3 +1,9 @@
+---
+tags:
+  - utilidades
+  - bricolaje
+---
+
 # Uso de la brida (cable tie) para amarrar
 
 Una **brida** (también llamada *zip tie*, *abrazadera de plástico* o *cable tie*) es una cinta de plástico con trinquete que, al tirar, se aprieta de forma permanente. En el vídeo original se usa para demostrar cómo sujetar dos cañas de bambú entrecruzadas.

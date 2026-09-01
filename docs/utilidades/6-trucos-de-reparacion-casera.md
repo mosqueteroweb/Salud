@@ -1,3 +1,9 @@
+---
+tags:
+  - utilidades
+  - bricolaje
+---
+
 # 6 trucos de reparación casera para el hogar
 
 Vídeo demostrativo (88 s) con **6 trucos rápidos de fontanería, electricidad y mantenimiento doméstico** para solucionar averías habituales sin necesidad de llamar a un técnico ni comprar repuestos costosos.

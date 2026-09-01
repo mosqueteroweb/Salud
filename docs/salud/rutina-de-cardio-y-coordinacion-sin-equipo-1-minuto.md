@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - ejercicio
+---
+
 # Rutina de cardio y coordinación sin equipo (1 minuto)
 
 

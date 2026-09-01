@@ -1,3 +1,9 @@
+---
+tags:
+  - curiosidades
+  - pasatiempos
+---
+
 # Resolver el cubo de Rubik con un algoritmo
 
 

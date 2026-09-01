@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - ejercicio
+---
+
 # Ejercicios de Kegel
 
 

@@ -1,3 +1,9 @@
+---
+tags:
+  - utilidades
+  - relojes
+---
+
 # Relojes Casio con 10 años de batería
 
 Comparativa de modelos Casio con pila de larga duración (más de 10 años de autonomía). Datos oficiales de Casio España.

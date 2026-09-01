@@ -1,3 +1,9 @@
+---
+tags:
+  - utilidades
+  - trucos-caseros
+---
+
 # Truco 4 — Manguera para dispensador de agua
 
 

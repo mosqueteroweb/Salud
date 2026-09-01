@@ -1,3 +1,9 @@
+---
+tags:
+  - utilidades
+  - trucos-caseros
+---
+
 # Truco 5 — Tendedero con tapón de botella
 
 

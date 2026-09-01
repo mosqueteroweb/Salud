@@ -1,1 +1,5 @@
 title: 🎓 Educación
+nav:
+  - index.md
+  - sistema-university-in-a-box-alter.md
+  - pensamiento-sistemico-framework-dart.md

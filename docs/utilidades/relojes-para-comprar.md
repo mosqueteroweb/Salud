@@ -1,3 +1,10 @@
+---
+tags:
+  - utilidades
+  - compras
+  - relojes
+---
+
 # Relojes para comprar
 
 Lista de modelos a considerar. Las casillas se marcan ✅ cuando se compra/decide (pulsa la casilla para marcarla).

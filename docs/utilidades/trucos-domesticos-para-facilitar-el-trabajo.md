@@ -1,3 +1,10 @@
+---
+tags:
+  - productividad
+  - utilidades
+  - hogar
+---
+
 # Trucos domésticos para facilitar el trabajo
 
 

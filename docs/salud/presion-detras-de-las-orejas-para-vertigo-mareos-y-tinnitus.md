@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - bienestar
+---
+
 # Presión detrás de las orejas (vértigo, dolor tensional y zumbidos)
 
 Técnica de acupresión y descompresión retroauricular (zona del punto *Yifeng* y base mastoidea) para aliviar rápidamente la sensación de mareo o vértigo, cortar dolores de cabeza provocados por tensión en la base del cráneo, mejorar el equilibrio y mitigar el zumbido de oídos (tinnitus).

@@ -1,3 +1,9 @@
+---
+tags:
+  - utilidades
+  - estilo
+---
+
 # Hacer el nudo de corbata medio Windsor
 
 

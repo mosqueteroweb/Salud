@@ -1,3 +1,9 @@
+---
+tags:
+  - utilidades
+  - trucos-caseros
+---
+
 # Truco 6 — Embudo para moto o scooter
 
 

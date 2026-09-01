@@ -1,3 +1,10 @@
+---
+tags:
+  - utilidades
+  - organización
+  - hogar
+---
+
 # Trucos para doblar la ropa de cama
 
 Vídeo demostrativo (46 s) con trucos para plegar ropa de cama de lino (sábanas, fundas de almohada, edredones y toallas) de forma compacta y ordenada.

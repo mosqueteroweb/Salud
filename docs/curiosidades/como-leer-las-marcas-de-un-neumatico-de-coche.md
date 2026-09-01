@@ -1,3 +1,9 @@
+---
+tags:
+  - curiosidades
+  - automoción
+---
+
 # Cómo leer las marcas de un neumático de coche
 
 Este vídeo explica cómo interpretar las marcas que aparecen en el lateral de un neumático de coche, lo cual es muy útil para el mantenimiento y la seguridad del vehículo:

@@ -1,3 +1,9 @@
+---
+tags:
+  - utilidades
+  - bricolaje
+---
+
 # Cómo ajustar una ventana de PVC
 
 Truco doméstico (20 s) para regular una ventana de PVC que no cierra bien: con un ajuste sencillo en los tornillos de la bisagra se corrige la hoja para que cierre alineada y hermética.

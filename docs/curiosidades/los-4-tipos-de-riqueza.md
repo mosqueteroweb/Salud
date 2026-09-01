@@ -1,3 +1,11 @@
+---
+tags:
+  - inversión
+  - productividad
+  - finanzas
+  - desarrollo-personal
+---
+
 # Los 4 tipos de riqueza
 
 Nos han enseñado habitualmente que el dinero es el único tipo de riqueza. Sin embargo, reducir el éxito a una sola métrica material es un error que suele costar caro con el paso de los años. Existen cuatro dimensiones fundamentales de la riqueza que es indispensable comprender y equilibrar para vivir con plenitud.

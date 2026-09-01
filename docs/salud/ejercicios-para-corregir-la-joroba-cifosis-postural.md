@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - postura
+---
+
 # Ejercicios para corregir la joroba (cifosis postural)
 
 

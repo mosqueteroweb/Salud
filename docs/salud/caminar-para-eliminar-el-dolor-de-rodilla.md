@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - movilidad
+---
+
 # Caminar para eliminar el dolor de rodilla
 
 

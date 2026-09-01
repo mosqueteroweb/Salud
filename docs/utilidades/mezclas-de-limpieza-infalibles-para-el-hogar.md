@@ -1,3 +1,10 @@
+---
+tags:
+  - utilidades
+  - limpieza
+  - hogar
+---
+
 # Mezclas de limpieza infalibles para un hogar impecable
 
 Guía práctica de fórmulas y soluciones caseras eficaces para limpiar, desinfectar y mantener las superficies del hogar utilizando ingredientes cotidianos y económicos.

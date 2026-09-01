@@ -1,3 +1,9 @@
+---
+tags:
+  - utilidades
+  - trucos-caseros
+---
+
 # Truco 8 — Pico antiderrame para garrafa
 
 

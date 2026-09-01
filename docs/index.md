@@ -32,9 +32,17 @@ Recopilatorio personal de notas y recursos que voy encontrando y quiero tener a 
 
     ---
 
-    Aprender con IA, métodos de estudio y sistemas de autoformación.
+    Aprender con IA, métodos de estudio, modelos mentales y sistemas de autoformación.
 
     [:octicons-arrow-right-24: Ver sección](educacion/index.md)
+
+- :material-tag-multiple:{ .lg .middle } [__Etiquetas__](tags.md)
+
+    ---
+
+    Índice temático transversal para descubrir artículos por etiquetas (productividad, inversión, etc.).
+
+    [:octicons-arrow-right-24: Ver etiquetas](tags.md)
 
 </div>
 

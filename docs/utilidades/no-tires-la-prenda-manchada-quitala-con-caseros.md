@@ -1,3 +1,10 @@
+---
+tags:
+  - utilidades
+  - limpieza
+  - hogar
+---
+
 # No tires la prenda manchada — quítala con caseros
 
 

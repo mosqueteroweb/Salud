@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - bienestar
+---
+
 # Las técnicas de masaje más efectivas para aliviar el cansancio del día
 
 Técnicas de masaje para aliviar la fatiga acumulada durante el día.

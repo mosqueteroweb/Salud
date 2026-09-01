@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - ejercicio
+---
+
 # Abdominales inferiores con reverse crunch
 
 

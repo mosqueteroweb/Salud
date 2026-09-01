@@ -1,3 +1,9 @@
+---
+tags:
+  - curiosidades
+  - automoción
+---
+
 # El truco de aparcamiento que todo conductor debería saber
 
 Vídeo animado (vista cenital) que enseña a aparcar en paralelo en una plaza a la derecha.

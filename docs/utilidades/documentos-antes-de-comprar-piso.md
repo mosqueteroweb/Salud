@@ -1,3 +1,10 @@
+---
+tags:
+  - inversión
+  - utilidades
+  - inmobiliaria
+---
+
 # 6 documentos que pedir antes de comprar un piso
 
 Antes de comprar cualquier piso hay 6 documentos que hay que pedir. Ninguno cuesta más de 15 €. Y en cinco años no he visto a casi nadie pedirlos todos:

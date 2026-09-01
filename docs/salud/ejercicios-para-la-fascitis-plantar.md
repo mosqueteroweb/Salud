@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - movilidad
+---
+
 # Ejercicios para la fascitis plantar
 
 

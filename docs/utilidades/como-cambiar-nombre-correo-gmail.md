@@ -1,3 +1,10 @@
+---
+tags:
+  - productividad
+  - utilidades
+  - herramientas-digitales
+---
+
 # Cómo cambiar el nombre de tu correo de Gmail
 
 Muchas personas crearon su cuenta de Gmail hace años con apodos informales, erratas o nombres poco profesionales (`er_lokito_vasilon@gmail.com`) y asumen que para tener un correo serio deben empezar de cero, perdiendo suscripciones, compras, fotos, archivos de Drive y contactos. 

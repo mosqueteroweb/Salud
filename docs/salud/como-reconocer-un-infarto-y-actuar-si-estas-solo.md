@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - primeros-auxilios
+---
+
 # Cómo reconocer un infarto y qué hacer si estás solo en casa
 
 Guía de primeros auxilios y supervivencia para identificar los síntomas tempranos de un infarto agudo de miocardio y seguir el protocolo de emergencia cuando te encuentras solo en el hogar.

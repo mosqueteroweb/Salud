@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - espalda
+---
+
 # Descompresión vertebral y salud de la espalda
 
 Vídeo divulgativo de `@salud.senior` sobre la técnica de descompresión vertebral mediante suspensión pasiva (colgarse de una barra o del marco de una puerta) para aliviar discos vertebrales comprimidos, reducir la rigidez y mejorar la postura.

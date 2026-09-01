@@ -1,3 +1,10 @@
+---
+tags:
+  - curiosidades
+  - limpieza
+  - hogar
+---
+
 # Limpiador casero multiusos (pasta dental, vinagre y lavavajillas)
 
 Este vídeo muestra cómo preparar un **limpiador casero multiusos** con cuatro ingredientes comunes, y cómo aplicarlo en varias superficies de la cocina:

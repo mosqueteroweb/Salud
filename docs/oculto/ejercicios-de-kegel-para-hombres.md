@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - ejercicio
+---
+
 # Ejercicios de Kegel para hombres
 
 Rutina de ejercicios de suelo pélvico (Kegel) para hombres, dividida en 8 movimientos cortos. Realiza las repeticiones que indica cada clip y descansa unos segundos entre series.

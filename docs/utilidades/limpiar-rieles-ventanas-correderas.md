@@ -1,3 +1,10 @@
+---
+tags:
+  - utilidades
+  - limpieza
+  - hogar
+---
+
 # Truco para limpiar rieles de ventanas correderas fácilmente
 
 Guía práctica y truco definitivo para limpiar los raíles y guías estrechas de ventanas y puertas correderas en segundos, sin desmontar las hojas, sin cepillos especiales y sin salpicar paredes ni cristales.

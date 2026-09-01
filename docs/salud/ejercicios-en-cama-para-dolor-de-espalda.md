@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - espalda
+---
+
 # Ejercicios en cama para dolor de espalda
 
 

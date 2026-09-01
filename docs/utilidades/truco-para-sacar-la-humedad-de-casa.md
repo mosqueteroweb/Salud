@@ -1,3 +1,9 @@
+---
+tags:
+  - utilidades
+  - hogar
+---
+
 # Truco para sacar la humedad de casa
 
 Vídeo corto donde se muestra un tip práctico para eliminar la humedad del hogar sin coste económico. Publicación original: "Por este tip para sacar la humedad de tu casa sin gastar un centavo."

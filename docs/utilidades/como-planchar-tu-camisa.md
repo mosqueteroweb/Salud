@@ -1,3 +1,9 @@
+---
+tags:
+  - utilidades
+  - hogar
+---
+
 # Fashion tip: cómo planchar tu camisa
 
 Tip de moda: cómo planchar tu camisa.

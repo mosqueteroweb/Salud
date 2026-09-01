@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - bienestar
+---
+
 # Ejercicios para el vértigo
 
 

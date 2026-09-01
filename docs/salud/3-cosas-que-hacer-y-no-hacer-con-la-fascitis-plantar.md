@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - movilidad
+---
+
 # 3 cosas que hacer (y no hacer) con la fascitis plantar
 
 

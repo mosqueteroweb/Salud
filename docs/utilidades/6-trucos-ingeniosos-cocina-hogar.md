@@ -1,3 +1,9 @@
+---
+tags:
+  - utilidades
+  - hogar
+---
+
 # 6 trucos ingeniosos para la cocina y el hogar
 
 Vídeo recopilatorio (4 min) con **6 trucos prácticos y virales de cocina y hogar** basados en la física y la palanca (*"Work smarter, not harder"*), diseñados para solucionar problemas cotidianos sin fuerza excesiva ni herramientas especiales.

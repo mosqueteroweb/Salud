@@ -1,3 +1,9 @@
+---
+tags:
+  - utilidades
+  - nudos
+---
+
 # 5 nudos de cuerda para el día a día
 
 

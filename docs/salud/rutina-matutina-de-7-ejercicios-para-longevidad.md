@@ -1,3 +1,11 @@
+---
+tags:
+  - salud
+  - longevidad
+  - hábitos
+  - ejercicio
+---
+
 # Rutina matutina de 7 ejercicios para longevidad
 
 

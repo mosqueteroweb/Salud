@@ -1,3 +1,9 @@
+---
+tags:
+  - utilidades
+  - nudos
+---
+
 # 12 nudos resistentes que todos deberían conocer
 
 

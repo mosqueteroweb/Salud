@@ -1,3 +1,11 @@
+---
+tags:
+  - salud
+  - productividad
+  - hábitos
+  - ejercicio
+---
+
 # Rutina matutina de 4 ejercicios al despertar
 
 

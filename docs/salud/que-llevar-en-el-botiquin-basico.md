@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - primeros-auxilios
+---
+
 # Qué llevar en el botiquín básico
 
 

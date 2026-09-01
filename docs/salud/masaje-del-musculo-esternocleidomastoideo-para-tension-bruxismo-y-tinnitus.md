@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - bienestar
+---
+
 # Masaje del músculo esternocleidomastoideo para tensión, bruxismo y tinnitus
 
 Este reel (de @julio_rm9) explica la relación entre la tensión en el **músculo esternocleidomastoideo** (el músculo del cuello que va de la base de la oreja a la clavícula) y síntomas como:

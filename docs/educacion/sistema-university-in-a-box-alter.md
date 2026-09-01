@@ -1,3 +1,10 @@
+---
+tags:
+  - productividad
+  - educación
+  - ia
+---
+
 # El Sistema "University in a Box" y el framework ALTER
 
 La inteligencia artificial te permite construir tu propia "universidad en una caja" ("University in a Box") de manera gratuita, ayudándote a convertirte en un experto autodidacta en casi cualquier tema. Este sistema busca solucionar un gran problema actual: aunque las mejores universidades del mundo ofrecen cursos gratuitos en línea, cerca del 88% de las personas que los inician nunca los terminan.

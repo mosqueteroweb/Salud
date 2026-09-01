@@ -1,3 +1,10 @@
+---
+tags:
+  - utilidades
+  - organización
+  - hogar
+---
+
 # 8 trucos para doblar la ropa
 
 

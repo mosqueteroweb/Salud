@@ -1,3 +1,9 @@
+---
+tags:
+  - salud
+  - movilidad
+---
+
 # Fascitis plantar: 3 ejercicios clave para curar el dolor de talón
 
 Guía médica y anatómica con **3 ejercicios esenciales de estiramiento y fortalecimiento** para rehabilitar la fascia plantar y eliminar el característico dolor punzante en el talón al dar los primeros pasos por la mañana.
