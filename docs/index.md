@@ -12,6 +12,14 @@ Recopilatorio personal de notas y recursos que voy encontrando y quiero tener a 
 
     [:octicons-arrow-right-24: Ver sección](salud/index.md)
 
+- :material-lightning-bolt:{ .lg .middle } [__Productividad__](productividad.md)
+
+    ---
+
+    Modelos mentales, marcos de decisión, métodos de estudio, gestión del tiempo y optimización personal.
+
+    [:octicons-arrow-right-24: Ver sección](productividad.md)
+
 - :material-tools:{ .lg .middle } [__Utilidades__](utilidades/index.md)
 
     ---
