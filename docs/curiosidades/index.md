@@ -4,6 +4,38 @@ Datos, fenómenos y temas curiosos que merecen guardarse:
 
 <div class="grid cards" markdown>
 
+- [__Gana Dinero, Jubílate y Fracasa (La trampa de la jubilación)__](gana-dinero-jubilate-fracasa.md)
+
+    ---
+
+    Por qué dejar de trabajar por completo a los 65 no es un objetivo natural. La ciencia de la longevidad, el modelo de Okinawa y cómo ahorrar sin culpa hoy.
+
+    [:octicons-arrow-right-24: Leer](gana-dinero-jubilate-fracasa.md)
+
+- [__Los 4 tipos de riqueza (financiera, social, física y tiempo)__](los-4-tipos-de-riqueza.md)
+
+    ---
+
+    El dinero no es la única riqueza. Comprende las cuatro dimensiones y el valor prioritario de la salud y el tiempo.
+
+    [:octicons-arrow-right-24: Leer](los-4-tipos-de-riqueza.md)
+
+- [__15 reglas valiosas para la vida y el carácter__](15-reglas-del-hombre.md)
+
+    ---
+
+    Principios de conducta, disciplina personal y relaciones expuestos por Bernardo Jurado.
+
+    [:octicons-arrow-right-24: Leer](15-reglas-del-hombre.md)
+
+- [__Por qué unos tienen suerte y la mayoría no (Stanford)__](por-que-unos-tienen-suerte-y-la-mayoria-no-stanford.md)
+
+    ---
+
+    Charla basada en el trabajo de una profesora de Stanford que lleva 20 años estudiando la suerte.
+
+    [:octicons-arrow-right-24: Leer](por-que-unos-tienen-suerte-y-la-mayoria-no-stanford.md)
+
 - [__Cómo leer las marcas de un neumático de coche__](como-leer-las-marcas-de-un-neumatico-de-coche.md)
 
     ---
@@ -28,14 +60,6 @@ Datos, fenómenos y temas curiosos que merecen guardarse:
 
     [:octicons-arrow-right-24: Leer](limpiador-casero-multiusos-pasta-dental-vinagre-y-lavavajillas.md)
 
-- [__Por qué unos tienen suerte y la mayoría no (Stanford)__](por-que-unos-tienen-suerte-y-la-mayoria-no-stanford.md)
-
-    ---
-
-    Charla basada en el trabajo de una profesora de Stanford que lleva 20 años estudiando la suerte.
-
-    [:octicons-arrow-right-24: Leer](por-que-unos-tienen-suerte-y-la-mayoria-no-stanford.md)
-
 - [__Resolver el cubo de Rubik con un algoritmo__](resolver-el-cubo-de-rubik-con-un-algoritmo.md)
 
     ---
@@ -51,21 +75,5 @@ Datos, fenómenos y temas curiosos que merecen guardarse:
     Vídeo de humor de @SocietyKnight: cata de aceite, reacción y un truco de magia.
 
     [:octicons-arrow-right-24: Leer](videos-de-interes.md)
-
-- [__15 reglas valiosas para la vida y el carácter__](15-reglas-del-hombre.md)
-
-    ---
-
-    Principios de conducta, disciplina personal y relaciones expuestos por Bernardo Jurado.
-
-    [:octicons-arrow-right-24: Leer](15-reglas-del-hombre.md)
-
-- [__Los 4 tipos de riqueza (financiera, social, física y tiempo)__](los-4-tipos-de-riqueza.md)
-
-    ---
-
-    El dinero no es la única riqueza. Comprende las cuatro dimensiones y el valor prioritario de la salud y el tiempo.
-
-    [:octicons-arrow-right-24: Leer](los-4-tipos-de-riqueza.md)
 
 </div>
