@@ -134,6 +134,14 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](6-trucos-ingeniosos-cocina-hogar.md)
 
+- [__16 trucos prácticos para la vida cotidiana y el hogar__](16-trucos-practicos-vida-cotidiana.md)
+
+    ---
+
+    Soluciones ingeniosas de cocina, limpieza, ropa y mantenimiento para resolver problemas cotidianos.
+
+    [:octicons-arrow-right-24: Leer](16-trucos-practicos-vida-cotidiana.md)
+
 - [__Cómo abren los bomberos puertas cerradas en segundos__](apertura-puertas-emergencia-bomberos.md)
 
     ---
