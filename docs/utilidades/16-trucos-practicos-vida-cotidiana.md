@@ -1,3 +1,12 @@
+---
+tags:
+  - utilidades
+  - hogar
+  - cocina
+  - limpieza
+  - trucos
+---
+
 # 16 trucos prácticos para la vida cotidiana y el hogar
 
 Recopilatorio con **16 soluciones ingeniosas y trucos cotidianos (*life hacks*)** para ahorrar tiempo, resolver pequeños inconvenientes domésticos y mejorar la eficiencia en la cocina, la limpieza, el cuidado de la ropa y el mantenimiento del hogar.
