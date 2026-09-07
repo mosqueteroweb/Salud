@@ -142,6 +142,14 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](16-trucos-practicos-vida-cotidiana.md)
 
+- [__7 trucos ocultos que facilitan la vida cotidiana__](7-trucos-ocultos-vida-cotidiana.md)
+
+    ---
+
+    Soluciones prácticas para astillas, pegamento en dedos, sábanas, corchos atrapados y tarros atascados.
+
+    [:octicons-arrow-right-24: Leer](7-trucos-ocultos-vida-cotidiana.md)
+
 - [__Cómo abren los bomberos puertas cerradas en segundos__](apertura-puertas-emergencia-bomberos.md)
 
     ---
