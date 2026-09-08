@@ -4,6 +4,14 @@ Datos, fenómenos y temas curiosos que merecen guardarse:
 
 <div class="grid cards" markdown>
 
+- [__Los mecanismos de control totalitario (Enemy, Denis Villeneuve)__](enemy-villeneuve-mecanismos-control-totalitario.md)
+
+    ---
+
+    La lección de historia del profesor Adam Bell: pan y circo, censura, limitación cultural y los patrones de dominación social.
+
+    [:octicons-arrow-right-24: Leer](enemy-villeneuve-mecanismos-control-totalitario.md)
+
 - [__Gana Dinero, Jubílate y Fracasa (La trampa de la jubilación)__](gana-dinero-jubilate-fracasa.md)
 
     ---
