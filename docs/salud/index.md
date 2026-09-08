@@ -166,6 +166,14 @@ Artículos, ejercicios y guías sobre salud postural, movilidad, alivio del dolo
 
 <div class="grid cards" markdown>
 
+- [__5 hábitos y ejercicios para caminar sin fatiga y activar la vitalidad__](5-habitos-caminar-sin-cansarse-vitalidad.md)
+
+    ---
+
+    Rutina de activación muscular postprandial para regular la glucosa, bombear circulación y ganar resistencia al caminar.
+
+    [:octicons-arrow-right-24: Leer](5-habitos-caminar-sin-cansarse-vitalidad.md)
+
 - [__Hábitos de longevidad de China__](habitos-de-longevidad-de-china.md)
 
     ---
