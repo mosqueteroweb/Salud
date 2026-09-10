@@ -14,6 +14,14 @@ Artículos, ejercicios y guías sobre salud postural, movilidad, alivio del dolo
 
     [:octicons-arrow-right-24: Leer](descompresion-vertebral-colgarse.md)
 
+- [__Método japonés con almohada para descompresión de espalda__](metodo-japones-almohada-descompresion-espalda-dormir.md)
+
+    ---
+
+    Técnica pasiva de 5 minutos en la cama para descomprimir la columna y aliviar nervios comprimidos antes de dormir.
+
+    [:octicons-arrow-right-24: Leer](metodo-japones-almohada-descompresion-espalda-dormir.md)
+
 - [__Ejercicios para corregir la joroba (cifosis postural)__](ejercicios-para-corregir-la-joroba-cifosis-postural.md)
 
     ---
