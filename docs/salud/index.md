@@ -136,6 +136,14 @@ Artículos, ejercicios y guías sobre salud postural, movilidad, alivio del dolo
 
 <div class="grid cards" markdown>
 
+- [__Rutina en pared (Wall-Sit) para abdomen y oblicuos__](rutina-wall-sit-abdomen-oblicuos.md)
+
+    ---
+
+    Tres variaciones de sentadilla isométrica contra la pared para quemar grasa, activar el core y tornear la cintura.
+
+    [:octicons-arrow-right-24: Leer](rutina-wall-sit-abdomen-oblicuos.md)
+
 - [__Abdominales inferiores con reverse crunch__](abdominales-inferiores-con-reverse-crunch.md)
 
     ---

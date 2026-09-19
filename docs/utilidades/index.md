@@ -150,6 +150,22 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](7-trucos-ocultos-vida-cotidiana.md)
 
+- [__El truco de física para verter líquidos sin derramar__](truco-cuchara-verter-liquidos-sin-derramar.md)
+
+    ---
+
+    Usa una cuchara como embudo laminar (Efecto Coandă) para trasvasar líquidos a botellas estrechas sin derrames.
+
+    [:octicons-arrow-right-24: Leer](truco-cuchara-verter-liquidos-sin-derramar.md)
+
+- [__Cómo limpiar los filtros de la campana extractora sin frotar__](limpiar-filtros-campana-extractora-grasa.md)
+
+    ---
+
+    Método infalible con bandeja de horno, pastilla de lavavajillas y agua hirviendo para disolver la grasa en segundos.
+
+    [:octicons-arrow-right-24: Leer](limpiar-filtros-campana-extractora-grasa.md)
+
 - [__Cómo abren los bomberos puertas cerradas en segundos__](apertura-puertas-emergencia-bomberos.md)
 
     ---
