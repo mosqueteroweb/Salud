@@ -231,3 +231,18 @@ Artículos, ejercicios y guías sobre salud postural, movilidad, alivio del dolo
     [:octicons-arrow-right-24: Leer](como-reconocer-un-infarto-y-actuar-si-estas-solo.md)
 
 </div>
+
+## Cirugía y recuperación
+
+<div class="grid cards" markdown>
+
+- [__Operación de hernia inguinal: cirugía con malla y recuperación__](operacion-hernia-inguinal-guia-y-recuperacion.md)
+
+    ---
+
+    Experiencia real, técnica con malla, manejo del dolor, problemas de movilidad y consejos postoperatorios clave.
+
+    [:octicons-arrow-right-24: Leer](operacion-hernia-inguinal-guia-y-recuperacion.md)
+
+</div>
+
