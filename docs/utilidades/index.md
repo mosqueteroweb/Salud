@@ -274,7 +274,7 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     ---
 
-    Comparativa de 10 modelos Casio de larga duración (pila > 10 años).
+    Comparativa de modelos Casio de larga duración (pila > 10 años y Tough Solar).
 
     [:octicons-arrow-right-24: Leer](relojes-casio-10-anos-bateria.md)
 
