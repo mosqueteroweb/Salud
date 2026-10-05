@@ -248,6 +248,14 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](como-cambiar-nombre-correo-gmail.md)
 
+- [__Guía definitiva ESP32: Familias y elección IoT__](guia-definitiva-esp32-que-elegir.md)
+
+    ---
+
+    Comparativa completa de microcontroladores ESP32 (S3, C3, C6, H2, P4), módulos y criterios para acertar en tu proyecto.
+
+    [:octicons-arrow-right-24: Leer](guia-definitiva-esp32-que-elegir.md)
+
 </div>
 
 ## Otros
