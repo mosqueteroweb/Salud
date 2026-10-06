@@ -20,7 +20,7 @@ Lista de modelos a considerar. Las casillas se marcan ✅ cuando se compra/decid
 - [ ] <mark style="background-color: #ffeb3b; color: #000; padding: 2px 4px; border-radius: 3px; font-weight: bold;">**Casio G-Shock GW-B5600**</mark> — caja 48,9 × 42,8 mm, sumergible 200 m, Tough Solar, radiocontrolado Multi-Band 6 y conectividad Bluetooth (Smartphone Link). Rango 150–185 $.
 - [ ] **Casio AQ-S820W-1AV Solar** — deportivo digital de resina (100 m), módulo Tough Solar y sin Bluetooth. ~59,90 €.
 - [ ] **Berny Compressor** — reloj de buceo automático estilo "compressor" (inspirado en Longines Polaris), movimiento Seagull ST1632 o Miyota 8215. ~130–140 € (AliExpress).
-- [ ] **SKMEI 1629** — deportivo digital inteligente con Bluetooth, caja de resina/ABS de 51 mm (grosor 15 mm), podómetro (pasos, calorías, distancia), recordatorio de llamadas y mensajes, control remoto de cámara, hora dual, cronógrafo, sumergible 50 m (5 ATM). Rango ~12–18 € (AliExpress).
+- [ ] <mark style="background-color: #ff9800; color: #fff; padding: 2px 5px; border-radius: 3px; font-weight: bold;">**SKMEI 1629 (Descatalogado)**</mark> — digital 51 mm con Bluetooth, podómetro (pasos/calorías), sumergible 50 m. *Agotado / fuera de catálogo.*
 
 > 📌 **Relojes Casio con 10 años de batería y Tough Solar:** comparativa de modelos Casio de larga duración → [ver artículo](relojes-casio-10-anos-bateria.md)
 
@@ -37,7 +37,7 @@ Lista de modelos a considerar. Las casillas se marcan ✅ cuando se compra/decid
 | <mark style="background-color: #ffeb3b; color: #000; padding: 2px 4px; border-radius: 3px; font-weight: bold;">Casio G-Shock GW-B5600</mark> | ![Casio G-Shock GW-B5600](../img/gwb5600-sm.png){ width=120 } |
 | Casio AQ-S820W-1AV Solar | ![Casio AQ-S820W-1AV](../img/aqs820w-sm.png){ width=120 } |
 | Berny Compressor | ![Berny Compressor](../img/berny-sm.png){ width=120 } |
-| SKMEI 1629 | ![SKMEI 1629](../img/skmei1629-sm.png){ width=120 } |
+| <mark style="background-color: #ff9800; color: #fff; padding: 2px 5px; border-radius: 3px; font-weight: bold;">SKMEI 1629 (Descatalogado)</mark> | ![SKMEI 1629](../img/skmei1629-sm.png){ width=120 } |
 
 ## Notas
 
