@@ -174,6 +174,14 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](apertura-puertas-emergencia-bomberos.md)
 
+- [__El truco del tapón de aceite: dosificador antigoteo casero__](truco-tapon-aceite-dosificador-antigoteo.md)
+
+    ---
+
+    Cómo reutilizar la anilla interior de la botella de aceite para convertirla en un dosificador fino y evitar derrames.
+
+    [:octicons-arrow-right-24: Leer](truco-tapon-aceite-dosificador-antigoteo.md)
+
 </div>
 
 ## Ropa y cuidado
