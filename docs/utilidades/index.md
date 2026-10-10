@@ -182,6 +182,22 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](truco-tapon-aceite-dosificador-antigoteo.md)
 
+- [__Cómo doblar bolsas de plástico en mini bolso__](doblar-bolsas-plastico-mini-bolso.md)
+
+    ---
+
+    Técnica de plegado geométrico compacto para organizar bolsas de la compra sin ocupar espacio ni desarmarse.
+
+    [:octicons-arrow-right-24: Leer](doblar-bolsas-plastico-mini-bolso.md)
+
+- [__Vela infinita casera para cortes de luz y apagones__](vela-infinita-casera-cortes-de-luz.md)
+
+    ---
+
+    Lámpara de emergencia con agua, arroz, aceite y un bastoncillo: iluminación segura y duradera sin velas comerciales.
+
+    [:octicons-arrow-right-24: Leer](vela-infinita-casera-cortes-de-luz.md)
+
 </div>
 
 ## Ropa y cuidado
