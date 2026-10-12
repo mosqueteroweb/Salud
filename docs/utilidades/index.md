@@ -280,6 +280,14 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](guia-definitiva-esp32-que-elegir.md)
 
+- [__50 Proyectos con ESP32 de 4$: Ciberseguridad y Hardware Hacking__](50-proyectos-esp32-seguridad-hardware-zoecyber.md)
+
+    ---
+
+    Recopilación técnica de 50 proyectos de Red Teaming, RF, acceso físico, BadUSB y comunicaciones off-grid basada en @zoecyber001.
+
+    [:octicons-arrow-right-24: Leer](50-proyectos-esp32-seguridad-hardware-zoecyber.md)
+
 </div>
 
 ## Otros
