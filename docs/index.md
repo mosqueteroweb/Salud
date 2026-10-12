@@ -4,6 +4,14 @@ Recopilatorio personal de notas y recursos que voy encontrando y quiero tener a 
 
 <div class="grid cards" markdown>
 
+- :material-clock-fast:{ .lg .middle } [__Recientes__](recientes.md)
+
+    ---
+
+    Los 10 últimos artículos y guías incorporados a la wiki para estar al día de las últimas novedades.
+
+    [:octicons-arrow-right-24: Ver recientes](recientes.md)
+
 - :material-heart:{ .lg .middle } [__Salud__](salud/index.md)
 
     ---
