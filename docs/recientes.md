@@ -10,6 +10,14 @@ Los últimos 10 artículos añadidos a la wiki, ordenados cronológicamente desd
 
 <div class="grid cards" markdown>
 
+- [__🛏️ Cómo doblar una sábana bajera ajustable con elástico__](utilidades/como-doblar-sabana-bajera-ajustable-con-elastico.md)
+
+    ---
+
+    Método paso a paso para transformar una sábana bajera con elásticos en un paquete plano y perfecto sin arrugas.
+
+    [:octicons-arrow-right-24: Leer](utilidades/como-doblar-sabana-bajera-ajustable-con-elastico.md)
+
 - [__⚡ 50 Proyectos con un ESP32: Ciberseguridad, Red Teaming y Hardware__](utilidades/50-proyectos-esp32-seguridad-hardware-zoecyber.md)
 
     ---
@@ -81,13 +89,5 @@ Los últimos 10 artículos añadidos a la wiki, ordenados cronológicamente desd
     Guía física del flujo laminar para trasvasar líquidos de recipientes anchos a botellas estrechas limpiamente.
 
     [:octicons-arrow-right-24: Leer](utilidades/truco-cuchara-verter-liquidos-sin-derramar.md)
-
-- [__🛏️ Método japonés de descompresión con almohada antes de dormir__](salud/metodo-japones-almohada-descompresion-espalda-dormir.md)
-
-    ---
-
-    Alineación postural y apertura intervertebral pasiva de 5 minutos para descargar la espalda baja y dormir mejor.
-
-    [:octicons-arrow-right-24: Leer](salud/metodo-japones-almohada-descompresion-espalda-dormir.md)
 
 </div>
