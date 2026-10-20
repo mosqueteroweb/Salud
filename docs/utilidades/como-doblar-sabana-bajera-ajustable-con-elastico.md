@@ -9,15 +9,13 @@ tags:
 
 # 🛏️ Cómo doblar una sábana bajera ajustable con elástico en un rectángulo perfecto
 
-Doblar una **sábana bajera ajustable** (con elástico perimetral o sábana de cajón) es uno de los mayores quebraderos de cabeza en la organización del hogar. La mayoría de personas terminan enrollándola hecha una bola irregular que ocupa el triple de espacio en el armario y se arruga por completo.
-
-Con este método geométrico definitivo, cualquier sábana bajera con esquinas redondeadas y elásticos fruncidos se transforma en apenas 60 segundos en un **paquete plano, liso y rectangular**, idéntico al de una sábana encimera estándar de hotel.
-
-## 🎥 Demostración en vídeo
-
 <video controls preload="none" src="../video/como-doblar-sabana-bajera-ajustable.mp4" style="max-width: 100%; border-radius: 8px;">Vídeo demostrativo: cómo doblar una sábana bajera ajustable con elástico en un rectángulo perfecto</video>
 
 *Demostración práctica paso a paso sobre el colchón. Fuente: X/Twitter ([@Ivybest666](https://x.com/Ivybest666/status/2112156114288844835)).*
+
+Doblar una **sábana bajera ajustable** (con elástico perimetral o sábana de cajón) es uno de los mayores quebraderos de cabeza en la organización del hogar. La mayoría de personas terminan enrollándola hecha una bola irregular que ocupa el triple de espacio en el armario y se arruga por completo.
+
+Con este método geométrico definitivo, cualquier sábana bajera con esquinas redondeadas y elásticos fruncidos se transforma en apenas 60 segundos en un **paquete plano, liso y rectangular**, idéntico al de una sábana encimera estándar de hotel.
 
 ---
 
