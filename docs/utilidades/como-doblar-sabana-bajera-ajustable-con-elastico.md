@@ -13,6 +13,12 @@ Doblar una **sábana bajera ajustable** (con elástico perimetral o sábana de c
 
 Con este método geométrico definitivo, cualquier sábana bajera con esquinas redondeadas y elásticos fruncidos se transforma en apenas 60 segundos en un **paquete plano, liso y rectangular**, idéntico al de una sábana encimera estándar de hotel.
 
+## 🎥 Demostración en vídeo
+
+<video controls preload="none" src="../video/como-doblar-sabana-bajera-ajustable.mp4" style="max-width: 100%; border-radius: 8px;">Vídeo demostrativo: cómo doblar una sábana bajera ajustable con elástico en un rectángulo perfecto</video>
+
+*Demostración práctica paso a paso sobre el colchón. Fuente: X/Twitter ([@Ivybest666](https://x.com/Ivybest666/status/2112156114288844835)).*
+
 ---
 
 ## 🎯 Por qué funciona este método
@@ -51,13 +57,3 @@ Con este método geométrico definitivo, cualquier sábana bajera con esquinas r
 1. Desde los extremos de la tira, dobla un tercio hacia el centro.
 2. Dobla el extremo contrario cerrando el paquete en un rectángulo final compacto y firme.
 3. Alísalo ligeramente con las palmas de las manos para dejarlo listo para apilar o guardar en vertical.
-
----
-
-## 🎥 Demostración paso a paso en vídeo
-
-A continuación se muestra la demostración práctica completa donde se aprecia con total claridad la secuencia de movimientos sobre el colchón:
-
-<video controls preload="none" src="../video/como-doblar-sabana-bajera-ajustable.mp4" style="max-width: 100%; border-radius: 8px;">Vídeo demostrativo: cómo doblar una sábana bajera ajustable con elástico en un rectángulo perfecto</video>
-
-**Fuente:** X/Twitter ([@Ivybest666](https://x.com/Ivybest666/status/2112156114288844835)).
