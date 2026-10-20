@@ -228,6 +228,14 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](no-tires-la-prenda-manchada-quitala-con-caseros.md)
 
+- [__Cómo doblar una sábana bajera ajustable con elástico__](como-doblar-sabana-bajera-ajustable-con-elastico.md)
+
+    ---
+
+    Método paso a paso para transformar una sábana bajera con elásticos en un rectángulo plano y perfecto sin arrugas.
+
+    [:octicons-arrow-right-24: Leer](como-doblar-sabana-bajera-ajustable-con-elastico.md)
+
 </div>
 
 ## Nudos y cuerdas
