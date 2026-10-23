@@ -266,6 +266,14 @@ Herramientas, trucos y recursos prácticos que facilitan las tareas del día a d
 
     [:octicons-arrow-right-24: Leer](hacer-el-nudo-de-corbata-medio-windsor.md)
 
+- [__2 Técnicas geniales de nudos: Amarre a clavo y anclaje de anilla__](tecnicas-geniales-nudos-amarre-clavo-anilla.md)
+
+    ---
+
+    Métodos rápidos y autoblocantes para fijar cuerdas a clavos sin que resbalen y anclar anillas metálicas con firmeza.
+
+    [:octicons-arrow-right-24: Leer](tecnicas-geniales-nudos-amarre-clavo-anilla.md)
+
 </div>
 
 ## Tecnología y digital

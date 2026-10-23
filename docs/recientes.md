@@ -10,6 +10,14 @@ Los últimos 10 artículos añadidos a la wiki, ordenados cronológicamente desd
 
 <div class="grid cards" markdown>
 
+- [__🪢 2 Técnicas geniales de nudos: Amarre a clavo y anclaje de anilla__](utilidades/tecnicas-geniales-nudos-amarre-clavo-anilla.md)
+
+    ---
+
+    Métodos rápidos y autoblocantes para fijar cuerdas a clavos sin que resbalen y anclar anillas metálicas con firmeza.
+
+    [:octicons-arrow-right-24: Leer](utilidades/tecnicas-geniales-nudos-amarre-clavo-anilla.md)
+
 - [__🛏️ Cómo doblar una sábana bajera ajustable con elástico__](utilidades/como-doblar-sabana-bajera-ajustable-con-elastico.md)
 
     ---
@@ -81,13 +89,5 @@ Los últimos 10 artículos añadidos a la wiki, ordenados cronológicamente desd
     Fórmula desengrasante con agua hirviendo y bicarbonato para disolver grasa incrustada en minutos.
 
     [:octicons-arrow-right-24: Leer](utilidades/limpiar-filtros-campana-extractora-grasa.md)
-
-- [__🥄 Efecto Coandă con cuchara: verter líquidos sin derramar__](utilidades/truco-cuchara-verter-liquidos-sin-derramar.md)
-
-    ---
-
-    Guía física del flujo laminar para trasvasar líquidos de recipientes anchos a botellas estrechas limpiamente.
-
-    [:octicons-arrow-right-24: Leer](utilidades/truco-cuchara-verter-liquidos-sin-derramar.md)
 
 </div>
